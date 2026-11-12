@@ -1,0 +1,13 @@
+{
+  "id": "task_001",
+  "repository": "repo",
+  "issue": "Return exactly the first n items; first([1, 2, 3], 2) should return [1, 2].",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "solution.py"
+  ]
+}

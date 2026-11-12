@@ -1,0 +1,27 @@
+{
+  "id": "task_021",
+  "repository": "repo",
+  "issue": "Event timestamps accept ISO-8601 offsets or Z. Normalize parsed timestamps to UTC; sort by actual instant, not lexicographic text. Equivalent instants retain input order; a timestamp without timezone raises ValueError.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "dev",
+  "editable": [
+    "dates.py",
+    "events.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

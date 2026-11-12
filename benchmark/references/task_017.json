@@ -1,0 +1,3 @@
+{
+  "payments.py": "class Payments:\n    def __init__(self, charge):\n        self.charge = charge\n        self.receipts = {}\n    def submit(self, key, amount):\n        if key in self.receipts:\n            old_amount, receipt = self.receipts[key]\n            if old_amount != amount: raise ValueError('conflicting replay')\n            return receipt\n        receipt = self.charge(amount)\n        self.receipts[key] = (amount, receipt)\n        return receipt\n"
+}

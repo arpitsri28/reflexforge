@@ -1,0 +1,32 @@
+{
+  "id": "task_108",
+  "repository": "repo",
+  "issue": "CLI options sometimes fail to control mail delivery and scheduled work, and creating a second application can inherit settings from the first. Explicit false and zero options must remain effective.",
+  "setup": "",
+  "reproduction": "python -m unittest discover -s tests -v",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "dev",
+  "editable": [
+    "defaults.py",
+    "parsing.py",
+    "layers.py",
+    "resolver.py",
+    "mailer.py",
+    "scheduler.py",
+    "application.py"
+  ],
+  "budget": {
+    "max_steps": 30,
+    "wall_seconds": 300,
+    "command_seconds": 30,
+    "max_tokens": 40000,
+    "response_tokens": 4096,
+    "retry_limit": 0
+  }
+}

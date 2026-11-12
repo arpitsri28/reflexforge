@@ -1,0 +1,3 @@
+{
+  "cache.py": "class Decisions:\n    def __init__(self): self.values={}\n    def key(self,principal,document,action):\n        return (principal.tenant, principal.key, principal.revision, document.key, document.revision, action)\n    def allowed(self,principal,document,action,policy):\n        key=self.key(principal,document,action)\n        if key not in self.values: self.values[key]=policy.allows(principal,document,action)\n        return self.values[key]\n"
+}

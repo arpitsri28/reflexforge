@@ -1,0 +1,3 @@
+{
+  "stock.py": "class Stock:\n    def __init__(self, quantity):\n        self.quantity = quantity\n        self.reservations = {}\n    def available(self):\n        return self.quantity - sum(self.reservations.values())\n    def reserve(self, cart, count):\n        if count <= 0 or cart in self.reservations or count > self.available():\n            raise ValueError('unavailable')\n        self.reservations[cart] = count\n    def cancel(self, cart):\n        self.reservations.pop(cart, None)\n"
+}

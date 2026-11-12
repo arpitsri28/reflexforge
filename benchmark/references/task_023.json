@@ -1,0 +1,3 @@
+{
+  "codec.py": "import csv\nimport io\ndef encode(rows):\n    stream = io.StringIO(newline='')\n    csv.writer(stream).writerows(rows)\n    return stream.getvalue()\ndef decode(text):\n    return list(csv.reader(io.StringIO(text, newline='')))\n"
+}

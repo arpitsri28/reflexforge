@@ -1,0 +1,27 @@
+{
+  "id": "task_022",
+  "repository": "repo",
+  "issue": "Login codes expire at now >= expires and are single-use. Successful redemption removes the code. An invalid or expired code must not produce a session. Use the explicit supplied clock, not wall time.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "dev",
+  "editable": [
+    "codes.py",
+    "login.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

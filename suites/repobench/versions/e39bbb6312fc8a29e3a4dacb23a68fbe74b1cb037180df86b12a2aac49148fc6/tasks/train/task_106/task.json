@@ -1,0 +1,32 @@
+{
+  "id": "task_106",
+  "repository": "repo",
+  "issue": "Resuming a catalog synchronization after an interrupted page can omit products. Replaying a partially completed run must preserve ordering and product identity without duplicating destination records.",
+  "setup": "",
+  "reproduction": "python -m unittest discover -s tests -v",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "protocol.py",
+    "transport.py",
+    "client.py",
+    "decoding.py",
+    "checkpoint.py",
+    "destination.py",
+    "synchronizer.py"
+  ],
+  "budget": {
+    "max_steps": 30,
+    "wall_seconds": 300,
+    "command_seconds": 30,
+    "max_tokens": 40000,
+    "response_tokens": 4096,
+    "retry_limit": 0
+  }
+}

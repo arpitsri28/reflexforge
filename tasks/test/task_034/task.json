@@ -1,0 +1,27 @@
+{
+  "id": "task_034",
+  "repository": "repo",
+  "issue": "Reader accepts version 1 documents with full_name and version 2 with first/last, returning canonical name. Missing version defaults to 1. Unknown versions must raise ValueError, not silently use version 2.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "test",
+  "editable": [
+    "migrations.py",
+    "reader.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

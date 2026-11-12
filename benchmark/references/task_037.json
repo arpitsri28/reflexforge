@@ -1,0 +1,3 @@
+{
+  "query.py": "def encode(params):\n    from urllib.parse import urlencode\n    return urlencode(params, doseq=True)\n"
+}

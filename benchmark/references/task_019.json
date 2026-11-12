@@ -1,0 +1,3 @@
+{
+  "ordering.py": "def merge(sources):\n    rows = [dict(row) for source in sources for row in source]\n    return sorted(rows, key=lambda row: row['priority'], reverse=True)\n"
+}

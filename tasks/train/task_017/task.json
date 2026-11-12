@@ -1,0 +1,27 @@
+{
+  "id": "task_017",
+  "repository": "repo",
+  "issue": "Payment submission must charge once per idempotency key and return the original receipt for a replay. Reusing a key with a different amount must raise ValueError without charging. Failed charges must not reserve a key.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "payments.py",
+    "api.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

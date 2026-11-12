@@ -1,0 +1,32 @@
+{
+  "id": "task_110",
+  "repository": "repo",
+  "issue": "The event stream works for simple ASCII messages but loses or corrupts messages when packets are fragmented or payloads contain non-ASCII text. Valid replayed events should not be applied twice.",
+  "setup": "",
+  "reproduction": "python -m unittest discover -s tests -v",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "dev",
+  "editable": [
+    "encoding.py",
+    "framing.py",
+    "schema.py",
+    "payloads.py",
+    "router.py",
+    "session.py",
+    "stream.py"
+  ],
+  "budget": {
+    "max_steps": 30,
+    "wall_seconds": 300,
+    "command_seconds": 30,
+    "max_tokens": 40000,
+    "response_tokens": 4096,
+    "retry_limit": 0
+  }
+}

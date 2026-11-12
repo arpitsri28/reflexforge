@@ -1,0 +1,3 @@
+{
+  "aggregate.py": "from stats import partition\ndef mean(partitions):\n    summaries = [partition(rows) for rows in partitions]\n    total = sum(t for t, w in summaries)\n    weight = sum(w for t, w in summaries)\n    return total / weight if weight else None\n"
+}

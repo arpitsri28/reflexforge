@@ -1,0 +1,3 @@
+{
+  "pages.py": "def collect(fetch):\n    cursor, seen, result = None, set(), []\n    while True:\n        page = fetch(cursor)\n        result.extend(page['items'])\n        cursor = page['next_cursor']\n        if cursor is None: break\n        if cursor in seen: raise ValueError('cursor cycle')\n        seen.add(cursor)\n    return result\n"
+}

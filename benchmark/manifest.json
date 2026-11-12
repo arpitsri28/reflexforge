@@ -1,0 +1,653 @@
+{
+  "format_version": 1,
+  "version": "d47b31353fc8ee339a3d293dc88b1f6861b1c6febe5e4e48d525bb1d84790e94",
+  "provenance": "project-authored synthetic debugging fixtures",
+  "entries": [
+    {
+      "id": "task_001",
+      "split": "train",
+      "family": "slice-boundary",
+      "category": "slice-boundary",
+      "difficulty": "easy",
+      "affected_modules": 1,
+      "prior_agent_exposure": true,
+      "coverage": [
+        "reported reproduction",
+        "empty input",
+        "boundary behavior"
+      ],
+      "task_path": "tasks/train/task_001/task.json",
+      "source_hash": "9890fbc60bb5449f4480dcf0ba6f34e5f96e860b3821f111e74020408608a6b7",
+      "reference_hash": "dafb682687f5dc725873a948f0a94988e60517d90be2f78ab6863b792da2881c"
+    },
+    {
+      "id": "task_002",
+      "split": "dev",
+      "family": "one-based-page-index",
+      "category": "one-based-page-index",
+      "difficulty": "easy",
+      "affected_modules": 1,
+      "prior_agent_exposure": true,
+      "coverage": [
+        "reported reproduction",
+        "empty input",
+        "boundary behavior"
+      ],
+      "task_path": "tasks/dev/task_002/task.json",
+      "source_hash": "c02e8e27922ee47603f91573fae041c9dd3bc6e3c3100440f6bf4cb5eaf3bff6",
+      "reference_hash": "9134eee7ac16d93b988195c10b03e6c69eafb494bf988c3041dfb8973dffa65f"
+    },
+    {
+      "id": "task_003",
+      "split": "test",
+      "family": "enabled-record-predicate",
+      "category": "enabled-record-predicate",
+      "difficulty": "easy",
+      "affected_modules": 1,
+      "prior_agent_exposure": true,
+      "coverage": [
+        "reported reproduction",
+        "empty input",
+        "boundary behavior"
+      ],
+      "task_path": "tasks/test/task_003/task.json",
+      "source_hash": "4ac143104febca66f2e2b49f07815ffe5b630c65c615eaf9cb96e7e3e3f9ce7f",
+      "reference_hash": "ba4ecbfc9cf4fbd4942fe63816dc1a58633a84de0fae7cff0bb47050d40d2909"
+    },
+    {
+      "id": "task_004",
+      "split": "train",
+      "family": "inventory-reservations",
+      "category": "state",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "overlapping carts",
+        "atomic rejection",
+        "cancellation"
+      ],
+      "task_path": "tasks/train/task_004/task.json",
+      "source_hash": "04893299f7aae198528297fec3f296d86df72336abc7c91269299d90bd573add",
+      "reference_hash": "d7119c2665cb7a5b6b8e5ed1fae9a0c3eaa01f6ce7051ea48b854afb3fe01981"
+    },
+    {
+      "id": "task_005",
+      "split": "train",
+      "family": "tenant-cache-identity",
+      "category": "cache",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "tenant separation",
+        "cache hit",
+        "scoped invalidation"
+      ],
+      "task_path": "tasks/train/task_005/task.json",
+      "source_hash": "bf0bcb64a6ead633dcdfd2973ce5d065bd89d88712832bbf2e3dafeee46aed21",
+      "reference_hash": "e46f578216d2d55e6c907fba5cff8344365f40d901b602171551ea0bcc3a0435"
+    },
+    {
+      "id": "task_006",
+      "split": "train",
+      "family": "directory-invalidation",
+      "category": "cache",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "insert invalidation",
+        "delete invalidation",
+        "defensive copies"
+      ],
+      "task_path": "tasks/train/task_006/task.json",
+      "source_hash": "08d9f22ad446960fc3fb6936a93d8f55b6f9e3f131b26d4a79f383ea92e2e70c",
+      "reference_hash": "723abc9d41627b01010f63e7f5803a9af37223a1c3f014e09022eb3eb58e0ed7"
+    },
+    {
+      "id": "task_007",
+      "split": "train",
+      "family": "async-ordered-collection",
+      "category": "async",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "awaiting",
+        "order and multiplicity",
+        "empty input"
+      ],
+      "task_path": "tasks/train/task_007/task.json",
+      "source_hash": "1686520eff3d33f13a18a476eb354f8ec97287fab6be1747238dd7533a6efd7f",
+      "reference_hash": "085db45944a31d6b73801d79fdc31aa84f5dd5b8c4ce4b22164e78bfb09ab224"
+    },
+    {
+      "id": "task_008",
+      "split": "train",
+      "family": "exception-taxonomy",
+      "category": "retry",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "transient recovery",
+        "permanent error propagation",
+        "invalid attempt count"
+      ],
+      "task_path": "tasks/train/task_008/task.json",
+      "source_hash": "ff4b5b4faf2ecd5048601d59d1c2790af69739b52668f340bd1ec41e02f5064c",
+      "reference_hash": "9e31972a2c06f24e4e3b1f6f78a2046adc691638f276f5ccc97621ba73ab42b8"
+    },
+    {
+      "id": "task_009",
+      "split": "train",
+      "family": "strict-env-booleans",
+      "category": "configuration",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "normalization",
+        "defaults",
+        "invalid inputs"
+      ],
+      "task_path": "tasks/train/task_009/task.json",
+      "source_hash": "09d06a43f04003541f7590271ed4d18ab519a794874c6e4430d4295ebe089afd",
+      "reference_hash": "867eb28d0cdeb2d79ff5a3d445108eaea17622f7e6b790aeeb69cf74ed1df281"
+    },
+    {
+      "id": "task_010",
+      "split": "train",
+      "family": "decimal-wire-format",
+      "category": "serialization",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "precision",
+        "negative and fractional amounts",
+        "wire type"
+      ],
+      "task_path": "tasks/train/task_010/task.json",
+      "source_hash": "681027d1b921a84fbf124518db7d42145ad9682e99e684218c32538b22f5d332",
+      "reference_hash": "cc2a8f427ba618ae20f9ea92372004a02507ba290f035a1968c4351f183f5aae"
+    },
+    {
+      "id": "task_011",
+      "split": "train",
+      "family": "document-acl-intersection",
+      "category": "authorization",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "organization boundary",
+        "owner/admin privileges",
+        "ordinary member denial"
+      ],
+      "task_path": "tasks/train/task_011/task.json",
+      "source_hash": "d86dc4fae69bca0fde7e70fc3fe645e4be176e9f0b2bfe3ba02fd80c31c8d598",
+      "reference_hash": "5f6afe31eccf80af5d0cb9a89ce6183b022058e4e9601ac3c842368611b08715"
+    },
+    {
+      "id": "task_012",
+      "split": "train",
+      "family": "package-relative-import",
+      "category": "imports",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "package import",
+        "multiple lines",
+        "unknown product propagation"
+      ],
+      "task_path": "tasks/train/task_012/task.json",
+      "source_hash": "88f073920d06e182424638adda367307ead18618b06b72bbb429b7feae094e5a",
+      "reference_hash": "533771a9d4c4581013ebf52a3fd2eb7a919a41b3710712d7c3a8382164796e27"
+    },
+    {
+      "id": "task_013",
+      "split": "train",
+      "family": "stream-consumption",
+      "category": "pipeline",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "one-shot iteration",
+        "empty input",
+        "zero and negative values"
+      ],
+      "task_path": "tasks/train/task_013/task.json",
+      "source_hash": "123bf2113d8e067966b86a588fd999d3438b4b6fbd150e8402f8ca64d67d4080",
+      "reference_hash": "c71af5c1743873a1cacb7451053dfca877fd6b5df11c5898c92410ef4991f794"
+    },
+    {
+      "id": "task_014",
+      "split": "train",
+      "family": "context-resource-cleanup",
+      "category": "lifecycle",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "success cleanup",
+        "exception cleanup",
+        "propagation"
+      ],
+      "task_path": "tasks/train/task_014/task.json",
+      "source_hash": "f1c4e692bf26b4e45621dc6f4b31e79a0a450922d1297c09f68c4ce18cd52dea",
+      "reference_hash": "72dae7dcb18cde1180ba8a760d96ee743f3fd98c3ebd8b08621543d8a9a4c9ef"
+    },
+    {
+      "id": "task_015",
+      "split": "train",
+      "family": "cursor-termination",
+      "category": "pagination",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "empty intermediate page",
+        "terminal nonempty page",
+        "cursor cycles"
+      ],
+      "task_path": "tasks/train/task_015/task.json",
+      "source_hash": "7046325286d7722e1997ecceb85d826f8bfc9c592e5312ac5d6fc3cdd4fd52d5",
+      "reference_hash": "69eb31511a10b5f40e5c9650730a2753b72358b93c0d5396a303046cb057fda7"
+    },
+    {
+      "id": "task_016",
+      "split": "train",
+      "family": "tree-traversal-validation",
+      "category": "validation",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "shared dependencies",
+        "cycle and self-cycle",
+        "unknown nodes"
+      ],
+      "task_path": "tasks/train/task_016/task.json",
+      "source_hash": "c2cefa4990483c3f5573f790421f57f17c8a5c00a338b98dcbc51357febb9ef0",
+      "reference_hash": "aa0fe77afb801769b76c910493d18e44037343c6b1a69a6e7b152ebfefaa3878"
+    },
+    {
+      "id": "task_017",
+      "split": "train",
+      "family": "idempotency-replay",
+      "category": "state",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "safe replay",
+        "conflicting request",
+        "failure not cached"
+      ],
+      "task_path": "tasks/train/task_017/task.json",
+      "source_hash": "b9dbdb50d14d7e8b31d57b21bfcb618e5bd53089fc2cae53c35888d29675bc2f",
+      "reference_hash": "e57a19394f2e501f6a711b039b5eb3116f3b7e3b6d1a97936fa4f573341f9fc2"
+    },
+    {
+      "id": "task_018",
+      "split": "train",
+      "family": "nested-transaction-snapshot",
+      "category": "state",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "nested rollback",
+        "commit",
+        "exception propagation"
+      ],
+      "task_path": "tasks/train/task_018/task.json",
+      "source_hash": "bacb56bb89e6711dfb403d32009cbcdd06adf41e9b53c0dcdebeacebe20dc0d8",
+      "reference_hash": "b9e8f71679e12821e227d4307a2efc2bd74f12062b07a50d03e7f27c6c6c0057"
+    },
+    {
+      "id": "task_019",
+      "split": "dev",
+      "family": "stable-priority-merge",
+      "category": "sorting",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "stable ties",
+        "descending order",
+        "input isolation"
+      ],
+      "task_path": "tasks/dev/task_019/task.json",
+      "source_hash": "5be97a062e62c9eee714f2ba515597ecfb3d98900b3be312bb86baaf4316d06d",
+      "reference_hash": "5cd9e6cb7ec65cfde0610694182fb098be08641a38b0e5b525b6bb0e704a133d"
+    },
+    {
+      "id": "task_020",
+      "split": "dev",
+      "family": "async-shared-counter",
+      "category": "concurrency",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "deterministic interleaving",
+        "unique increments",
+        "empty batch and reuse"
+      ],
+      "task_path": "tasks/dev/task_020/task.json",
+      "source_hash": "b0bf98fa313c0e4bac401e44ebed1174db807dba538aafe76fcbc58dc5328002",
+      "reference_hash": "f38a4f4d9446afaf2f2e5586a4a60f2fc4380d63b5550f6de11efdf30fec6ef2"
+    },
+    {
+      "id": "task_021",
+      "split": "dev",
+      "family": "timezone-normalization",
+      "category": "datetime",
+      "difficulty": "hard",
+      "affected_modules": 2,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "offset normalization",
+        "chronological order",
+        "timezone validation and stable ties"
+      ],
+      "task_path": "tasks/dev/task_021/task.json",
+      "source_hash": "7de5e74e4911e700d4b3eb199ea049bd892f99bee8e77e66b14666fbd92691ed",
+      "reference_hash": "ea2043a13c9c035c7788d3de5006ec2519181ec282dcff511a3d541f1a21124e"
+    },
+    {
+      "id": "task_022",
+      "split": "dev",
+      "family": "single-use-login-code",
+      "category": "authentication",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "single use",
+        "replay denial",
+        "expiry boundary"
+      ],
+      "task_path": "tasks/dev/task_022/task.json",
+      "source_hash": "dce1df4b213927b20fb4308a65de8ba461a16776ebd969c308e40fbe985b4a7b",
+      "reference_hash": "63b7e961c6d31ddcec63a8db23d6b2d76712b6dfab90c73b96e7702e5321166a"
+    },
+    {
+      "id": "task_023",
+      "split": "dev",
+      "family": "csv-quoted-records",
+      "category": "serialization",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "quoted delimiters",
+        "embedded line breaks",
+        "empty values"
+      ],
+      "task_path": "tasks/dev/task_023/task.json",
+      "source_hash": "625a8d2c196eedf3a406e34ffa2fdd4345d87747125356e0272731e29278fe0a",
+      "reference_hash": "649c717cee2d4b4207b1e96185953ed62fd081249e71ba8ae17213c60ec6214f"
+    },
+    {
+      "id": "task_024",
+      "split": "dev",
+      "family": "bounded-lru-refresh",
+      "category": "cache",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "hit recency",
+        "replacement recency",
+        "capacity enforcement"
+      ],
+      "task_path": "tasks/dev/task_024/task.json",
+      "source_hash": "bc80a8588c1e4836836c9d694b53c7dad0ace0e4c64399db780fd0100e3dc07c",
+      "reference_hash": "6bc72d80b8fbed43af95023f99235cf899cd29f3e7e1b02e045e59bf40f9ac84"
+    },
+    {
+      "id": "task_025",
+      "split": "dev",
+      "family": "async-failure-cancellation",
+      "category": "async",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "successful gather",
+        "sibling cancellation",
+        "awaited cleanup and propagation"
+      ],
+      "task_path": "tasks/dev/task_025/task.json",
+      "source_hash": "1f2d2d1ed4c56215905a47eeadf493afc7816d4d720bc5a95520f9b8723d8e9f",
+      "reference_hash": "1d4744920ec6b85a5df21fecbd12ec86bd5fc1d4fe9f875cbb805db02b03f333"
+    },
+    {
+      "id": "task_026",
+      "split": "dev",
+      "family": "header-token-boundaries",
+      "category": "parsing",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "scheme validation",
+        "whitespace handling",
+        "field count"
+      ],
+      "task_path": "tasks/dev/task_026/task.json",
+      "source_hash": "ba8f35d3490161b1bcacec1e80ca37cfbc697de10f29522a0427ecd74d622d11",
+      "reference_hash": "8a44c724ca99041d1d7c00e95ee5ccf442c3a159cc6c506ecabc4299c4b4d29e"
+    },
+    {
+      "id": "task_027",
+      "split": "train",
+      "family": "exception-taxonomy",
+      "category": "errors",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "partial results",
+        "error positions",
+        "infrastructure propagation"
+      ],
+      "task_path": "tasks/train/task_027/task.json",
+      "source_hash": "d0bf11019398422f579bf4ff84efcf457222dee5148039ce856d39761b61398c",
+      "reference_hash": "15d285daf3766b53fc47fb0051676c889d5152b96d3254e645b733cd174fd22b"
+    },
+    {
+      "id": "task_028",
+      "split": "dev",
+      "family": "settings-layer-merge",
+      "category": "configuration",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "recursive merge",
+        "input ownership",
+        "scalar replacement"
+      ],
+      "task_path": "tasks/dev/task_028/task.json",
+      "source_hash": "b0ecf40a97b2c333ec1e31ed842944274fa5ff2775ac75fbe0a739bac8c2bf24",
+      "reference_hash": "18e660ecea64cf88797ffc5af1c7710340b6423255295e0fea996350483ccca9"
+    },
+    {
+      "id": "task_029",
+      "split": "dev",
+      "family": "iterator-window-flush",
+      "category": "pipeline",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "partial final batch",
+        "empty/exact batches",
+        "size validation"
+      ],
+      "task_path": "tasks/dev/task_029/task.json",
+      "source_hash": "afcb9e5f48b652f2e0f06521a787db39cf541dfdd7217a16c51fae2ba643fd82",
+      "reference_hash": "5959296af6e9e83e7d98eec2aad0af02a5f34354edb3797482a6db9e164acc20"
+    },
+    {
+      "id": "task_030",
+      "split": "train",
+      "family": "context-resource-cleanup",
+      "category": "lifecycle",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "LIFO teardown",
+        "partial acquisition failure",
+        "empty resource group"
+      ],
+      "task_path": "tasks/train/task_030/task.json",
+      "source_hash": "ba6ce48ead4ed536bdd325471c29e8afb843ce691e74f220da42df5366d29450",
+      "reference_hash": "55a6be1c7c69be5a032c2be1f942354184b0c17e284932feaca6b413c841cd5c"
+    },
+    {
+      "id": "task_031",
+      "split": "dev",
+      "family": "route-parameter-precedence",
+      "category": "routing",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "literal precedence",
+        "segment boundaries",
+        "unknown paths"
+      ],
+      "task_path": "tasks/dev/task_031/task.json",
+      "source_hash": "6417876877bf8ed94a97981038506c1272d718373220f9825fc12936c402f5f8",
+      "reference_hash": "32eaef1406a82f068307e467c1cad1cc626eeae39b5c409244b9d3fe1a695b0b"
+    },
+    {
+      "id": "task_032",
+      "split": "test",
+      "family": "binary-frame-boundaries",
+      "category": "protocol",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "fragment buffering",
+        "multiple/empty frames",
+        "state reuse"
+      ],
+      "task_path": "tasks/test/task_032/task.json",
+      "source_hash": "8a6eed169a67ec7ea251ce7eec8d32e94a0668d4a70d2c6c6664054adacf133e",
+      "reference_hash": "a43d90173de7cb6bd074e29f441742de82013cd9c234fe95fc40e2886a3e3e77"
+    },
+    {
+      "id": "task_033",
+      "split": "test",
+      "family": "interval-coalescing",
+      "category": "algorithms",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "nested ranges",
+        "adjacency and gaps",
+        "empty/reversed intervals"
+      ],
+      "task_path": "tasks/test/task_033/task.json",
+      "source_hash": "0fd128f9cb0f98dbc3ba310130209245197505adc18f9f0d0b477d2cab08d8cc",
+      "reference_hash": "d047a9f52e740741dcf93584b80987028f78dd3c11e2ee3400bf11a969c8f1d9"
+    },
+    {
+      "id": "task_034",
+      "split": "test",
+      "family": "schema-version-dispatch",
+      "category": "serialization",
+      "difficulty": "hard",
+      "affected_modules": 2,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "legacy default",
+        "new schema",
+        "unknown schema rejection"
+      ],
+      "task_path": "tasks/test/task_034/task.json",
+      "source_hash": "678b9d7108a7b17b0af6046fa6fcda064768815065973a1048150ff8a42fdf2f",
+      "reference_hash": "6be43dca4b3d7f6341c9933856b8438c88d92d310995336d10c5c94d9d37249e"
+    },
+    {
+      "id": "task_035",
+      "split": "test",
+      "family": "event-subscription-lifecycle",
+      "category": "events",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "self-unsubscribe",
+        "new handlers deferred",
+        "repeated dispatch"
+      ],
+      "task_path": "tasks/test/task_035/task.json",
+      "source_hash": "72d9d4522a6f53647765dc6af42421c6699bbdbfd9fd43c8404bea0673b8d35d",
+      "reference_hash": "da18398b3add7c331e84431989b51ba8757325e4636914c53e3f2bcc65a7ece5"
+    },
+    {
+      "id": "task_036",
+      "split": "test",
+      "family": "weighted-aggregation",
+      "category": "analytics",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "partition invariance",
+        "unequal weights",
+        "zero weights"
+      ],
+      "task_path": "tasks/test/task_036/task.json",
+      "source_hash": "ce7909d76b1d761706359ec3a26c7e8e960db8cf8abffd82e1283c9f66cbb839",
+      "reference_hash": "bba33140aaed4ca8cdbdcf644c08856ea74adf3b14a6403ff6d37a8683490e97"
+    },
+    {
+      "id": "task_037",
+      "split": "test",
+      "family": "url-query-multivalue",
+      "category": "encoding",
+      "difficulty": "medium",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "reserved characters",
+        "repeated parameters",
+        "Unicode and empty lists"
+      ],
+      "task_path": "tasks/test/task_037/task.json",
+      "source_hash": "6182da3c5a41640e63295412eb5219f0f96a06ed5591290c84ef74f0f6488957",
+      "reference_hash": "3e3dec5e4cdf1ebdf714630f272b6c3ac26b0b1ae3bc7fb74b974bdd81dacd38"
+    },
+    {
+      "id": "task_038",
+      "split": "test",
+      "family": "plugin-registry-lazy-import",
+      "category": "imports",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "lazy import",
+        "idempotent initialization",
+        "missing plugin"
+      ],
+      "task_path": "tasks/test/task_038/task.json",
+      "source_hash": "695a4c13d2e08050cb9d47cbffe7c93d3a1e9d1b4236a36cc8ec96d74ebc28c5",
+      "reference_hash": "7abe66ee916166e11aaaa25fd97bd6b8f81c3cbf23acd354636391dd2fc419f6"
+    }
+  ]
+}

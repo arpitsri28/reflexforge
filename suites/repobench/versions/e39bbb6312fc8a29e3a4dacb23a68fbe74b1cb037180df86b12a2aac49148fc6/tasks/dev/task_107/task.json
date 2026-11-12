@@ -1,0 +1,33 @@
+{
+  "id": "task_107",
+  "repository": "repo",
+  "issue": "An allowed document request can affect whether a later request is authorized for someone else. Permission changes must take effect on the next request without disabling the decision cache.",
+  "setup": "",
+  "reproduction": "python -m unittest discover -s tests -v",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "dev",
+  "editable": [
+    "models.py",
+    "repository.py",
+    "authentication.py",
+    "policy.py",
+    "cache.py",
+    "service.py",
+    "middleware.py",
+    "application.py"
+  ],
+  "budget": {
+    "max_steps": 30,
+    "wall_seconds": 300,
+    "command_seconds": 30,
+    "max_tokens": 40000,
+    "response_tokens": 4096,
+    "retry_limit": 0
+  }
+}

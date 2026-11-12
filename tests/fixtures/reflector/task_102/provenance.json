@@ -1,0 +1,53 @@
+{
+  "origin_experiment": "9fd09c6ad0f14d74913bca37107588dd",
+  "origin_run": "5563b7195e674d4f976e06f82442ec42",
+  "original_trace_sha256": "56eae9ac29a05e2269149d92bdc8b7485f2ab32e43ef412cdab94ac483cb5a24",
+  "projection": "worker-visible calls/results, approved exported source, public claims and termination only; omitted rows preserve original event indices",
+  "task": {
+    "id": "task_102",
+    "repository": "repo",
+    "issue": "Concurrent background workers sometimes process the same queued job, and cancelling an in-flight worker can make an unfinished job disappear. Successful jobs must retain their recorded results.",
+    "setup": "",
+    "reproduction": "python -m unittest discover -s tests -v",
+    "runtime": "python3.11",
+    "split": "train",
+    "editable": [
+      "jobs.py",
+      "broker.py",
+      "results.py",
+      "worker.py",
+      "operations.py",
+      "scheduler.py",
+      "application.py"
+    ],
+    "budget": {
+      "max_steps": 30,
+      "wall_seconds": 300,
+      "command_seconds": 30,
+      "max_tokens": 40000,
+      "response_tokens": 4096,
+      "retry_limit": 0
+    }
+  },
+  "result": {
+    "run_id": "5563b7195e674d4f976e06f82442ec42",
+    "task_id": "task_102",
+    "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+    "model": "gpt-5.4-mini",
+    "synthetic": false,
+    "termination": "completed",
+    "evaluation": "failed",
+    "failure_category": "incorrect_patch",
+    "steps": 14,
+    "tool_calls": 13,
+    "reflection_retries": 0,
+    "input_tokens": 21846,
+    "output_tokens": 746,
+    "cached_input_tokens": 14848,
+    "reasoning_tokens": 0,
+    "usage_incomplete": false,
+    "unconfirmed_tokens": 0,
+    "cost_usd": 0.0097191,
+    "wall_seconds": 35.595951624998634
+  }
+}

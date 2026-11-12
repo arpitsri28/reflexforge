@@ -1,0 +1,3 @@
+{
+  "codes.py": "class Codes:\n    def __init__(self): self.values = {}\n    def issue(self, code, user, expires): self.values[code] = (user, expires)\n    def redeem(self, code, now):\n        user, expires = self.values[code]\n        if now >= expires: raise ValueError('expired')\n        del self.values[code]\n        return user\n"
+}

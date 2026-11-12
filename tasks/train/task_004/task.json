@@ -1,0 +1,27 @@
+{
+  "id": "task_004",
+  "repository": "repo",
+  "issue": "Inventory availability must subtract all active reservations. Cancelling a reservation restores availability; overselling must raise ValueError without changing existing reservations. Two carts can currently reserve the same stock.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "stock.py",
+    "checkout.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

@@ -1,0 +1,1655 @@
+{
+  "suite": "repobench",
+  "structural": {
+    "task_101": {
+      "meaningful_modules": 7,
+      "dependency_depth": 2,
+      "plausible_failure_locations": 5,
+      "debugging_operations": [
+        "reproduce public failure",
+        "trace contracts across dependency boundaries",
+        "inspect state before and after exceptions",
+        "repair coordinated invariants",
+        "run preservation and regression suites"
+      ],
+      "state_invariants": [
+        "one provider effect per logical key",
+        "pending and complete payload identity",
+        "account isolation",
+        "one audit event"
+      ],
+      "empirical_difficulty": null
+    },
+    "task_102": {
+      "meaningful_modules": 7,
+      "dependency_depth": 1,
+      "plausible_failure_locations": 6,
+      "debugging_operations": [
+        "reproduce public failure",
+        "trace contracts across dependency boundaries",
+        "inspect state before and after exceptions",
+        "repair coordinated invariants",
+        "run preservation and regression suites"
+      ],
+      "state_invariants": [
+        "exclusive ownership",
+        "cancelled acquisition is available again",
+        "only durable results acknowledged",
+        "failure preserves retryability"
+      ],
+      "empirical_difficulty": null
+    },
+    "task_103": {
+      "meaningful_modules": 7,
+      "dependency_depth": 1,
+      "plausible_failure_locations": 5,
+      "debugging_operations": [
+        "reproduce public failure",
+        "trace contracts across dependency boundaries",
+        "inspect state before and after exceptions",
+        "repair coordinated invariants",
+        "run preservation and regression suites"
+      ],
+      "state_invariants": [
+        "ack follows successful durable effect",
+        "dedup marker and effect share a transaction",
+        "failure remains deliverable",
+        "ordered once-only effects"
+      ],
+      "empirical_difficulty": null
+    },
+    "task_104": {
+      "meaningful_modules": 7,
+      "dependency_depth": 2,
+      "plausible_failure_locations": 7,
+      "debugging_operations": [
+        "reproduce public failure",
+        "trace contracts across dependency boundaries",
+        "inspect state before and after exceptions",
+        "repair coordinated invariants",
+        "run preservation and regression suites"
+      ],
+      "state_invariants": [
+        "canonical monetary units",
+        "strict input types",
+        "cross-source dedup identity",
+        "UTC buckets and partition invariance"
+      ],
+      "empirical_difficulty": null
+    },
+    "task_105": {
+      "meaningful_modules": 7,
+      "dependency_depth": 2,
+      "plausible_failure_locations": 7,
+      "debugging_operations": [
+        "reproduce public failure",
+        "trace contracts across dependency boundaries",
+        "inspect state before and after exceptions",
+        "repair coordinated invariants",
+        "run preservation and regression suites"
+      ],
+      "state_invariants": [
+        "nested savepoint ownership",
+        "outer atomicity",
+        "live view identity",
+        "exception and balance preservation"
+      ],
+      "empirical_difficulty": null
+    },
+    "task_106": {
+      "meaningful_modules": 7,
+      "dependency_depth": 1,
+      "plausible_failure_locations": 6,
+      "debugging_operations": [
+        "reproduce public failure",
+        "trace contracts across dependency boundaries",
+        "inspect state before and after exceptions",
+        "repair coordinated invariants",
+        "run preservation and regression suites"
+      ],
+      "state_invariants": [
+        "checkpoint denotes first uncommitted page",
+        "destination batch atomicity",
+        "stable retry cursor",
+        "completion distinct from start"
+      ],
+      "empirical_difficulty": null
+    },
+    "task_107": {
+      "meaningful_modules": 8,
+      "dependency_depth": 1,
+      "plausible_failure_locations": 7,
+      "debugging_operations": [
+        "reproduce public failure",
+        "trace contracts across dependency boundaries",
+        "inspect state before and after exceptions",
+        "repair coordinated invariants",
+        "run preservation and regression suites"
+      ],
+      "state_invariants": [
+        "principal isolation",
+        "tenant isolation",
+        "revision-sensitive permissions",
+        "cache-hit performance"
+      ],
+      "empirical_difficulty": null
+    },
+    "task_108": {
+      "meaningful_modules": 7,
+      "dependency_depth": 2,
+      "plausible_failure_locations": 7,
+      "debugging_operations": [
+        "reproduce public failure",
+        "trace contracts across dependency boundaries",
+        "inspect state before and after exceptions",
+        "repair coordinated invariants",
+        "run preservation and regression suites"
+      ],
+      "state_invariants": [
+        "precedence",
+        "explicit falsy values",
+        "instance/input ownership",
+        "typed consumer settings"
+      ],
+      "empirical_difficulty": null
+    },
+    "task_109": {
+      "meaningful_modules": 7,
+      "dependency_depth": 2,
+      "plausible_failure_locations": 7,
+      "debugging_operations": [
+        "reproduce public failure",
+        "trace contracts across dependency boundaries",
+        "inspect state before and after exceptions",
+        "repair coordinated invariants",
+        "run preservation and regression suites"
+      ],
+      "state_invariants": [
+        "ownership before fallible initialization",
+        "LIFO complete cleanup",
+        "original failure preservation",
+        "restartable stopped state"
+      ],
+      "empirical_difficulty": null
+    },
+    "task_110": {
+      "meaningful_modules": 7,
+      "dependency_depth": 3,
+      "plausible_failure_locations": 7,
+      "debugging_operations": [
+        "reproduce public failure",
+        "trace contracts across dependency boundaries",
+        "inspect state before and after exceptions",
+        "repair coordinated invariants",
+        "run preservation and regression suites"
+      ],
+      "state_invariants": [
+        "frame lengths are byte counts",
+        "incomplete frames retain header and body",
+        "validated monotone sequence",
+        "no partial effects on invalid payload"
+      ],
+      "empirical_difficulty": null
+    },
+    "task_111": {
+      "meaningful_modules": 7,
+      "dependency_depth": 2,
+      "plausible_failure_locations": 7,
+      "debugging_operations": [
+        "reproduce public failure",
+        "trace contracts across dependency boundaries",
+        "inspect state before and after exceptions",
+        "repair coordinated invariants",
+        "run preservation and regression suites"
+      ],
+      "state_invariants": [
+        "cache contains completed providers only",
+        "cycles detected with path",
+        "failure does not poison retries",
+        "shared dependency identity"
+      ],
+      "empirical_difficulty": null
+    },
+    "task_112": {
+      "meaningful_modules": 7,
+      "dependency_depth": 2,
+      "plausible_failure_locations": 7,
+      "debugging_operations": [
+        "reproduce public failure",
+        "trace contracts across dependency boundaries",
+        "inspect state before and after exceptions",
+        "repair coordinated invariants",
+        "run preservation and regression suites"
+      ],
+      "state_invariants": [
+        "replace removes obsolete postings",
+        "facets and search share one projection",
+        "validation before mutation",
+        "deletion clears every term"
+      ],
+      "empirical_difficulty": null
+    }
+  },
+  "version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+  "provenance": "project-authored synthetic debugging fixtures",
+  "split_counts": {
+    "train": 6,
+    "dev": 4,
+    "test": 2
+  },
+  "difficulty_counts": {
+    "hard": 12
+  },
+  "category_counts": {
+    "backend-payments": 1,
+    "async-job-ownership": 1,
+    "message-delivery": 1,
+    "mixed-source-etl": 1,
+    "nested-ledger-transactions": 1,
+    "resumable-catalog-client": 1,
+    "request-authorization": 1,
+    "service-configuration": 1,
+    "worker-pool-lifecycle": 1,
+    "streaming-event-protocol": 1,
+    "dependency-container": 1,
+    "search-projections": 1
+  },
+  "near_duplicates": [],
+  "tasks": [
+    {
+      "id": "task_101",
+      "split": "train",
+      "family": "backend-payments",
+      "category": "backend-payments",
+      "difficulty": "hard",
+      "affected_modules": 2,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "one provider effect per logical key",
+        "pending and complete payload identity",
+        "account isolation",
+        "one audit event"
+      ],
+      "task_path": "tasks/train/task_101/task.json",
+      "source_hash": "cb4ab6d1b177e1a72b1ffc3aa2707843d7876921163c19fb2764f6b99e2a781e",
+      "reference_hash": "8f5fc49abab3b564a0c7f37627a17f4961bdf4b6c5827f1b95ff4b1ec3303868"
+    },
+    {
+      "id": "task_102",
+      "split": "train",
+      "family": "async-job-ownership",
+      "category": "async-job-ownership",
+      "difficulty": "hard",
+      "affected_modules": 2,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "exclusive ownership",
+        "cancelled acquisition is available again",
+        "only durable results acknowledged",
+        "failure preserves retryability"
+      ],
+      "task_path": "tasks/train/task_102/task.json",
+      "source_hash": "2daf536717444c57ceb716f4bb3380a6d4fe9a11f69ad38b11e22f4da8083fbb",
+      "reference_hash": "729c5f7c885e668913227c566cfcb5b982d58d87cd79f5fed2965ee54a63bd89"
+    },
+    {
+      "id": "task_103",
+      "split": "train",
+      "family": "message-delivery",
+      "category": "message-delivery",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "ack follows successful durable effect",
+        "dedup marker and effect share a transaction",
+        "failure remains deliverable",
+        "ordered once-only effects"
+      ],
+      "task_path": "tasks/train/task_103/task.json",
+      "source_hash": "386a18021a76730915f23dae6ddc5fc59bc8733590ebc7b1c8a28e6bde780e6d",
+      "reference_hash": "2c586a2d7d9de3fe53a3a8255af360a2446b6cadcce45dac7c5f96d2458136e8"
+    },
+    {
+      "id": "task_104",
+      "split": "train",
+      "family": "mixed-source-etl",
+      "category": "mixed-source-etl",
+      "difficulty": "hard",
+      "affected_modules": 2,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "canonical monetary units",
+        "strict input types",
+        "cross-source dedup identity",
+        "UTC buckets and partition invariance"
+      ],
+      "task_path": "tasks/train/task_104/task.json",
+      "source_hash": "0d5cbb5bc974b36ffccf92c8543eb0fdd1a6b12eef3b477102e5a8d1990715dd",
+      "reference_hash": "b9fbc4cb6886cc9e21947d51f5fa3dc226c2f3af01507f2afaebcc952ca8fb75"
+    },
+    {
+      "id": "task_105",
+      "split": "train",
+      "family": "nested-ledger-transactions",
+      "category": "nested-ledger-transactions",
+      "difficulty": "hard",
+      "affected_modules": 2,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "nested savepoint ownership",
+        "outer atomicity",
+        "live view identity",
+        "exception and balance preservation"
+      ],
+      "task_path": "tasks/train/task_105/task.json",
+      "source_hash": "261d3d01e16c4241e622c9b0a65577681b397573d0a8a39da55242a8aaa1001b",
+      "reference_hash": "34b6eedb32fe36435434446736b64c94d71c8e8bf019064c86e8ec35690dbac9"
+    },
+    {
+      "id": "task_106",
+      "split": "train",
+      "family": "resumable-catalog-client",
+      "category": "resumable-catalog-client",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "checkpoint denotes first uncommitted page",
+        "destination batch atomicity",
+        "stable retry cursor",
+        "completion distinct from start"
+      ],
+      "task_path": "tasks/train/task_106/task.json",
+      "source_hash": "564006ec3202e5260f56901f1d485a3a5d5c1181b563d892747dfde7ec83d24b",
+      "reference_hash": "442c1cfa963a3c2a7459c33508068c5f9ee2637a4c262940a8974de130de92a7"
+    },
+    {
+      "id": "task_107",
+      "split": "dev",
+      "family": "request-authorization",
+      "category": "request-authorization",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "principal isolation",
+        "tenant isolation",
+        "revision-sensitive permissions",
+        "cache-hit performance"
+      ],
+      "task_path": "tasks/dev/task_107/task.json",
+      "source_hash": "327537d39aa02c8574ff2f8716578ec5444a94994f104ca40f1f5ddc9bf69c0d",
+      "reference_hash": "832244bed51719a4f6a07b7daf262c187c385e1c3adb0dad1e66cb70d4ac7cff"
+    },
+    {
+      "id": "task_108",
+      "split": "dev",
+      "family": "service-configuration",
+      "category": "service-configuration",
+      "difficulty": "hard",
+      "affected_modules": 2,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "precedence",
+        "explicit falsy values",
+        "instance/input ownership",
+        "typed consumer settings"
+      ],
+      "task_path": "tasks/dev/task_108/task.json",
+      "source_hash": "792e68b509bf738733ce0626545dabe493e16b08a96a3137900700989ceda628",
+      "reference_hash": "48ed60a4870d5ce1fe0d751a9facdbbbb9c1acd55bc5ae9331599ee8a4b9053f"
+    },
+    {
+      "id": "task_109",
+      "split": "dev",
+      "family": "worker-pool-lifecycle",
+      "category": "worker-pool-lifecycle",
+      "difficulty": "hard",
+      "affected_modules": 2,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "ownership before fallible initialization",
+        "LIFO complete cleanup",
+        "original failure preservation",
+        "restartable stopped state"
+      ],
+      "task_path": "tasks/dev/task_109/task.json",
+      "source_hash": "55a887e1f8486f1b8fb7cf871ca5e4a8f40643791e2ddd66d30e4d69a9ca6aa0",
+      "reference_hash": "35ff223ecf5f521ecda75cfa851c29abc29a369da3516493d2fd1c7515c8e315"
+    },
+    {
+      "id": "task_110",
+      "split": "dev",
+      "family": "streaming-event-protocol",
+      "category": "streaming-event-protocol",
+      "difficulty": "hard",
+      "affected_modules": 2,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "frame lengths are byte counts",
+        "incomplete frames retain header and body",
+        "validated monotone sequence",
+        "no partial effects on invalid payload"
+      ],
+      "task_path": "tasks/dev/task_110/task.json",
+      "source_hash": "4114f5f414ef113ab73063dc385628d24d82ab8673198c00d603fccddff77340",
+      "reference_hash": "1535bae984dfd7b30f879e83eac19956af5025b0c53e3a4f875191f2ab595708"
+    },
+    {
+      "id": "task_111",
+      "split": "test",
+      "family": "dependency-container",
+      "category": "dependency-container",
+      "difficulty": "hard",
+      "affected_modules": 1,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "cache contains completed providers only",
+        "cycles detected with path",
+        "failure does not poison retries",
+        "shared dependency identity"
+      ],
+      "task_path": "tasks/test/task_111/task.json",
+      "source_hash": "698983670449a208061574d44e6c803effa913770d891f41e200e43e613052b4",
+      "reference_hash": "93d7ab29bf0dd620514548691560e367e990a3c924574c24590a99db1129a568"
+    },
+    {
+      "id": "task_112",
+      "split": "test",
+      "family": "search-projections",
+      "category": "search-projections",
+      "difficulty": "hard",
+      "affected_modules": 2,
+      "prior_agent_exposure": false,
+      "coverage": [
+        "replace removes obsolete postings",
+        "facets and search share one projection",
+        "validation before mutation",
+        "deletion clears every term"
+      ],
+      "task_path": "tasks/test/task_112/task.json",
+      "source_hash": "a6f88e2034f01776c1914dc901296581f4f40d72ab50fe9079629f99f08c061d",
+      "reference_hash": "20eac168cf825508ccc098208f46ec72ff187a801ef4e1a59305c21ad31ff9d0"
+    }
+  ],
+  "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+  "selected_count": 12,
+  "valid_count": 12,
+  "results": [
+    {
+      "task_id": "task_101",
+      "suite": "repobench",
+      "manifest_hash": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+      "source_hash": "cb4ab6d1b177e1a72b1ffc3aa2707843d7876921163c19fb2764f6b99e2a781e",
+      "reference_hash": "8f5fc49abab3b564a0c7f37627a17f4961bdf4b6c5827f1b95ff4b1ec3303868",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "root_cause_category": "backend-payments",
+      "meaningful_modules": 7,
+      "valid": true,
+      "hidden_test_isolation": true,
+      "buggy": {
+        "visible_exit": 1,
+        "public_tests_run": 3,
+        "visible_output": "test_lost_reply (test_application.PaymentsTest.test_lost_reply) ... FAIL\ntest_regular_checkout (test_application.PaymentsTest.test_regular_checkout) ... ok\ntest_replay (test_application.PaymentsTest.test_replay) ... ok\n\n======================================================================\nFAIL: test_lost_reply (test_application.PaymentsTest.test_lost_reply)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/tests/test_application.py\", line 19, in test_lost_reply\n    self.assertEqual(len(self.gateway.charges),1)\nAssertionError: 2 != 1\n\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nFAILED (failures=1)\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 16, in test_ambiguous_commit\n    self.assertEqual(len(g.charges),1)\nAssertionError: 2 != 1\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 21, in test_pending_conflict\n    with self.assertRaises(ValueError): s.submit('u','r',74)\nAssertionError: ValueError not raised\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_ambiguous_commit",
+              "__main__.Contract.test_pending_conflict"
+            ],
+            "successful": false,
+            "tests_run": 6
+          },
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 16, in test_ambiguous_commit\n    self.assertEqual(len(g.charges),1)\nAssertionError: 2 != 1\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 21, in test_pending_conflict\n    with self.assertRaises(ValueError): s.submit('u','r',74)\nAssertionError: ValueError not raised\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_ambiguous_commit",
+              "__main__.Contract.test_pending_conflict"
+            ],
+            "successful": false,
+            "tests_run": 6
+          }
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "public_tests_run": 3,
+        "visible_output": "test_lost_reply (test_application.PaymentsTest.test_lost_reply) ... ok\ntest_regular_checkout (test_application.PaymentsTest.test_regular_checkout) ... ok\ntest_replay (test_application.PaymentsTest.test_replay) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 6
+          },
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 6
+          }
+        ]
+      },
+      "partial_fix": {
+        "visible_exit": 0,
+        "public_tests_run": 3,
+        "visible_output": "test_lost_reply (test_application.PaymentsTest.test_lost_reply) ... ok\ntest_regular_checkout (test_application.PaymentsTest.test_regular_checkout) ... ok\ntest_replay (test_application.PaymentsTest.test_replay) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 21, in test_pending_conflict\n    with self.assertRaises(ValueError): s.submit('u','r',74)\nAssertionError: ValueError not raised\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_pending_conflict"
+            ],
+            "successful": false,
+            "tests_run": 6
+          }
+        ]
+      },
+      "reproducible": true,
+      "unmodified_rejected": true,
+      "partial_fix_rejected": true,
+      "mutant_hash": "e351d969ada094c8ee67725fd3b25d11906a9b264de7f0b3420d9bc638c91f7a"
+    },
+    {
+      "task_id": "task_102",
+      "suite": "repobench",
+      "manifest_hash": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+      "source_hash": "2daf536717444c57ceb716f4bb3380a6d4fe9a11f69ad38b11e22f4da8083fbb",
+      "reference_hash": "729c5f7c885e668913227c566cfcb5b982d58d87cd79f5fed2965ee54a63bd89",
+      "mutant_hash": "235f8c175568e38780a1745b6627e44e03427dccc007aec3802dafebb335ec4c",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "root_cause_category": "async-job-ownership",
+      "meaningful_modules": 7,
+      "valid": true,
+      "hidden_test_isolation": true,
+      "buggy": {
+        "visible_exit": 1,
+        "public_tests_run": 2,
+        "visible_output": "test_normal (test_application.QueueTest.test_normal) ... ok\ntest_parallel_claims (test_application.QueueTest.test_parallel_claims) ... FAIL\n\n======================================================================\nFAIL: test_parallel_claims (test_application.QueueTest.test_parallel_claims)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/workspace/tests/test_application.py\", line 21, in test_parallel_claims\n    self.assertEqual(sum(x is not None for x in [a,c]),1)\nAssertionError: 2 != 1\n\n----------------------------------------------------------------------\nRan 2 tests in 0.023s\n\nFAILED (failures=1)\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 33, in test_cancelled_processing_retries\n    self.assertEqual(j.state,'queued');self.assertEqual(r.values,{})\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'done' != 'queued'\n- done\n+ queued\n\n",
+              "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 19, in test_exclusive_reservation\n    self.assertEqual(sum(v is not None for v in values),1)\nAssertionError: 2 != 1\n",
+              "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 39, in test_processing_error_releases\n    self.assertEqual(j.state,'queued')\nAssertionError: 'done' != 'queued'\n- done\n+ queued\n\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_cancelled_processing_retries",
+              "__main__.Contract.test_exclusive_reservation",
+              "__main__.Contract.test_processing_error_releases"
+            ],
+            "successful": false,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 33, in test_cancelled_processing_retries\n    self.assertEqual(j.state,'queued');self.assertEqual(r.values,{})\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'done' != 'queued'\n- done\n+ queued\n\n",
+              "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 19, in test_exclusive_reservation\n    self.assertEqual(sum(v is not None for v in values),1)\nAssertionError: 2 != 1\n",
+              "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 39, in test_processing_error_releases\n    self.assertEqual(j.state,'queued')\nAssertionError: 'done' != 'queued'\n- done\n+ queued\n\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_cancelled_processing_retries",
+              "__main__.Contract.test_exclusive_reservation",
+              "__main__.Contract.test_processing_error_releases"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_normal (test_application.QueueTest.test_normal) ... ok\ntest_parallel_claims (test_application.QueueTest.test_parallel_claims) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.015s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          }
+        ]
+      },
+      "partial_fix": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_normal (test_application.QueueTest.test_normal) ... ok\ntest_parallel_claims (test_application.QueueTest.test_parallel_claims) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.008s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 33, in test_cancelled_processing_retries\n    self.assertEqual(j.state,'queued');self.assertEqual(r.values,{})\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'done' != 'queued'\n- done\n+ queued\n\n",
+              "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 39, in test_processing_error_releases\n    self.assertEqual(j.state,'queued')\nAssertionError: 'done' != 'queued'\n- done\n+ queued\n\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_cancelled_processing_retries",
+              "__main__.Contract.test_processing_error_releases"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reproducible": true,
+      "unmodified_rejected": true,
+      "partial_fix_rejected": true
+    },
+    {
+      "task_id": "task_103",
+      "suite": "repobench",
+      "manifest_hash": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+      "source_hash": "386a18021a76730915f23dae6ddc5fc59bc8733590ebc7b1c8a28e6bde780e6d",
+      "reference_hash": "2c586a2d7d9de3fe53a3a8255af360a2446b6cadcce45dac7c5f96d2458136e8",
+      "mutant_hash": "a50d18f0c87c4d10f5c0d8b652f81618df76d846612481b617b03711f3e6bd01",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "root_cause_category": "message-delivery",
+      "meaningful_modules": 7,
+      "valid": true,
+      "hidden_test_isolation": true,
+      "buggy": {
+        "visible_exit": 1,
+        "public_tests_run": 2,
+        "visible_output": "test_normal (test_application.DeliveryTest.test_normal) ... ok\ntest_recover (test_application.DeliveryTest.test_recover) ... FAIL\n\n======================================================================\nFAIL: test_recover (test_application.DeliveryTest.test_recover)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/tests/test_application.py\", line 12, in test_recover\n    self.assertEqual(c.once(),'applied')\nAssertionError: 'empty' != 'applied'\n- empty\n+ applied\n\n\n----------------------------------------------------------------------\nRan 2 tests in 0.007s\n\nFAILED (failures=1)\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 10, in test_failure_is_not_acknowledged\n    self.assertEqual(c.broker.pending,[m]);self.assertEqual(c.broker.acks,[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Lists differ: [] != [Message(key='a', account='u', delta=9)]\n\nSecond list contains 1 additional elements.\nFirst extra element 0:\nMessage(key='a', account='u', delta=9)\n\n- []\n+ [Message(key='a', account='u', delta=9)]\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_failure_is_not_acknowledged"
+            ],
+            "successful": false,
+            "tests_run": 4
+          },
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 10, in test_failure_is_not_acknowledged\n    self.assertEqual(c.broker.pending,[m]);self.assertEqual(c.broker.acks,[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Lists differ: [] != [Message(key='a', account='u', delta=9)]\n\nSecond list contains 1 additional elements.\nFirst extra element 0:\nMessage(key='a', account='u', delta=9)\n\n- []\n+ [Message(key='a', account='u', delta=9)]\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_failure_is_not_acknowledged"
+            ],
+            "successful": false,
+            "tests_run": 4
+          }
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_normal (test_application.DeliveryTest.test_normal) ... ok\ntest_recover (test_application.DeliveryTest.test_recover) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 4
+          },
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 4
+          }
+        ]
+      },
+      "partial_fix": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_normal (test_application.DeliveryTest.test_normal) ... ok\ntest_recover (test_application.DeliveryTest.test_recover) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 16, in test_successful_replay_is_deduplicated\n    self.assertEqual(len(c.store.audit),1);self.assertEqual(c.broker.pending,[])\n                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Lists differ: [Message(key='a', account='u', delta=9)] != []\n\nFirst list contains 1 additional elements.\nFirst extra element 0:\nMessage(key='a', account='u', delta=9)\n\n- [Message(key='a', account='u', delta=9)]\n+ []\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_successful_replay_is_deduplicated"
+            ],
+            "successful": false,
+            "tests_run": 4
+          }
+        ]
+      },
+      "reproducible": true,
+      "unmodified_rejected": true,
+      "partial_fix_rejected": true
+    },
+    {
+      "task_id": "task_104",
+      "suite": "repobench",
+      "manifest_hash": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+      "source_hash": "0d5cbb5bc974b36ffccf92c8543eb0fdd1a6b12eef3b477102e5a8d1990715dd",
+      "reference_hash": "b9fbc4cb6886cc9e21947d51f5fa3dc226c2f3af01507f2afaebcc952ca8fb75",
+      "mutant_hash": "4783407df1f18fca884694628192611a38e2fc82177c8af37fb53702ba1e29f6",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "root_cause_category": "mixed-source-etl",
+      "meaningful_modules": 7,
+      "valid": true,
+      "hidden_test_isolation": true,
+      "buggy": {
+        "visible_exit": 1,
+        "public_tests_run": 2,
+        "visible_output": "test_csv_sale (test_application.PipelineTest.test_csv_sale) ... ERROR\ntest_json_sale (test_application.PipelineTest.test_json_sale) ... ok\n\n======================================================================\nERROR: test_csv_sale (test_application.PipelineTest.test_csv_sale)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/tests/test_application.py\", line 9, in test_csv_sale\n    self.assertEqual(json.loads(a.report())[0]['cents'],1250)\n                     ~~~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n\n----------------------------------------------------------------------\nRan 2 tests in 0.011s\n\nFAILED (errors=1)\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 15, in test_type_validation\n    self.assertEqual(len(errors),3);self.assertEqual(json.loads(a.report()),[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0 != 3\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_type_validation"
+            ],
+            "successful": false,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 15, in test_type_validation\n    self.assertEqual(len(errors),3);self.assertEqual(json.loads(a.report()),[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0 != 3\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_type_validation"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_csv_sale (test_application.PipelineTest.test_csv_sale) ... ok\ntest_json_sale (test_application.PipelineTest.test_json_sale) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          }
+        ]
+      },
+      "partial_fix": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_csv_sale (test_application.PipelineTest.test_csv_sale) ... ok\ntest_json_sale (test_application.PipelineTest.test_json_sale) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 15, in test_type_validation\n    self.assertEqual(len(errors),3);self.assertEqual(json.loads(a.report()),[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0 != 3\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_type_validation"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reproducible": true,
+      "unmodified_rejected": true,
+      "partial_fix_rejected": true
+    },
+    {
+      "task_id": "task_105",
+      "suite": "repobench",
+      "manifest_hash": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+      "source_hash": "261d3d01e16c4241e622c9b0a65577681b397573d0a8a39da55242a8aaa1001b",
+      "reference_hash": "34b6eedb32fe36435434446736b64c94d71c8e8bf019064c86e8ec35690dbac9",
+      "mutant_hash": "5eb08f25e1cc33109c2dd20712621df4045e168d135528b66ef34522f8ae8573",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "root_cause_category": "nested-ledger-transactions",
+      "meaningful_modules": 7,
+      "valid": true,
+      "hidden_test_isolation": true,
+      "buggy": {
+        "visible_exit": 1,
+        "public_tests_run": 2,
+        "visible_output": "test_failed_fee (test_application.LedgerTest.test_failed_fee) ... ERROR\ntest_normal (test_application.LedgerTest.test_normal) ... ok\n\n======================================================================\nERROR: test_failed_fee (test_application.LedgerTest.test_failed_fee)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/tests/test_application.py\", line 11, in test_failed_fee\n    self.assertEqual(report(s)['balances'],{'a':20,'b':0})\n                     ^^^^^^^^^\n  File \"/workspace/reporting.py\", line 2, in report\n    return {'balances':dict(store.account_view()),'audit':list(store.audit_view())}\n                            ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/storage.py\", line 6, in account_view\n    def account_view(self): return self.data['accounts']\n                                   ~~~~~~~~~^^^^^^^^^^^^\nTypeError: 'NoneType' object is not subscriptable\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nFAILED (errors=1)\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 29, in test_live_views_on_simple_rollback\n    self.assertEqual(view['a'],20)\nAssertionError: 1 != 20\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 10, in test_outer_rollback_restores_inner_commits\n    self.assertEqual(view,{'a':20,'b':0});self.assertEqual(events,[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'a': 15, 'b': 5} != {'a': 20, 'b': 0}\n- {'a': 15, 'b': 5}\n?       ^^       ^\n\n+ {'a': 20, 'b': 0}\n?       ^^       ^\n\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 24, in test_fee_failure_is_atomic\n    self.assertEqual(report(s),{'balances':{'a':20,'b':0},'audit':[]})\n                     ^^^^^^^^^\n  File \"/workspace/reporting.py\", line 2, in report\n    return {'balances':dict(store.account_view()),'audit':list(store.audit_view())}\n                            ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/storage.py\", line 6, in account_view\n    def account_view(self): return self.data['accounts']\n                                   ~~~~~~~~~^^^^^^^^^^^^\nTypeError: 'NoneType' object is not subscriptable\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 19, in test_inner_rollback_can_be_caught\n    a.change('b',2)\n  File \"/workspace/accounts.py\", line 5, in change\n    balance=self.store.data['accounts'][name]+amount\n            ~~~~~~~~~~~~~~~^^^^^^^^^^^^\nTypeError: 'NoneType' object is not subscriptable\n"
+            ],
+            "errors": [
+              "__main__.Contract.test_fee_failure_is_atomic",
+              "__main__.Contract.test_inner_rollback_can_be_caught"
+            ],
+            "failures": [
+              "__main__.Contract.test_live_views_on_simple_rollback",
+              "__main__.Contract.test_outer_rollback_restores_inner_commits"
+            ],
+            "successful": false,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 29, in test_live_views_on_simple_rollback\n    self.assertEqual(view['a'],20)\nAssertionError: 1 != 20\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 10, in test_outer_rollback_restores_inner_commits\n    self.assertEqual(view,{'a':20,'b':0});self.assertEqual(events,[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'a': 15, 'b': 5} != {'a': 20, 'b': 0}\n- {'a': 15, 'b': 5}\n?       ^^       ^\n\n+ {'a': 20, 'b': 0}\n?       ^^       ^\n\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 24, in test_fee_failure_is_atomic\n    self.assertEqual(report(s),{'balances':{'a':20,'b':0},'audit':[]})\n                     ^^^^^^^^^\n  File \"/workspace/reporting.py\", line 2, in report\n    return {'balances':dict(store.account_view()),'audit':list(store.audit_view())}\n                            ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/storage.py\", line 6, in account_view\n    def account_view(self): return self.data['accounts']\n                                   ~~~~~~~~~^^^^^^^^^^^^\nTypeError: 'NoneType' object is not subscriptable\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 19, in test_inner_rollback_can_be_caught\n    a.change('b',2)\n  File \"/workspace/accounts.py\", line 5, in change\n    balance=self.store.data['accounts'][name]+amount\n            ~~~~~~~~~~~~~~~^^^^^^^^^^^^\nTypeError: 'NoneType' object is not subscriptable\n"
+            ],
+            "errors": [
+              "__main__.Contract.test_fee_failure_is_atomic",
+              "__main__.Contract.test_inner_rollback_can_be_caught"
+            ],
+            "failures": [
+              "__main__.Contract.test_live_views_on_simple_rollback",
+              "__main__.Contract.test_outer_rollback_restores_inner_commits"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_failed_fee (test_application.LedgerTest.test_failed_fee) ... ok\ntest_normal (test_application.LedgerTest.test_normal) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          }
+        ]
+      },
+      "partial_fix": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_failed_fee (test_application.LedgerTest.test_failed_fee) ... ok\ntest_normal (test_application.LedgerTest.test_normal) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 29, in test_live_views_on_simple_rollback\n    self.assertEqual(view['a'],20)\nAssertionError: 1 != 20\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 10, in test_outer_rollback_restores_inner_commits\n    self.assertEqual(view,{'a':20,'b':0});self.assertEqual(events,[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'a': 15, 'b': 5} != {'a': 20, 'b': 0}\n- {'a': 15, 'b': 5}\n?       ^^       ^\n\n+ {'a': 20, 'b': 0}\n?       ^^       ^\n\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_live_views_on_simple_rollback",
+              "__main__.Contract.test_outer_rollback_restores_inner_commits"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reproducible": true,
+      "unmodified_rejected": true,
+      "partial_fix_rejected": true
+    },
+    {
+      "task_id": "task_106",
+      "suite": "repobench",
+      "manifest_hash": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+      "source_hash": "564006ec3202e5260f56901f1d485a3a5d5c1181b563d892747dfde7ec83d24b",
+      "reference_hash": "442c1cfa963a3c2a7459c33508068c5f9ee2637a4c262940a8974de130de92a7",
+      "mutant_hash": "1093cf955a4bf0dc8aede99ff5f7384e753699880430e6caa496ff4d2dfb4cd5",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "root_cause_category": "resumable-catalog-client",
+      "meaningful_modules": 7,
+      "valid": true,
+      "hidden_test_isolation": true,
+      "buggy": {
+        "visible_exit": 1,
+        "public_tests_run": 2,
+        "visible_output": "test_regular (test_application.ClientTest.test_regular) ... ok\ntest_resume_failure (test_application.ClientTest.test_resume_failure) ... FAIL\n\n======================================================================\nFAIL: test_resume_failure (test_application.ClientTest.test_resume_failure)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/tests/test_application.py\", line 17, in test_resume_failure\n    s.run();self.assertEqual([r['id'] for r in s.sink.export()],['a','b'])\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Lists differ: ['b'] != ['a', 'b']\n\nFirst differing element 0:\n'b'\n'a'\n\nSecond list contains 1 additional elements.\nFirst extra element 1:\n'b'\n\n- ['b']\n+ ['a', 'b']\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nFAILED (failures=1)\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 16, in test_failed_batch_does_not_advance\n    self.assertEqual(s.checkpoint.snapshot(),(None,False));self.assertEqual(s.sink.export(),[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Tuples differ: ('b', False) != (None, False)\n\nFirst differing element 0:\n'b'\nNone\n\n- ('b', False)\n+ (None, False)\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 21, in test_invalid_page_keeps_checkpoint\n    self.assertEqual(s.checkpoint.snapshot(),(None,False))\nAssertionError: Tuples differ: ('b', False) != (None, False)\n\nFirst differing element 0:\n'b'\nNone\n\n- ('b', False)\n+ (None, False)\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_failed_batch_does_not_advance",
+              "__main__.Contract.test_invalid_page_keeps_checkpoint"
+            ],
+            "successful": false,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 16, in test_failed_batch_does_not_advance\n    self.assertEqual(s.checkpoint.snapshot(),(None,False));self.assertEqual(s.sink.export(),[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Tuples differ: ('b', False) != (None, False)\n\nFirst differing element 0:\n'b'\nNone\n\n- ('b', False)\n+ (None, False)\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 21, in test_invalid_page_keeps_checkpoint\n    self.assertEqual(s.checkpoint.snapshot(),(None,False))\nAssertionError: Tuples differ: ('b', False) != (None, False)\n\nFirst differing element 0:\n'b'\nNone\n\n- ('b', False)\n+ (None, False)\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_failed_batch_does_not_advance",
+              "__main__.Contract.test_invalid_page_keeps_checkpoint"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_regular (test_application.ClientTest.test_regular) ... ok\ntest_resume_failure (test_application.ClientTest.test_resume_failure) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.015s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          }
+        ]
+      },
+      "partial_fix": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_regular (test_application.ClientTest.test_regular) ... ok\ntest_resume_failure (test_application.ClientTest.test_resume_failure) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 21, in test_invalid_page_keeps_checkpoint\n    self.assertEqual(s.checkpoint.snapshot(),(None,False))\nAssertionError: Tuples differ: ('b', False) != (None, False)\n\nFirst differing element 0:\n'b'\nNone\n\n- ('b', False)\n+ (None, False)\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_invalid_page_keeps_checkpoint"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reproducible": true,
+      "unmodified_rejected": true,
+      "partial_fix_rejected": true
+    },
+    {
+      "task_id": "task_107",
+      "suite": "repobench",
+      "manifest_hash": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+      "source_hash": "327537d39aa02c8574ff2f8716578ec5444a94994f104ca40f1f5ddc9bf69c0d",
+      "reference_hash": "832244bed51719a4f6a07b7daf262c187c385e1c3adb0dad1e66cb70d4ac7cff",
+      "mutant_hash": "3b9b4c45284c4a3dfe81058f45e3c9f910307dd2bdc0dc1c14597f248b9bf6d1",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "root_cause_category": "request-authorization",
+      "meaningful_modules": 8,
+      "valid": true,
+      "hidden_test_isolation": true,
+      "buggy": {
+        "visible_exit": 1,
+        "public_tests_run": 2,
+        "visible_output": "test_owner (test_application.AccessTest.test_owner) ... ok\ntest_second_user_denied (test_application.AccessTest.test_second_user_denied) ... FAIL\n\n======================================================================\nFAIL: test_second_user_denied (test_application.AccessTest.test_second_user_denied)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/tests/test_application.py\", line 10, in test_second_user_denied\n    with self.assertRaises(PermissionError): self.app.request('b','d')\nAssertionError: PermissionError not raised\n\n----------------------------------------------------------------------\nRan 2 tests in 0.002s\n\nFAILED (failures=1)\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 19, in test_document_change\n    with self.assertRaises(PermissionError): app.request('b','d')\nAssertionError: PermissionError not raised\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 25, in test_ownership_transfer\n    with self.assertRaises(PermissionError): app.request('a','d')\nAssertionError: PermissionError not raised\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 12, in test_principal_and_tenant_boundaries\n    with self.assertRaises(PermissionError): app.request(token,'d')\nAssertionError: PermissionError not raised\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 15, in test_role_revocation\n    with self.assertRaises(PermissionError): app.request('b','d')\nAssertionError: PermissionError not raised\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_document_change",
+              "__main__.Contract.test_ownership_transfer",
+              "__main__.Contract.test_principal_and_tenant_boundaries",
+              "__main__.Contract.test_role_revocation"
+            ],
+            "successful": false,
+            "tests_run": 6
+          },
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 19, in test_document_change\n    with self.assertRaises(PermissionError): app.request('b','d')\nAssertionError: PermissionError not raised\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 25, in test_ownership_transfer\n    with self.assertRaises(PermissionError): app.request('a','d')\nAssertionError: PermissionError not raised\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 12, in test_principal_and_tenant_boundaries\n    with self.assertRaises(PermissionError): app.request(token,'d')\nAssertionError: PermissionError not raised\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 15, in test_role_revocation\n    with self.assertRaises(PermissionError): app.request('b','d')\nAssertionError: PermissionError not raised\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_document_change",
+              "__main__.Contract.test_ownership_transfer",
+              "__main__.Contract.test_principal_and_tenant_boundaries",
+              "__main__.Contract.test_role_revocation"
+            ],
+            "successful": false,
+            "tests_run": 6
+          }
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_owner (test_application.AccessTest.test_owner) ... ok\ntest_second_user_denied (test_application.AccessTest.test_second_user_denied) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 6
+          },
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 6
+          }
+        ]
+      },
+      "partial_fix": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_owner (test_application.AccessTest.test_owner) ... ok\ntest_second_user_denied (test_application.AccessTest.test_second_user_denied) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 19, in test_document_change\n    with self.assertRaises(PermissionError): app.request('b','d')\nAssertionError: PermissionError not raised\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 25, in test_ownership_transfer\n    with self.assertRaises(PermissionError): app.request('a','d')\nAssertionError: PermissionError not raised\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 15, in test_role_revocation\n    with self.assertRaises(PermissionError): app.request('b','d')\nAssertionError: PermissionError not raised\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_document_change",
+              "__main__.Contract.test_ownership_transfer",
+              "__main__.Contract.test_role_revocation"
+            ],
+            "successful": false,
+            "tests_run": 6
+          }
+        ]
+      },
+      "reproducible": true,
+      "unmodified_rejected": true,
+      "partial_fix_rejected": true
+    },
+    {
+      "task_id": "task_108",
+      "suite": "repobench",
+      "manifest_hash": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+      "source_hash": "792e68b509bf738733ce0626545dabe493e16b08a96a3137900700989ceda628",
+      "reference_hash": "48ed60a4870d5ce1fe0d751a9facdbbbb9c1acd55bc5ae9331599ee8a4b9053f",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "root_cause_category": "service-configuration",
+      "meaningful_modules": 7,
+      "valid": true,
+      "hidden_test_isolation": true,
+      "buggy": {
+        "visible_exit": 1,
+        "public_tests_run": 2,
+        "visible_output": "test_cli_disables_delivery (test_application.ConfigurationTest.test_cli_disables_delivery) ... FAIL\ntest_defaults_work (test_application.ConfigurationTest.test_defaults_work) ... ok\n\n======================================================================\nFAIL: test_cli_disables_delivery (test_application.ConfigurationTest.test_cli_disables_delivery)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/tests/test_application.py\", line 7, in test_cli_disables_delivery\n    self.assertFalse(app.tick(10,'hello'))\nAssertionError: True is not false\n\n----------------------------------------------------------------------\nRan 2 tests in 0.002s\n\nFAILED (failures=1)\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 9, in test_false_and_zero\n    self.assertFalse(app.tick(0,'no'));self.assertEqual(app.mailer.sent,[]);self.assertEqual(app.scheduler.runs,[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: True is not false\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 22, in test_input_ownership\n    self.assertEqual(settings['mail']['tags'],['custom'])\nAssertionError: Lists differ: ['custom', 'later'] != ['custom']\n\nFirst list contains 1 additional elements.\nFirst extra element 1:\n'later'\n\n- ['custom', 'later']\n+ ['custom']\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 17, in test_instances_do_not_share_state\n    self.assertEqual(b.config['mail']['host'],original['mail']['host'])\nAssertionError: 'first' != 'local'\n- first\n+ local\n\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 11, in test_precedence\n    app=Application(file={'mail':{'host':'file'}},env={'MAIL_HOST':'env'},cli={'mail':{'host':'cli'}})\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/application.py\", line 7, in __init__\n    self.config=resolve(file or {},environment(env or {}),cli or {})\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/resolver.py\", line 7, in resolve\n    if type(result['jobs']['interval']) is not int or result['jobs']['interval']<0: raise ValueError('interval')\n                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: interval\n"
+            ],
+            "errors": [
+              "__main__.Contract.test_precedence"
+            ],
+            "failures": [
+              "__main__.Contract.test_false_and_zero",
+              "__main__.Contract.test_input_ownership",
+              "__main__.Contract.test_instances_do_not_share_state"
+            ],
+            "successful": false,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 9, in test_false_and_zero\n    self.assertFalse(app.tick(0,'no'));self.assertEqual(app.mailer.sent,[]);self.assertEqual(app.scheduler.runs,[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: True is not false\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 22, in test_input_ownership\n    self.assertEqual(settings['mail']['tags'],['custom'])\nAssertionError: Lists differ: ['custom', 'later'] != ['custom']\n\nFirst list contains 1 additional elements.\nFirst extra element 1:\n'later'\n\n- ['custom', 'later']\n+ ['custom']\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 17, in test_instances_do_not_share_state\n    self.assertEqual(b.config['mail']['host'],original['mail']['host'])\nAssertionError: 'first' != 'local'\n- first\n+ local\n\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 11, in test_precedence\n    app=Application(file={'mail':{'host':'file'}},env={'MAIL_HOST':'env'},cli={'mail':{'host':'cli'}})\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/application.py\", line 7, in __init__\n    self.config=resolve(file or {},environment(env or {}),cli or {})\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/resolver.py\", line 7, in resolve\n    if type(result['jobs']['interval']) is not int or result['jobs']['interval']<0: raise ValueError('interval')\n                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: interval\n"
+            ],
+            "errors": [
+              "__main__.Contract.test_precedence"
+            ],
+            "failures": [
+              "__main__.Contract.test_false_and_zero",
+              "__main__.Contract.test_input_ownership",
+              "__main__.Contract.test_instances_do_not_share_state"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_cli_disables_delivery (test_application.ConfigurationTest.test_cli_disables_delivery) ... ok\ntest_defaults_work (test_application.ConfigurationTest.test_defaults_work) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          }
+        ]
+      },
+      "partial_fix": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_cli_disables_delivery (test_application.ConfigurationTest.test_cli_disables_delivery) ... ok\ntest_defaults_work (test_application.ConfigurationTest.test_defaults_work) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 22, in test_input_ownership\n    self.assertEqual(settings['mail']['tags'],['custom'])\nAssertionError: Lists differ: ['custom', 'later'] != ['custom']\n\nFirst list contains 1 additional elements.\nFirst extra element 1:\n'later'\n\n- ['custom', 'later']\n+ ['custom']\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 18, in test_instances_do_not_share_state\n    self.assertEqual(DEFAULTS,original);self.assertEqual(b.config['mail']['tags'],['default'])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'mai[34 chars]al', 'tags': ['default', 'mutated']}, 'jobs': {'interval': 10}} != {'mai[34 chars]al', 'tags': ['default']}, 'jobs': {'interval': 10}}\n  {'jobs': {'interval': 10},\n-  'mail': {'enabled': True, 'host': 'local', 'tags': ['default', 'mutated']}}\n?                                                               -----------\n\n+  'mail': {'enabled': True, 'host': 'local', 'tags': ['default']}}\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_input_ownership",
+              "__main__.Contract.test_instances_do_not_share_state"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reproducible": true,
+      "unmodified_rejected": true,
+      "partial_fix_rejected": true,
+      "mutant_hash": "669091d65c5cfb923d6170275098a4b39318dc42d30bc6c2e196234d927f30be"
+    },
+    {
+      "task_id": "task_109",
+      "suite": "repobench",
+      "manifest_hash": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+      "source_hash": "55a887e1f8486f1b8fb7cf871ca5e4a8f40643791e2ddd66d30e4d69a9ca6aa0",
+      "reference_hash": "35ff223ecf5f521ecda75cfa851c29abc29a369da3516493d2fd1c7515c8e315",
+      "mutant_hash": "7e00808b5c22b6d40568ba52f666268bcd9a3e6dafd12250a7ae9e4f15b5a3e3",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "root_cause_category": "worker-pool-lifecycle",
+      "meaningful_modules": 7,
+      "valid": true,
+      "hidden_test_isolation": true,
+      "buggy": {
+        "visible_exit": 1,
+        "public_tests_run": 2,
+        "visible_output": "test_partial_startup (test_application.LifecycleTest.test_partial_startup) ... FAIL\ntest_success (test_application.LifecycleTest.test_success) ... ok\n\n======================================================================\nFAIL: test_partial_startup (test_application.LifecycleTest.test_partial_startup)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/tests/test_application.py\", line 12, in test_partial_startup\n    self.assertEqual(live(resources),[])\nAssertionError: Lists differ: ['b'] != []\n\nFirst list contains 1 additional elements.\nFirst extra element 0:\n'b'\n\n- ['b']\n+ []\n\n----------------------------------------------------------------------\nRan 2 tests in 0.006s\n\nFAILED (failures=1)\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 30, in test_factory_failure\n    self.assertTrue(a.closed);self.assertEqual(app.pool.state,'stopped')\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'starting' != 'stopped'\n- starting\n+ stopped\n\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 15, in test_open_failure_and_restart\n    self.assertTrue(bad.closed)\nAssertionError: False is not true\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 10, in test_partial_validation_cleanup\n    self.assertEqual(close_order(events),['b','a']);self.assertEqual(live([a,b]),[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Lists differ: ['a'] != ['b', 'a']\n\nFirst differing element 0:\n'a'\n'b'\n\nSecond list contains 1 additional elements.\nFirst extra element 1:\n'a'\n\n- ['a']\n+ ['b', 'a']\n",
+              "Traceback (most recent call last):\n  File \"/workspace/pool.py\", line 11, in start\n    resource.validate()\n  File \"/workspace/resources.py\", line 8, in validate\n    if self.fail=='validate': raise ValueError('validate '+self.name)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: validate c\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 19, in test_cleanup_failure_preserves_original\n    with self.assertRaisesRegex(ValueError,'validate c'): app.start([lambda:a,lambda:b,lambda:c])\n                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/application.py\", line 6, in start\n    def start(self,factories): self.pool.start(validate_factories(factories));self.worker.start()\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/pool.py\", line 15, in start\n    self.errors=release(self.resources)\n                ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/cleanup.py\", line 2, in release\n    for resource in reversed(resources): resource.close()\n                                         ^^^^^^^^^^^^^^^^\n  File \"/workspace/resources.py\", line 12, in close\n    if self.fail=='close': raise RuntimeError('close '+self.name)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: close b\n"
+            ],
+            "errors": [
+              "__main__.Contract.test_cleanup_failure_preserves_original"
+            ],
+            "failures": [
+              "__main__.Contract.test_factory_failure",
+              "__main__.Contract.test_open_failure_and_restart",
+              "__main__.Contract.test_partial_validation_cleanup"
+            ],
+            "successful": false,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 30, in test_factory_failure\n    self.assertTrue(a.closed);self.assertEqual(app.pool.state,'stopped')\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'starting' != 'stopped'\n- starting\n+ stopped\n\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 15, in test_open_failure_and_restart\n    self.assertTrue(bad.closed)\nAssertionError: False is not true\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 10, in test_partial_validation_cleanup\n    self.assertEqual(close_order(events),['b','a']);self.assertEqual(live([a,b]),[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Lists differ: ['a'] != ['b', 'a']\n\nFirst differing element 0:\n'a'\n'b'\n\nSecond list contains 1 additional elements.\nFirst extra element 1:\n'a'\n\n- ['a']\n+ ['b', 'a']\n",
+              "Traceback (most recent call last):\n  File \"/workspace/pool.py\", line 11, in start\n    resource.validate()\n  File \"/workspace/resources.py\", line 8, in validate\n    if self.fail=='validate': raise ValueError('validate '+self.name)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: validate c\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 19, in test_cleanup_failure_preserves_original\n    with self.assertRaisesRegex(ValueError,'validate c'): app.start([lambda:a,lambda:b,lambda:c])\n                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/application.py\", line 6, in start\n    def start(self,factories): self.pool.start(validate_factories(factories));self.worker.start()\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/pool.py\", line 15, in start\n    self.errors=release(self.resources)\n                ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/cleanup.py\", line 2, in release\n    for resource in reversed(resources): resource.close()\n                                         ^^^^^^^^^^^^^^^^\n  File \"/workspace/resources.py\", line 12, in close\n    if self.fail=='close': raise RuntimeError('close '+self.name)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: close b\n"
+            ],
+            "errors": [
+              "__main__.Contract.test_cleanup_failure_preserves_original"
+            ],
+            "failures": [
+              "__main__.Contract.test_factory_failure",
+              "__main__.Contract.test_open_failure_and_restart",
+              "__main__.Contract.test_partial_validation_cleanup"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_partial_startup (test_application.LifecycleTest.test_partial_startup) ... ok\ntest_success (test_application.LifecycleTest.test_success) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          }
+        ]
+      },
+      "partial_fix": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_partial_startup (test_application.LifecycleTest.test_partial_startup) ... ok\ntest_success (test_application.LifecycleTest.test_success) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/workspace/pool.py\", line 12, in start\n    resource.validate()\n  File \"/workspace/resources.py\", line 8, in validate\n    if self.fail=='validate': raise ValueError('validate '+self.name)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: validate c\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 19, in test_cleanup_failure_preserves_original\n    with self.assertRaisesRegex(ValueError,'validate c'): app.start([lambda:a,lambda:b,lambda:c])\n                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/application.py\", line 6, in start\n    def start(self,factories): self.pool.start(validate_factories(factories));self.worker.start()\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/pool.py\", line 15, in start\n    self.errors=release(self.resources)\n                ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/cleanup.py\", line 2, in release\n    for resource in reversed(resources): resource.close()\n                                         ^^^^^^^^^^^^^^^^\n  File \"/workspace/resources.py\", line 12, in close\n    if self.fail=='close': raise RuntimeError('close '+self.name)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: close b\n"
+            ],
+            "errors": [
+              "__main__.Contract.test_cleanup_failure_preserves_original"
+            ],
+            "failures": [],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reproducible": true,
+      "unmodified_rejected": true,
+      "partial_fix_rejected": true
+    },
+    {
+      "task_id": "task_110",
+      "suite": "repobench",
+      "manifest_hash": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+      "source_hash": "4114f5f414ef113ab73063dc385628d24d82ab8673198c00d603fccddff77340",
+      "reference_hash": "1535bae984dfd7b30f879e83eac19956af5025b0c53e3a4f875191f2ab595708",
+      "mutant_hash": "15d7108a96bdeaa713c8ae69176855e5b4bbe9bb7e6d64fe4f9947429f60ebbf",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "root_cause_category": "streaming-event-protocol",
+      "meaningful_modules": 7,
+      "valid": true,
+      "hidden_test_isolation": true,
+      "buggy": {
+        "visible_exit": 1,
+        "public_tests_run": 2,
+        "visible_output": "test_ascii (test_application.StreamTest.test_ascii) ... ok\ntest_fragmented (test_application.StreamTest.test_fragmented) ... ERROR\n\n======================================================================\nERROR: test_fragmented (test_application.StreamTest.test_fragmented)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/tests/test_application.py\", line 9, in test_fragmented\n    self.assertEqual(s.receive(wire[:7])+s.receive(wire[7:]),[3])\n                                         ^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/stream.py\", line 8, in receive\n    for frame in self.decoder.feed(data):\n                 ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/framing.py\", line 7, in feed\n    if length>65536: raise ValueError('oversized frame')\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: oversized frame\n\n----------------------------------------------------------------------\nRan 2 tests in 0.002s\n\nFAILED (errors=1)\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 14, in test_unicode_byte_lengths\n    self.assertEqual(int.from_bytes(wire[:4],'big'),len(wire)-4)\nAssertionError: 50 != 53\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 11, in test_every_byte_boundary\n    s=Stream();self.assertEqual(s.receive(wire[:boundary])+s.receive(wire[boundary:]),expected)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/stream.py\", line 8, in receive\n    for frame in self.decoder.feed(data):\n                 ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/framing.py\", line 7, in feed\n    if length>65536: raise ValueError('oversized frame')\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: oversized frame\n"
+            ],
+            "errors": [
+              "__main__.Contract.test_every_byte_boundary"
+            ],
+            "failures": [
+              "__main__.Contract.test_unicode_byte_lengths"
+            ],
+            "successful": false,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 14, in test_unicode_byte_lengths\n    self.assertEqual(int.from_bytes(wire[:4],'big'),len(wire)-4)\nAssertionError: 50 != 53\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 11, in test_every_byte_boundary\n    s=Stream();self.assertEqual(s.receive(wire[:boundary])+s.receive(wire[boundary:]),expected)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/stream.py\", line 8, in receive\n    for frame in self.decoder.feed(data):\n                 ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/framing.py\", line 7, in feed\n    if length>65536: raise ValueError('oversized frame')\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: oversized frame\n"
+            ],
+            "errors": [
+              "__main__.Contract.test_every_byte_boundary"
+            ],
+            "failures": [
+              "__main__.Contract.test_unicode_byte_lengths"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_ascii (test_application.StreamTest.test_ascii) ... ok\ntest_fragmented (test_application.StreamTest.test_fragmented) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          }
+        ]
+      },
+      "partial_fix": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_ascii (test_application.StreamTest.test_ascii) ... ok\ntest_fragmented (test_application.StreamTest.test_fragmented) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 14, in test_unicode_byte_lengths\n    self.assertEqual(int.from_bytes(wire[:4],'big'),len(wire)-4)\nAssertionError: 50 != 53\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_unicode_byte_lengths"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reproducible": true,
+      "unmodified_rejected": true,
+      "partial_fix_rejected": true
+    },
+    {
+      "task_id": "task_111",
+      "suite": "repobench",
+      "manifest_hash": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+      "source_hash": "698983670449a208061574d44e6c803effa913770d891f41e200e43e613052b4",
+      "reference_hash": "93d7ab29bf0dd620514548691560e367e990a3c924574c24590a99db1129a568",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "root_cause_category": "dependency-container",
+      "meaningful_modules": 7,
+      "valid": true,
+      "hidden_test_isolation": true,
+      "buggy": {
+        "visible_exit": 1,
+        "public_tests_run": 2,
+        "visible_output": "test_normal (test_application.DependencyTest.test_normal) ... ok\ntest_retry_construction (test_application.DependencyTest.test_retry_construction) ... FAIL\n\n======================================================================\nFAIL: test_retry_construction (test_application.DependencyTest.test_retry_construction)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/tests/test_application.py\", line 16, in test_retry_construction\n    self.assertEqual(a.service('v'),{'ok':True})\nAssertionError: None != {'ok': True}\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nFAILED (failures=1)\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 18, in test_cycle_path_and_recovery\n    with self.assertRaises(DependencyCycle) as caught: a.service('a')\nAssertionError: DependencyCycle not raised\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 15, in test_failed_construction_retries\n    value=a.service('v');self.assertIsNotNone(value);self.assertIs(a.service('v'),value);self.assertEqual(len(calls),2)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: unexpectedly None\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 29, in test_unknown_name_not_cached\n    with self.assertRaises(KeyError): a.service('unknown')\nAssertionError: KeyError not raised\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_cycle_path_and_recovery",
+              "__main__.Contract.test_failed_construction_retries",
+              "__main__.Contract.test_unknown_name_not_cached"
+            ],
+            "successful": false,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 18, in test_cycle_path_and_recovery\n    with self.assertRaises(DependencyCycle) as caught: a.service('a')\nAssertionError: DependencyCycle not raised\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 15, in test_failed_construction_retries\n    value=a.service('v');self.assertIsNotNone(value);self.assertIs(a.service('v'),value);self.assertEqual(len(calls),2)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: unexpectedly None\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 29, in test_unknown_name_not_cached\n    with self.assertRaises(KeyError): a.service('unknown')\nAssertionError: KeyError not raised\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_cycle_path_and_recovery",
+              "__main__.Contract.test_failed_construction_retries",
+              "__main__.Contract.test_unknown_name_not_cached"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_normal (test_application.DependencyTest.test_normal) ... ok\ntest_retry_construction (test_application.DependencyTest.test_retry_construction) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          }
+        ]
+      },
+      "partial_fix": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_normal (test_application.DependencyTest.test_normal) ... ok\ntest_retry_construction (test_application.DependencyTest.test_retry_construction) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 29, in test_unknown_name_not_cached\n    with self.assertRaises(KeyError): a.service('unknown')\nAssertionError: KeyError not raised\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_unknown_name_not_cached"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reproducible": true,
+      "unmodified_rejected": true,
+      "partial_fix_rejected": true,
+      "mutant_hash": "4606e061008a69871bfc64df884ce9d4bb88f8c99fe6abec928b85adafa80d7a"
+    },
+    {
+      "task_id": "task_112",
+      "suite": "repobench",
+      "manifest_hash": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+      "source_hash": "a6f88e2034f01776c1914dc901296581f4f40d72ab50fe9079629f99f08c061d",
+      "reference_hash": "20eac168cf825508ccc098208f46ec72ff187a801ef4e1a59305c21ad31ff9d0",
+      "mutant_hash": "8a7d0ce8032dadc12c4d4acccc89b199eb1cf998a2e125c0c92f3764d08e738f",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "root_cause_category": "search-projections",
+      "meaningful_modules": 7,
+      "valid": true,
+      "hidden_test_isolation": true,
+      "buggy": {
+        "visible_exit": 1,
+        "public_tests_run": 2,
+        "visible_output": "test_normal (test_application.SearchTest.test_normal) ... ok\ntest_replacement (test_application.SearchTest.test_replacement) ... FAIL\n\n======================================================================\nFAIL: test_replacement (test_application.SearchTest.test_replacement)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/tests/test_application.py\", line 12, in test_replacement\n    self.assertEqual(s.find('red'),[])\nAssertionError: Lists differ: [Document(key='a', title='Blue berry', body='')] != []\n\nFirst list contains 1 additional elements.\nFirst extra element 0:\nDocument(key='a', title='Blue berry', body='')\n\n- [Document(key='a', title='Blue berry', body='')]\n+ []\n\n----------------------------------------------------------------------\nRan 2 tests in 0.002s\n\nFAILED (failures=1)\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 19, in test_delete_after_update\n    self.assertEqual(s.facets(),{});self.assertEqual(s.index.document_terms,{})\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'red': 1} != {}\n- {'red': 1}\n+ {}\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 16, in test_invalid_edit_is_atomic\n    self.assertEqual(s.store.get('a'),original);self.assertEqual(s.facets(),{'apple':1,'red':1})\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Document(key='a', title='', body='') != Document(key='a', title='Red apple', body='')\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 11, in test_replace_repairs_all_projections\n    self.assertEqual(s.find('red'),[]);self.assertNotIn('red',s.index.postings)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Lists differ: [Document(key='a', title='Blue berry', body='')] != []\n\nFirst list contains 1 additional elements.\nFirst extra element 0:\nDocument(key='a', title='Blue berry', body='')\n\n- [Document(key='a', title='Blue berry', body='')]\n+ []\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_delete_after_update",
+              "__main__.Contract.test_invalid_edit_is_atomic",
+              "__main__.Contract.test_replace_repairs_all_projections"
+            ],
+            "successful": false,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 19, in test_delete_after_update\n    self.assertEqual(s.facets(),{});self.assertEqual(s.index.document_terms,{})\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'red': 1} != {}\n- {'red': 1}\n+ {}\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 16, in test_invalid_edit_is_atomic\n    self.assertEqual(s.store.get('a'),original);self.assertEqual(s.facets(),{'apple':1,'red':1})\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Document(key='a', title='', body='') != Document(key='a', title='Red apple', body='')\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 11, in test_replace_repairs_all_projections\n    self.assertEqual(s.find('red'),[]);self.assertNotIn('red',s.index.postings)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Lists differ: [Document(key='a', title='Blue berry', body='')] != []\n\nFirst list contains 1 additional elements.\nFirst extra element 0:\nDocument(key='a', title='Blue berry', body='')\n\n- [Document(key='a', title='Blue berry', body='')]\n+ []\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_delete_after_update",
+              "__main__.Contract.test_invalid_edit_is_atomic",
+              "__main__.Contract.test_replace_repairs_all_projections"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_normal (test_application.SearchTest.test_normal) ... ok\ntest_replacement (test_application.SearchTest.test_replacement) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          },
+          {
+            "exit_code": 0,
+            "details": [],
+            "errors": [],
+            "failures": [],
+            "successful": true,
+            "tests_run": 5
+          }
+        ]
+      },
+      "partial_fix": {
+        "visible_exit": 0,
+        "public_tests_run": 2,
+        "visible_output": "test_normal (test_application.SearchTest.test_normal) ... ok\ntest_replacement (test_application.SearchTest.test_replacement) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+        "regressions": [
+          {
+            "exit_code": 1,
+            "details": [
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 19, in test_delete_after_update\n    self.assertEqual(s.facets(),{});self.assertEqual(s.index.document_terms,{})\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'red': 1} != {}\n- {'red': 1}\n+ {}\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 16, in test_invalid_edit_is_atomic\n    self.assertEqual(s.store.get('a'),original);self.assertEqual(s.facets(),{'apple':1,'red':1})\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Document(key='a', title='', body='') != Document(key='a', title='Red apple', body='')\n",
+              "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 11, in test_replace_repairs_all_projections\n    self.assertEqual(s.find('red'),[]);self.assertNotIn('red',s.index.postings)\n                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'red' unexpectedly found in {'apple': {'a'}, 'red': {'a'}, 'berry': {'a'}, 'blue': {'a'}}\n"
+            ],
+            "errors": [],
+            "failures": [
+              "__main__.Contract.test_delete_after_update",
+              "__main__.Contract.test_invalid_edit_is_atomic",
+              "__main__.Contract.test_replace_repairs_all_projections"
+            ],
+            "successful": false,
+            "tests_run": 5
+          }
+        ]
+      },
+      "reproducible": true,
+      "unmodified_rejected": true,
+      "partial_fix_rejected": true
+    }
+  ]
+}

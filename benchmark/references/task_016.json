@@ -1,0 +1,3 @@
+{
+  "graph.py": "def expand(graph, root):\n    ordered, visited, active = [], set(), set()\n    def visit(node):\n        if node in active: raise ValueError('cycle')\n        if node in visited: return\n        active.add(node)\n        for dependency in graph[node]: visit(dependency)\n        active.remove(node)\n        visited.add(node)\n        ordered.append(node)\n    visit(root)\n    return ordered\n"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "task_005",
+  "repository": "repo",
+  "issue": "ProfileCache must isolate users across tenants, and invalidate only the selected tenant/user. Identical user IDs currently leak a cached profile between tenants.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "cache.py",
+    "profiles.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

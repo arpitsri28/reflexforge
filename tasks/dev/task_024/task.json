@@ -1,0 +1,27 @@
+{
+  "id": "task_024",
+  "repository": "repo",
+  "issue": "LRU hits must refresh recency. Insertion above capacity evicts the least recently used entry; replacing an existing key must not evict another entry. Capacity is positive.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "dev",
+  "editable": [
+    "lru.py",
+    "lookup.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

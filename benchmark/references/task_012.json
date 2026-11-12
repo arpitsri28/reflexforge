@@ -1,0 +1,3 @@
+{
+  "shop/orders.py": "from .prices import PRICES\ndef total(lines):\n    return sum(PRICES[name] * count for name, count in lines)\n"
+}

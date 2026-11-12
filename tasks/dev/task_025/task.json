@@ -1,0 +1,27 @@
+{
+  "id": "task_025",
+  "repository": "repo",
+  "issue": "race_fail_fast() must cancel and await unfinished siblings when one child fails, then propagate that exception. Successful calls return results in input order. Tests use events, not timing-dependent sleeps.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "dev",
+  "editable": [
+    "group.py",
+    "service.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

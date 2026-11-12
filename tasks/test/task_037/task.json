@@ -1,0 +1,27 @@
+{
+  "id": "task_037",
+  "repository": "repo",
+  "issue": "URL query construction must percent-encode reserved characters and emit one key=value pair per list item. Spaces, plus signs, ampersands and Unicode must round-trip with parse_qs. Empty lists emit no values.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "test",
+  "editable": [
+    "query.py",
+    "links.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "task_112",
+  "repository": "repo",
+  "issue": "Search results and term facets can disagree after document edits or deletion. A rejected edit should leave the previous document and all search views intact.",
+  "setup": "",
+  "reproduction": "python -m unittest discover -s tests -v",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "test",
+  "editable": [
+    "documents.py",
+    "tokenization.py",
+    "storage.py",
+    "indexing.py",
+    "query.py",
+    "facets.py",
+    "service.py"
+  ],
+  "budget": {
+    "max_steps": 30,
+    "wall_seconds": 300,
+    "command_seconds": 30,
+    "max_tokens": 40000,
+    "response_tokens": 4096,
+    "retry_limit": 0
+  }
+}

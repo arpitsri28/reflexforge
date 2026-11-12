@@ -1,0 +1,4 @@
+{
+  "encoding.py": "import json\ndef encode(event):\n    text=json.dumps(event,ensure_ascii=False,separators=(',',':'))\n    body=text.encode('utf-8')\n    return len(body).to_bytes(4,'big')+body\n",
+  "framing.py": "class Decoder:\n    def __init__(self): self.buffer=b''\n    def feed(self,data):\n        self.buffer+=data;frames=[]\n        while len(self.buffer)>=4:\n            length=int.from_bytes(self.buffer[:4],'big')\n            if length>65536: raise ValueError('oversized frame')\n            if len(self.buffer)<4+length: break\n            frames.append(self.buffer[4:4+length]);self.buffer=self.buffer[4+length:]\n        return frames\n"
+}

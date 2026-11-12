@@ -1,0 +1,3 @@
+{
+  "policy.py": "def can_edit(user, doc):\n    return user['org'] == doc['org'] and (user['id'] == doc['owner'] or user['admin'])\n"
+}

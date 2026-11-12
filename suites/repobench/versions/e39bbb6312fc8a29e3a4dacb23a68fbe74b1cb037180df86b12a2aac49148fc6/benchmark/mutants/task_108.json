@@ -1,0 +1,4 @@
+{
+  "resolver.py": "from defaults import DEFAULTS\nfrom layers import merge\ndef resolve(file,environment,cli):\n    result=DEFAULTS\n    for layer in (file,environment,cli): result=merge(result,layer)\n    if type(result['mail']['enabled']) is not bool: raise ValueError('mail enabled')\n    if type(result['jobs']['interval']) is not int or result['jobs']['interval']<0: raise ValueError('interval')\n    return result\n",
+  "layers.py": "def merge(base,override):\n    result=base.copy()\n    for key,value in override.items():\n        if isinstance(value,dict) and isinstance(result.get(key),dict): result[key]=merge(result[key],value)\n        else: result[key]=value\n    return result\n"
+}

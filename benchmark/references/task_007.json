@@ -1,0 +1,3 @@
+{
+  "collector.py": "async def collect(items, fetch):\n    return [await fetch(item) for item in items]\n"
+}

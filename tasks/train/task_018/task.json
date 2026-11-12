@@ -1,0 +1,27 @@
+{
+  "id": "task_018",
+  "repository": "repo",
+  "issue": "A transaction returns a committed nested dictionary on success and restores the entire dictionary on exception. A shallow snapshot currently leaves nested list mutations behind after rollback; propagate the body exception.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "transactions.py",
+    "service.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

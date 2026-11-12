@@ -1,0 +1,32 @@
+{
+  "id": "task_103",
+  "repository": "repo",
+  "issue": "A local event consumer occasionally loses a balance update when processing fails and delivery is retried. Replayed successful messages must not apply the same business effect twice.",
+  "setup": "",
+  "reproduction": "python -m unittest discover -s tests -v",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "messages.py",
+    "broker.py",
+    "storage.py",
+    "handlers.py",
+    "consumer.py",
+    "simulation.py",
+    "application.py"
+  ],
+  "budget": {
+    "max_steps": 30,
+    "wall_seconds": 300,
+    "command_seconds": 30,
+    "max_tokens": 40000,
+    "response_tokens": 4096,
+    "retry_limit": 0
+  }
+}

@@ -1,0 +1,3 @@
+{
+  "session.py": "from contextlib import contextmanager\n@contextmanager\ndef session(factory):\n    connection = factory()\n    try:\n        yield connection\n    finally:\n        connection.close()\n"
+}

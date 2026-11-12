@@ -1,0 +1,32 @@
+{
+  "id": "task_105",
+  "repository": "repo",
+  "issue": "Failed transfers can leave wallet views and audit exports disagreeing. Nested operations that recover from an inner failure must retain the outer changes, while an outer failure must undo all nested work.",
+  "setup": "",
+  "reproduction": "python -m unittest discover -s tests -v",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "storage.py",
+    "transactions.py",
+    "accounts.py",
+    "fees.py",
+    "transfers.py",
+    "reporting.py",
+    "application.py"
+  ],
+  "budget": {
+    "max_steps": 30,
+    "wall_seconds": 300,
+    "command_seconds": 30,
+    "max_tokens": 40000,
+    "response_tokens": 4096,
+    "retry_limit": 0
+  }
+}

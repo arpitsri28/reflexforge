@@ -1,0 +1,3 @@
+{
+  "cache.py": "class ProfileCache:\n    def __init__(self): self.values = {}\n    def key(self, tenant, user): return (tenant, user)\n    def get(self, tenant, user, loader):\n        key = self.key(tenant, user)\n        if key not in self.values: self.values[key] = loader(tenant, user)\n        return self.values[key]\n    def invalidate(self, tenant, user):\n        self.values.pop(self.key(tenant, user), None)\n"
+}

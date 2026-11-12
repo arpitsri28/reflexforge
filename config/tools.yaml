@@ -1,0 +1,8 @@
+descriptions:
+  list_dir: List a directory inside the workspace.
+  read_file: Read a UTF-8 file inside the workspace.
+  search_code: Search workspace text using a regular expression.
+  edit_file: Replace the entire content of an editable source file.
+  run_shell: Run a shell command in the isolated workspace.
+  run_tests: Run visible tests in the isolated workspace.
+  read_skill: Read a named reusable debugging skill.

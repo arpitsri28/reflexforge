@@ -1,0 +1,6 @@
+max_steps: 20
+wall_seconds: 180
+command_seconds: 20
+max_tokens: 30000
+response_tokens: 2048
+retry_limit: 2

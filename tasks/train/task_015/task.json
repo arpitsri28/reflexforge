@@ -1,0 +1,27 @@
+{
+  "id": "task_015",
+  "repository": "repo",
+  "issue": "API collect() must follow opaque next_cursor values until the field is None. An empty item page with a non-None cursor is not the end. Preserve item order and reject repeated cursors with ValueError rather than looping.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "pages.py",
+    "client.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

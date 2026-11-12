@@ -1,0 +1,27 @@
+{
+  "id": "task_036",
+  "repository": "repo",
+  "issue": "Aggregate weighted mean across partitions using total weighted sum divided by total weight, not a mean of partition means. Ignore zero-weight observations; return None when total weight is zero. Weights are nonnegative.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "test",
+  "editable": [
+    "stats.py",
+    "aggregate.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

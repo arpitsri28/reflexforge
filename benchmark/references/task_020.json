@@ -1,0 +1,3 @@
+{
+  "counter.py": "import asyncio\nclass Counter:\n    def __init__(self):\n        self.value = 0\n        self.lock = asyncio.Lock()\n    async def increment(self):\n        async with self.lock:\n            before = self.value\n            await asyncio.sleep(0)\n            self.value = before + 1\n            return self.value\n"
+}

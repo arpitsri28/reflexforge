@@ -1,0 +1,3 @@
+{
+  "query.py": "from tokenization import tokens\ndef search(store,index,text):\n    terms=tokens(text)\n    if not terms: return []\n    matches=set.intersection(*(set(index.postings.get(term,set())) for term in terms))\n    return [store.get(key) for key in sorted(matches) if terms <= tokens(store.get(key).title+' '+store.get(key).body)]\n"
+}

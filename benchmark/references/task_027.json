@@ -1,0 +1,3 @@
+{
+  "batching.py": "def process(records, convert):\n    values, errors = [], {}\n    for index, record in enumerate(records):\n        try: values.append(convert(record))\n        except ValueError as exc:\n            values.append(None)\n            errors[index] = str(exc)\n    return values, errors\n"
+}

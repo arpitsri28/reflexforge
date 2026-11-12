@@ -1,0 +1,3 @@
+{
+  "bus.py": "class Bus:\n    def __init__(self): self.handlers = []\n    def subscribe(self, handler): self.handlers.append(handler)\n    def unsubscribe(self, handler):\n        if handler in self.handlers: self.handlers.remove(handler)\n    def publish(self, value):\n        for handler in tuple(self.handlers): handler(value)\n"
+}

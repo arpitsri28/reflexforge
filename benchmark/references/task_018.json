@@ -1,0 +1,3 @@
+{
+  "transactions.py": "from contextlib import contextmanager\nfrom copy import deepcopy\n@contextmanager\ndef transaction(data):\n    original = deepcopy(data)\n    try: yield data\n    except Exception:\n        data.clear()\n        data.update(original)\n        raise\n"
+}

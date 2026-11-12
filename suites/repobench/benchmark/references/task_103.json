@@ -1,0 +1,3 @@
+{
+  "consumer.py": "class Consumer:\n    def __init__(self,broker,store,handler): self.broker,self.store,self.handler=broker,store,handler\n    def once(self):\n        message=self.broker.receive()\n        if message is None: return 'empty'\n        if message.key in self.store.seen:\n            self.broker.ack(message)\n            return 'duplicate'\n        with self.store.atomic():\n            self.handler.apply(message,self.store)\n            self.store.seen.add(message.key)\n        self.broker.ack(message)\n        return 'applied'\n"
+}

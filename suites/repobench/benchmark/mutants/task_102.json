@@ -1,0 +1,3 @@
+{
+  "broker.py": "async def noop(): pass\nclass Broker:\n    def __init__(self, jobs, before_claim=noop):\n        self.jobs=list(jobs)\n        self.before_claim=before_claim\n    async def claim(self):\n        job=next((j for j in self.jobs if j.state=='queued'),None)\n        if job is None: return None\n        job.state = 'leased'\n        try:\n            await self.before_claim()\n            return job\n        except BaseException:\n            job.state = 'queued'\n            raise\n    def ack(self,job): job.state='done'\n    def release(self,job):\n        if job.state=='leased': job.state='queued'\n    def pending(self): return [j.key for j in self.jobs if j.state!='done']\n"
+}

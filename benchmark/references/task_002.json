@@ -1,0 +1,3 @@
+{
+  "solution.py": "def paginate(items, page, size):\n    start = (page - 1) * size\n    return items[start:start + size]\n"
+}

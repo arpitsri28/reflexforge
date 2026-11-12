@@ -1,0 +1,13 @@
+{
+  "id": "task_002",
+  "repository": "repo",
+  "issue": "Pagination is one-indexed. Page 1 with size 2 should return the first two items.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "runtime": "python3.11",
+  "split": "dev",
+  "editable": [
+    "solution.py"
+  ]
+}

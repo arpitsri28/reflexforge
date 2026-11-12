@@ -1,0 +1,3 @@
+{
+  "registry.py": "HANDLERS = {}\ndef register(name, handler): HANDLERS[name] = handler\ndef load_defaults():\n    from builtin_plugin import double\n    register('double', double)\ndef run(name, value): return HANDLERS[name](value)\n"
+}

@@ -1,0 +1,1185 @@
+{
+  "version": "d47b31353fc8ee339a3d293dc88b1f6861b1c6febe5e4e48d525bb1d84790e94",
+  "provenance": "deterministic Docker fixture QA; not agent benchmark results",
+  "valid_count": 38,
+  "results": [
+    {
+      "task_id": "task_001",
+      "source_hash": "9890fbc60bb5449f4480dcf0ba6f34e5f96e860b3821f111e74020408608a6b7",
+      "reference_hash": "dafb682687f5dc725873a948f0a94988e60517d90be2f78ab6863b792da2881c",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 7, in <module>\n    assert m.first([1, 2, 3], 2) == [1, 2]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 7, in <module>\n    assert m.first([1, 2, 3], 2) == [1, 2]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "task_id": "task_002",
+      "source_hash": "c02e8e27922ee47603f91573fae041c9dd3bc6e3c3100440f6bf4cb5eaf3bff6",
+      "reference_hash": "9134eee7ac16d93b988195c10b03e6c69eafb494bf988c3041dfb8973dffa65f",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 7, in <module>\n    assert m.paginate([1, 2, 3, 4], 1, 2) == [1, 2]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 7, in <module>\n    assert m.paginate([1, 2, 3, 4], 1, 2) == [1, 2]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "task_id": "task_003",
+      "source_hash": "4ac143104febca66f2e2b49f07815ffe5b630c65c615eaf9cb96e7e3e3f9ce7f",
+      "reference_hash": "ba4ecbfc9cf4fbd4942fe63816dc1a58633a84de0fae7cff0bb47050d40d2909",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 7, in <module>\n    assert m.enabled([{\"enabled\": False}, {\"enabled\": True}, {}]) == [{\"enabled\": True}]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 7, in <module>\n    assert m.enabled([{\"enabled\": False}, {\"enabled\": True}, {}]) == [{\"enabled\": True}]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "task_id": "task_004",
+      "source_hash": "04893299f7aae198528297fec3f296d86df72336abc7c91269299d90bd573add",
+      "reference_hash": "d7119c2665cb7a5b6b8e5ed1fae9a0c3eaa01f6ce7051ea48b854afb3fe01981",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 7, in <module>\n    assert add_cart(s, 'a', 3) == 2\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 7, in <module>\n    assert add_cart(s, 'a', 3) == 2\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_005",
+      "source_hash": "bf0bcb64a6ead633dcdfd2973ce5d065bd89d88712832bbf2e3dafeee46aed21",
+      "reference_hash": "e46f578216d2d55e6c907fba5cff8344365f40d901b602171551ea0bcc3a0435",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 9, in <module>\n    assert a['tenant'] == 'red' and b['tenant'] == 'blue'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 9, in <module>\n    assert a['tenant'] == 'red' and b['tenant'] == 'blue'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_006",
+      "source_hash": "08d9f22ad446960fc3fb6936a93d8f55b6f9e3f131b26d4a79f383ea92e2e70c",
+      "reference_hash": "723abc9d41627b01010f63e7f5803a9af37223a1c3f014e09022eb3eb58e0ed7",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 10, in <module>\n    assert render(d) == 'a,b'\n           ^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 10, in <module>\n    assert render(d) == 'a,b'\n           ^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_007",
+      "source_hash": "1686520eff3d33f13a18a476eb354f8ec97287fab6be1747238dd7533a6efd7f",
+      "reference_hash": "085db45944a31d6b73801d79fdc31aa84f5dd5b8c4ce4b22164e78bfb09ab224",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\n/evaluation/hidden.py:12: RuntimeWarning: coroutine 'check.<locals>.fetch' was never awaited\n  assert await collect([3, 1, 2], fetch) == [6, 2, 4]\nRuntimeWarning: Enable tracemalloc to get the object allocation traceback\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 16, in <module>\n    asyncio.run(check())\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 190, in run\n    return runner.run(main)\n           ^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 12, in check\n    assert await collect([3, 1, 2], fetch) == [6, 2, 4]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\n/evaluation/hidden.py:12: RuntimeWarning: coroutine 'check.<locals>.fetch' was never awaited\n  assert await collect([3, 1, 2], fetch) == [6, 2, 4]\nRuntimeWarning: Enable tracemalloc to get the object allocation traceback\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 16, in <module>\n    asyncio.run(check())\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 190, in run\n    return runner.run(main)\n           ^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 12, in check\n    assert await collect([3, 1, 2], fetch) == [6, 2, 4]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_008",
+      "source_hash": "ff4b5b4faf2ecd5048601d59d1c2790af69739b52668f340bd1ec41e02f5064c",
+      "reference_hash": "9e31972a2c06f24e4e3b1f6f78a2046adc691638f276f5ccc97621ba73ab42b8",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 18, in <module>\n    assert len(calls) == 1\n           ^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 18, in <module>\n    assert len(calls) == 1\n           ^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_009",
+      "source_hash": "09d06a43f04003541f7590271ed4d18ab519a794874c6e4430d4295ebe089afd",
+      "reference_hash": "867eb28d0cdeb2d79ff5a3d445108eaea17622f7e6b790aeeb69cf74ed1df281",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 5, in <module>\n    assert load({'DEBUG': ' FALSE '})['debug'] is False\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 5, in <module>\n    assert load({'DEBUG': ' FALSE '})['debug'] is False\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_010",
+      "source_hash": "681027d1b921a84fbf124518db7d42145ad9682e99e684218c32538b22f5d332",
+      "reference_hash": "cc2a8f427ba618ae20f9ea92372004a02507ba290f035a1968c4351f183f5aae",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 10, in <module>\n    assert isinstance(json.loads(data)['amount'], str)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 10, in <module>\n    assert isinstance(json.loads(data)['amount'], str)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_011",
+      "source_hash": "d86dc4fae69bca0fde7e70fc3fe645e4be176e9f0b2bfe3ba02fd80c31c8d598",
+      "reference_hash": "5f6afe31eccf80af5d0cb9a89ce6183b022058e4e9601ac3c842368611b08715",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 9, in <module>\n    assert not can_edit({'org': 'b', 'id': 1, 'admin': True}, doc)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 9, in <module>\n    assert not can_edit({'org': 'b', 'id': 1, 'admin': True}, doc)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_012",
+      "source_hash": "88f073920d06e182424638adda367307ead18618b06b72bbb429b7feae094e5a",
+      "reference_hash": "533771a9d4c4581013ebf52a3fd2eb7a919a41b3710712d7c3a8382164796e27",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 4, in <module>\n    from shop.orders import total\n  File \"/workspace/shop/orders.py\", line 1, in <module>\n    from prices import PRICES\nModuleNotFoundError: No module named 'prices'\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 4, in <module>\n    from shop.orders import total\n  File \"/workspace/shop/orders.py\", line 1, in <module>\n    from prices import PRICES\nModuleNotFoundError: No module named 'prices'\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_013",
+      "source_hash": "123bf2113d8e067966b86a588fd999d3438b4b6fbd150e8402f8ca64d67d4080",
+      "reference_hash": "c71af5c1743873a1cacb7451053dfca877fd6b5df11c5898c92410ef4991f794",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 5, in <module>\n    assert summarize(iter([2, None, 3])) == {'count': 2, 'total': 5}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 5, in <module>\n    assert summarize(iter([2, None, 3])) == {'count': 2, 'total': 5}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_014",
+      "source_hash": "f1c4e692bf26b4e45621dc6f4b31e79a0a450922d1297c09f68c4ce18cd52dea",
+      "reference_hash": "72dae7dcb18cde1180ba8a760d96ee743f3fd98c3ebd8b08621543d8a9a4c9ef",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 16, in <module>\n    assert c.closed == 1\n           ^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 16, in <module>\n    assert c.closed == 1\n           ^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_015",
+      "source_hash": "7046325286d7722e1997ecceb85d826f8bfc9c592e5312ac5d6fc3cdd4fd52d5",
+      "reference_hash": "69eb31511a10b5f40e5c9650730a2753b72358b93c0d5396a303046cb057fda7",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 6, in <module>\n    assert values(pages.__getitem__) == [7]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 6, in <module>\n    assert values(pages.__getitem__) == [7]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_016",
+      "source_hash": "c2cefa4990483c3f5573f790421f57f17c8a5c00a338b98dcbc51357febb9ef0",
+      "reference_hash": "aa0fe77afb801769b76c910493d18e44037343c6b1a69a6e7b152ebfefaa3878",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 9, in <module>\n    else: raise AssertionError('self cycle accepted')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: self cycle accepted\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 9, in <module>\n    else: raise AssertionError('self cycle accepted')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: self cycle accepted\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_017",
+      "source_hash": "b9dbdb50d14d7e8b31d57b21bfcb618e5bd53089fc2cae53c35888d29675bc2f",
+      "reference_hash": "e57a19394f2e501f6a711b039b5eb3116f3b7e3b6d1a97936fa4f573341f9fc2",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 7, in <module>\n    assert p.submit('a', 10) == p.submit('a', 10)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 7, in <module>\n    assert p.submit('a', 10) == p.submit('a', 10)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_018",
+      "source_hash": "bacb56bb89e6711dfb403d32009cbcdd06adf41e9b53c0dcdebeacebe20dc0d8",
+      "reference_hash": "b9e8f71679e12821e227d4307a2efc2bd74f12062b07a50d03e7f27c6c6c0057",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 11, in <module>\n    assert data == {'items': [1, 2], 'nested': {'flag': True}}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 11, in <module>\n    assert data == {'items': [1, 2], 'nested': {'flag': True}}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_019",
+      "source_hash": "5be97a062e62c9eee714f2ba515597ecfb3d98900b3be312bb86baaf4316d06d",
+      "reference_hash": "5cd9e6cb7ec65cfde0610694182fb098be08641a38b0e5b525b6bb0e704a133d",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 8, in <module>\n    assert ids([a, b]) == ['q', 'a', 'z', 'b']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 8, in <module>\n    assert ids([a, b]) == ['q', 'a', 'z', 'b']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_020",
+      "source_hash": "b0bf98fa313c0e4bac401e44ebed1174db807dba538aafe76fcbc58dc5328002",
+      "reference_hash": "f38a4f4d9446afaf2f2e5586a4a60f2fc4380d63b5550f6de11efdf30fec6ef2",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 13, in <module>\n    asyncio.run(check())\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 190, in run\n    return runner.run(main)\n           ^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 9, in check\n    assert sorted(await run(c, 8)) == list(range(1, 9))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 13, in <module>\n    asyncio.run(check())\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 190, in run\n    return runner.run(main)\n           ^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 9, in check\n    assert sorted(await run(c, 8)) == list(range(1, 9))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_021",
+      "source_hash": "7de5e74e4911e700d4b3eb199ea049bd892f99bee8e77e66b14666fbd92691ed",
+      "reference_hash": "ea2043a13c9c035c7788d3de5006ec2519181ec282dcff511a3d541f1a21124e",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 7, in <module>\n    assert [r['id'] for r in ordered(rows)] == [1, 2]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 7, in <module>\n    assert [r['id'] for r in ordered(rows)] == [1, 2]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_022",
+      "source_hash": "dce1df4b213927b20fb4308a65de8ba461a16776ebd969c308e40fbe985b4a7b",
+      "reference_hash": "63b7e961c6d31ddcec63a8db23d6b2d76712b6dfab90c73b96e7702e5321166a",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 11, in <module>\n    else: raise AssertionError('replayed login')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: replayed login\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 11, in <module>\n    else: raise AssertionError('replayed login')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: replayed login\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_023",
+      "source_hash": "625a8d2c196eedf3a406e34ffa2fdd4345d87747125356e0272731e29278fe0a",
+      "reference_hash": "649c717cee2d4b4207b1e96185953ed62fd081249e71ba8ae17213c60ec6214f",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 5, in <module>\n    assert transfer([['a,b', 'c'], ['say \"yes\"', '']]) == [['a,b', 'c'], ['say \"yes\"', '']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 5, in <module>\n    assert transfer([['a,b', 'c'], ['say \"yes\"', '']]) == [['a,b', 'c'], ['say \"yes\"', '']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_024",
+      "source_hash": "bc80a8588c1e4836836c9d694b53c7dad0ace0e4c64399db780fd0100e3dc07c",
+      "reference_hash": "6bc72d80b8fbed43af95023f99235cf899cd29f3e7e1b02e045e59bf40f9ac84",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 11, in <module>\n    assert list(c.data) == ['a', 'c']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 11, in <module>\n    assert list(c.data) == ['a', 'c']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_025",
+      "source_hash": "1f2d2d1ed4c56215905a47eeadf493afc7816d4d720bc5a95520f9b8723d8e9f",
+      "reference_hash": "1d4744920ec6b85a5df21fecbd12ec86bd5fc1d4fe9f875cbb805db02b03f333",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 22, in <module>\n    asyncio.run(check())\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 190, in run\n    return runner.run(main)\n           ^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 21, in check\n    assert stopped.is_set()\n           ^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 22, in <module>\n    asyncio.run(check())\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 190, in run\n    return runner.run(main)\n           ^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 21, in check\n    assert stopped.is_set()\n           ^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_026",
+      "source_hash": "ba8f35d3490161b1bcacec1e80ca37cfbc697de10f29522a0427ecd74d622d11",
+      "reference_hash": "8a44c724ca99041d1d7c00e95ee5ccf442c3a159cc6c506ecabc4299c4b4d29e",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 6, in <module>\n    assert credentials({'Authorization': ' Bearer\\txyz '}) == 'xyz'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 6, in <module>\n    assert credentials({'Authorization': ' Bearer\\txyz '}) == 'xyz'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_027",
+      "source_hash": "d0bf11019398422f579bf4ff84efcf457222dee5148039ce856d39761b61398c",
+      "reference_hash": "15d285daf3766b53fc47fb0051676c889d5152b96d3254e645b733cd174fd22b",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 12, in <module>\n    else: raise AssertionError('infrastructure error swallowed')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: infrastructure error swallowed\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 12, in <module>\n    else: raise AssertionError('infrastructure error swallowed')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: infrastructure error swallowed\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_028",
+      "source_hash": "b0ecf40a97b2c333ec1e31ed842944274fa5ff2775ac75fbe0a739bac8c2bf24",
+      "reference_hash": "18e660ecea64cf88797ffc5af1c7710340b6423255295e0fea996350483ccca9",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 8, in <module>\n    assert result['db'] == {'host': 'local', 'port': 2}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 8, in <module>\n    assert result['db'] == {'host': 'local', 'port': 2}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_029",
+      "source_hash": "afcb9e5f48b652f2e0f06521a787db39cf541dfdd7217a16c51fae2ba643fd82",
+      "reference_hash": "5959296af6e9e83e7d98eec2aad0af02a5f34354edb3797482a6db9e164acc20",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 5, in <module>\n    assert export(iter([1, 2, 3]), 2) == [[1, 2], [3]]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 5, in <module>\n    assert export(iter([1, 2, 3]), 2) == [[1, 2], [3]]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_030",
+      "source_hash": "ba6ce48ead4ed536bdd325471c29e8afb843ce691e74f220da42df5366d29450",
+      "reference_hash": "55a6be1c7c69be5a032c2be1f942354184b0c17e284932feaca6b413c841cd5c",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 10, in <module>\n    assert closed == ['b', 'a']\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 10, in <module>\n    assert closed == ['b', 'a']\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_031",
+      "source_hash": "6417876877bf8ed94a97981038506c1272d718373220f9825fc12936c402f5f8",
+      "reference_hash": "32eaef1406a82f068307e467c1cad1cc626eeae39b5c409244b9d3fe1a695b0b",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 6, in <module>\n    assert r.resolve('/users/me') == 'self'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 6, in <module>\n    assert r.resolve('/users/me') == 'self'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_032",
+      "source_hash": "8a6eed169a67ec7ea251ce7eec8d32e94a0668d4a70d2c6c6664054adacf133e",
+      "reference_hash": "a43d90173de7cb6bd074e29f441742de82013cd9c234fe95fc40e2886a3e3e77",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 8, in <module>\n    assert d.feed(b'bc\\x00\\x01x') == [b'abc', b'', b'x']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 8, in <module>\n    assert d.feed(b'bc\\x00\\x01x') == [b'abc', b'', b'x']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_033",
+      "source_hash": "0fd128f9cb0f98dbc3ba310130209245197505adc18f9f0d0b477d2cab08d8cc",
+      "reference_hash": "d047a9f52e740741dcf93584b80987028f78dd3c11e2ee3400bf11a969c8f1d9",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 6, in <module>\n    assert coalesce([(1, 10), (2, 3), (10, 12)]) == [(1, 12)]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 6, in <module>\n    assert coalesce([(1, 10), (2, 3), (10, 12)]) == [(1, 12)]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_034",
+      "source_hash": "678b9d7108a7b17b0af6046fa6fcda064768815065973a1048150ff8a42fdf2f",
+      "reference_hash": "6be43dca4b3d7f6341c9933856b8438c88d92d310995336d10c5c94d9d37249e",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 5, in <module>\n    assert read('{\"data\": {\"full_name\": \"Ada Lovelace\"}}') == {'name': 'Ada Lovelace'}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/reader.py\", line 5, in read\n    return canonical(document['data'], document.get('version', 2))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/migrations.py\", line 3, in canonical\n    return {'name': fields['first'] + ' ' + fields['last']}\n                    ~~~~~~^^^^^^^^^\nKeyError: 'first'\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 5, in <module>\n    assert read('{\"data\": {\"full_name\": \"Ada Lovelace\"}}') == {'name': 'Ada Lovelace'}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/reader.py\", line 5, in read\n    return canonical(document['data'], document.get('version', 2))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/migrations.py\", line 3, in canonical\n    return {'name': fields['first'] + ' ' + fields['last']}\n                    ~~~~~~^^^^^^^^^\nKeyError: 'first'\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_035",
+      "source_hash": "72d9d4522a6f53647765dc6af42421c6699bbdbfd9fd43c8404bea0673b8d35d",
+      "reference_hash": "da18398b3add7c331e84431989b51ba8757325e4636914c53e3f2bcc65a7ece5",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 11, in <module>\n    assert seen == [('one', 1), ('two', 1), ('two', 2)]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 11, in <module>\n    assert seen == [('one', 1), ('two', 1), ('two', 2)]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_036",
+      "source_hash": "ce7909d76b1d761706359ec3a26c7e8e960db8cf8abffd82e1283c9f66cbb839",
+      "reference_hash": "bba33140aaed4ca8cdbdcf644c08856ea74adf3b14a6403ff6d37a8683490e97",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 5, in <module>\n    assert mean([[(10, 1)], [(20, 3)]]) == 17.5\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 5, in <module>\n    assert mean([[(10, 1)], [(20, 3)]]) == 17.5\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_037",
+      "source_hash": "6182da3c5a41640e63295412eb5219f0f96a06ed5591290c84ef74f0f6488957",
+      "reference_hash": "3e3dec5e4cdf1ebdf714630f272b6c3ac26b0b1ae3bc7fb74b974bdd81dacd38",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 7, in <module>\n    assert decode({'q': 'a&b + caf\u00e9'}) == {'q': ['a&b + caf\u00e9']}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 7, in <module>\n    assert decode({'q': 'a&b + caf\u00e9'}) == {'q': ['a&b + caf\u00e9']}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    },
+    {
+      "task_id": "task_038",
+      "source_hash": "695a4c13d2e08050cb9d47cbffe7c93d3a1e9d1b4236a36cc8ec96d74ebc28c5",
+      "reference_hash": "7abe66ee916166e11aaaa25fd97bd6b8f81c3cbf23acd354636391dd2fc419f6",
+      "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+      "valid": true,
+      "buggy": {
+        "visible_exit": 1,
+        "regression_exits": [
+          1,
+          1
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 5, in <module>\n    import registry\n  File \"/workspace/registry.py\", line 1, in <module>\n    import builtin_plugin\n  File \"/workspace/builtin_plugin.py\", line 1, in <module>\n    from registry import register\nImportError: cannot import name 'register' from partially initialized module 'registry' (most likely due to a circular import) (/workspace/registry.py)\n",
+          "REGRESSION_START\nTraceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 5, in <module>\n    import registry\n  File \"/workspace/registry.py\", line 1, in <module>\n    import builtin_plugin\n  File \"/workspace/builtin_plugin.py\", line 1, in <module>\n    from registry import register\nImportError: cannot import name 'register' from partially initialized module 'registry' (most likely due to a circular import) (/workspace/registry.py)\n"
+        ]
+      },
+      "reference": {
+        "visible_exit": 0,
+        "regression_exits": [
+          0,
+          0
+        ],
+        "deterministic_output": true,
+        "outputs": [
+          "REGRESSION_START\nREGRESSION_PASS\n",
+          "REGRESSION_START\nREGRESSION_PASS\n"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "task_023",
+  "repository": "repo",
+  "issue": "Read and write CSV rows using standard CSV quoting: embedded commas, double quotes and newlines must round-trip. Return strings, preserve empty cells, and do not split embedded newlines into records.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "dev",
+  "editable": [
+    "codec.py",
+    "export.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

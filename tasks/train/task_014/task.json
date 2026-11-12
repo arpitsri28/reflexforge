@@ -1,0 +1,27 @@
+{
+  "id": "task_014",
+  "repository": "repo",
+  "issue": "session(factory) must close the acquired connection exactly once on normal and exceptional exits. Do not suppress exceptions from the body, and do not attempt cleanup if acquisition fails.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "session.py",
+    "work.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

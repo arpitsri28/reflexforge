@@ -1,0 +1,4 @@
+{
+  "dates.py": "from datetime import datetime, timezone\ndef parse(value):\n    result = datetime.fromisoformat(value.replace('Z', '+00:00'))\n    if result.tzinfo is None: raise ValueError('timezone required')\n    return result.astimezone(timezone.utc)\n",
+  "events.py": "from dates import parse\ndef ordered(records):\n    return sorted(records, key=lambda r: parse(r['time']))\ndef utc_time(record): return parse(record['time']).isoformat()\n"
+}

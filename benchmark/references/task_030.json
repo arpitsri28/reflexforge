@@ -1,0 +1,3 @@
+{
+  "resources.py": "from contextlib import contextmanager\n@contextmanager\ndef open_all(factories):\n    opened = []\n    try:\n        for factory in factories: opened.append(factory())\n        yield opened\n    finally:\n        for resource in reversed(opened): resource.close()\n"
+}

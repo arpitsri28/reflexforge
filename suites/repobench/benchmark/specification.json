@@ -1,0 +1,717 @@
+{
+  "task_101": {
+    "domain": "backend-payments",
+    "root_cause": "The service assigns an attempt-specific provider key after preparing a pending journal row. A committed-but-unobserved provider charge is repeated; the journal also validates payloads only after a receipt exists.",
+    "dependency_path": [
+      "api.py",
+      "transport.py",
+      "payments.py",
+      "journal.py",
+      "gateway.py"
+    ],
+    "module_roles": {
+      "models.py": "Validated request and durable receipt state",
+      "journal.py": "Logical checkout identity and replay records",
+      "gateway.py": "Deterministic external commit/reply-loss simulation",
+      "audit.py": "Logical business-event ledger",
+      "payments.py": "Coordinates requests, provider effects and journal completion",
+      "transport.py": "Bounded transport retry semantics",
+      "api.py": "Public request adapter"
+    },
+    "meaningful_modules": 7,
+    "dependency_depth": 2,
+    "dependency_depth_metric": "longest local import path; injected runtime dependencies are additional",
+    "local_import_graph": {
+      "models.py": [],
+      "journal.py": [
+        "models.py"
+      ],
+      "gateway.py": [],
+      "audit.py": [],
+      "payments.py": [
+        "models.py"
+      ],
+      "transport.py": [
+        "gateway.py"
+      ],
+      "api.py": [
+        "transport.py"
+      ]
+    },
+    "dependency_path_kind": "symptom-to-cause investigation/dataflow components",
+    "plausible_failure_locations": 5,
+    "debugging_operations": [
+      "reproduce public failure",
+      "trace contracts across dependency boundaries",
+      "inspect state before and after exceptions",
+      "repair coordinated invariants",
+      "run preservation and regression suites"
+    ],
+    "state_invariants": [
+      "one provider effect per logical key",
+      "pending and complete payload identity",
+      "account isolation",
+      "one audit event"
+    ],
+    "empirical_difficulty": null,
+    "public_test_count": 3,
+    "hidden_test_count": 6,
+    "mutant_hash": "e351d969ada094c8ee67725fd3b25d11906a9b264de7f0b3420d9bc638c91f7a"
+  },
+  "task_102": {
+    "domain": "async-job-ownership",
+    "root_cause": "Ownership is published after an await, allowing two claims, while unconditional acknowledgement converts cancelled work to done.",
+    "dependency_path": [
+      "application.py",
+      "scheduler.py",
+      "worker.py",
+      "broker.py",
+      "jobs.py",
+      "results.py"
+    ],
+    "module_roles": {
+      "jobs.py": "Queue state model",
+      "broker.py": "Ownership and acknowledgement transitions",
+      "results.py": "Result persistence",
+      "worker.py": "Processing and failure cleanup",
+      "operations.py": "Business operations",
+      "scheduler.py": "Concurrent worker scheduling",
+      "application.py": "Public composition and construction"
+    },
+    "meaningful_modules": 7,
+    "dependency_depth": 1,
+    "dependency_depth_metric": "longest local import path; injected runtime dependencies are additional",
+    "local_import_graph": {
+      "jobs.py": [],
+      "broker.py": [],
+      "results.py": [],
+      "worker.py": [],
+      "operations.py": [],
+      "scheduler.py": [],
+      "application.py": [
+        "broker.py",
+        "operations.py",
+        "results.py",
+        "worker.py"
+      ]
+    },
+    "dependency_path_kind": "symptom-to-cause investigation/dataflow components",
+    "plausible_failure_locations": 6,
+    "debugging_operations": [
+      "reproduce public failure",
+      "trace contracts across dependency boundaries",
+      "inspect state before and after exceptions",
+      "repair coordinated invariants",
+      "run preservation and regression suites"
+    ],
+    "state_invariants": [
+      "exclusive ownership",
+      "cancelled acquisition is available again",
+      "only durable results acknowledged",
+      "failure preserves retryability"
+    ],
+    "empirical_difficulty": null,
+    "public_test_count": 2,
+    "hidden_test_count": 5,
+    "mutant_hash": "235f8c175568e38780a1745b6627e44e03427dccc007aec3802dafebb335ec4c"
+  },
+  "task_103": {
+    "domain": "message-delivery",
+    "root_cause": "Acknowledgement precedes the business transaction and the deduplication marker is written outside rollback ownership.",
+    "dependency_path": [
+      "simulation.py",
+      "consumer.py",
+      "broker.py",
+      "storage.py",
+      "handlers.py"
+    ],
+    "module_roles": {
+      "messages.py": "Delivery identity and account payload",
+      "broker.py": "At-least-once local delivery",
+      "storage.py": "Transactional business state",
+      "handlers.py": "Effect application and deterministic interruption",
+      "consumer.py": "Delivery/transaction coordinator",
+      "simulation.py": "Deterministic drain loop",
+      "application.py": "Service construction"
+    },
+    "meaningful_modules": 7,
+    "dependency_depth": 1,
+    "dependency_depth_metric": "longest local import path; injected runtime dependencies are additional",
+    "local_import_graph": {
+      "messages.py": [],
+      "broker.py": [],
+      "storage.py": [],
+      "handlers.py": [],
+      "consumer.py": [],
+      "simulation.py": [],
+      "application.py": [
+        "broker.py",
+        "consumer.py",
+        "handlers.py",
+        "storage.py"
+      ]
+    },
+    "dependency_path_kind": "symptom-to-cause investigation/dataflow components",
+    "plausible_failure_locations": 5,
+    "debugging_operations": [
+      "reproduce public failure",
+      "trace contracts across dependency boundaries",
+      "inspect state before and after exceptions",
+      "repair coordinated invariants",
+      "run preservation and regression suites"
+    ],
+    "state_invariants": [
+      "ack follows successful durable effect",
+      "dedup marker and effect share a transaction",
+      "failure remains deliverable",
+      "ordered once-only effects"
+    ],
+    "empirical_difficulty": null,
+    "public_test_count": 2,
+    "hidden_test_count": 4,
+    "mutant_hash": "a50d18f0c87c4d10f5c0d8b652f81618df76d846612481b617b03711f3e6bd01"
+  },
+  "task_104": {
+    "domain": "mixed-source-etl",
+    "root_cause": "CSV major-unit strings reach an integer-minor-unit aggregator without unit conversion, while JSON validation coerces non-integer values before checking the schema.",
+    "dependency_path": [
+      "application.py",
+      "sources.py",
+      "pipeline.py",
+      "validation.py",
+      "normalization.py",
+      "aggregation.py",
+      "exporting.py"
+    ],
+    "module_roles": {
+      "sources.py": "CSV and JSON adapters",
+      "validation.py": "Public row contracts",
+      "normalization.py": "Canonical money and UTC representation",
+      "aggregation.py": "Deduplicated running aggregates",
+      "pipeline.py": "Per-row validation/error boundary",
+      "exporting.py": "Stable output serialization",
+      "application.py": "Batch ingestion API"
+    },
+    "meaningful_modules": 7,
+    "dependency_depth": 2,
+    "dependency_depth_metric": "longest local import path; injected runtime dependencies are additional",
+    "local_import_graph": {
+      "sources.py": [],
+      "validation.py": [],
+      "normalization.py": [],
+      "aggregation.py": [],
+      "pipeline.py": [
+        "normalization.py",
+        "validation.py"
+      ],
+      "exporting.py": [],
+      "application.py": [
+        "aggregation.py",
+        "exporting.py",
+        "pipeline.py",
+        "sources.py"
+      ]
+    },
+    "dependency_path_kind": "symptom-to-cause investigation/dataflow components",
+    "plausible_failure_locations": 7,
+    "debugging_operations": [
+      "reproduce public failure",
+      "trace contracts across dependency boundaries",
+      "inspect state before and after exceptions",
+      "repair coordinated invariants",
+      "run preservation and regression suites"
+    ],
+    "state_invariants": [
+      "canonical monetary units",
+      "strict input types",
+      "cross-source dedup identity",
+      "UTC buckets and partition invariance"
+    ],
+    "empirical_difficulty": null,
+    "public_test_count": 2,
+    "hidden_test_count": 5,
+    "mutant_hash": "4783407df1f18fca884694628192611a38e2fc82177c8af37fb53702ba1e29f6"
+  },
+  "task_105": {
+    "domain": "nested-ledger-transactions",
+    "root_cause": "A shared snapshot slot is overwritten/cleared by nested transactions, and replacement of the store root invalidates live views during rollback.",
+    "dependency_path": [
+      "application.py",
+      "transfers.py",
+      "fees.py",
+      "accounts.py",
+      "transactions.py",
+      "storage.py",
+      "reporting.py"
+    ],
+    "module_roles": {
+      "storage.py": "Mutable state ownership and live views",
+      "transactions.py": "Nested savepoint boundary",
+      "accounts.py": "Balance invariant operations",
+      "fees.py": "Fee business validation",
+      "transfers.py": "Compound nested operation",
+      "reporting.py": "Read-side snapshots",
+      "application.py": "Ledger construction"
+    },
+    "meaningful_modules": 7,
+    "dependency_depth": 2,
+    "dependency_depth_metric": "longest local import path; injected runtime dependencies are additional",
+    "local_import_graph": {
+      "storage.py": [],
+      "transactions.py": [],
+      "accounts.py": [],
+      "fees.py": [],
+      "transfers.py": [
+        "fees.py"
+      ],
+      "reporting.py": [],
+      "application.py": [
+        "accounts.py",
+        "storage.py",
+        "transactions.py",
+        "transfers.py"
+      ]
+    },
+    "dependency_path_kind": "symptom-to-cause investigation/dataflow components",
+    "plausible_failure_locations": 7,
+    "debugging_operations": [
+      "reproduce public failure",
+      "trace contracts across dependency boundaries",
+      "inspect state before and after exceptions",
+      "repair coordinated invariants",
+      "run preservation and regression suites"
+    ],
+    "state_invariants": [
+      "nested savepoint ownership",
+      "outer atomicity",
+      "live view identity",
+      "exception and balance preservation"
+    ],
+    "empirical_difficulty": null,
+    "public_test_count": 2,
+    "hidden_test_count": 5,
+    "mutant_hash": "5eb08f25e1cc33109c2dd20712621df4045e168d135528b66ef34522f8ae8573"
+  },
+  "task_106": {
+    "domain": "resumable-catalog-client",
+    "root_cause": "The coordinator durably advances the bookmark before schema validation and destination batch commit, so a restart skips an uncommitted page.",
+    "dependency_path": [
+      "synchronizer.py",
+      "client.py",
+      "transport.py",
+      "decoding.py",
+      "destination.py",
+      "checkpoint.py"
+    ],
+    "module_roles": {
+      "protocol.py": "Response and error contracts",
+      "transport.py": "Deterministic local status simulation",
+      "client.py": "Bounded HTTP-like retries",
+      "decoding.py": "Page and record validation",
+      "checkpoint.py": "Durable resume state",
+      "destination.py": "Atomic destination upserts",
+      "synchronizer.py": "Page processing coordinator"
+    },
+    "meaningful_modules": 7,
+    "dependency_depth": 1,
+    "dependency_depth_metric": "longest local import path; injected runtime dependencies are additional",
+    "local_import_graph": {
+      "protocol.py": [],
+      "transport.py": [
+        "protocol.py"
+      ],
+      "client.py": [
+        "protocol.py"
+      ],
+      "decoding.py": [],
+      "checkpoint.py": [],
+      "destination.py": [
+        "protocol.py"
+      ],
+      "synchronizer.py": [
+        "decoding.py"
+      ]
+    },
+    "dependency_path_kind": "symptom-to-cause investigation/dataflow components",
+    "plausible_failure_locations": 6,
+    "debugging_operations": [
+      "reproduce public failure",
+      "trace contracts across dependency boundaries",
+      "inspect state before and after exceptions",
+      "repair coordinated invariants",
+      "run preservation and regression suites"
+    ],
+    "state_invariants": [
+      "checkpoint denotes first uncommitted page",
+      "destination batch atomicity",
+      "stable retry cursor",
+      "completion distinct from start"
+    ],
+    "empirical_difficulty": null,
+    "public_test_count": 2,
+    "hidden_test_count": 5,
+    "mutant_hash": "1093cf955a4bf0dc8aede99ff5f7384e753699880430e6caa496ff4d2dfb4cd5"
+  },
+  "task_107": {
+    "domain": "request-authorization",
+    "root_cause": "Cache identity omits the authenticated principal and both permission revisions, turning request-scoped decisions into cross-principal or stale global permissions.",
+    "dependency_path": [
+      "middleware.py",
+      "authentication.py",
+      "repository.py",
+      "service.py",
+      "cache.py",
+      "policy.py",
+      "models.py"
+    ],
+    "module_roles": {
+      "models.py": "Immutable permission-bearing records",
+      "repository.py": "Versioned principal/document updates",
+      "authentication.py": "Token resolution to current principals",
+      "policy.py": "Permission rules and instrumentation",
+      "cache.py": "Authorization decision memoization",
+      "service.py": "Protected document reads",
+      "middleware.py": "Per-request authentication",
+      "application.py": "Backend composition"
+    },
+    "meaningful_modules": 8,
+    "dependency_depth": 1,
+    "dependency_depth_metric": "longest local import path; injected runtime dependencies are additional",
+    "local_import_graph": {
+      "models.py": [],
+      "repository.py": [],
+      "authentication.py": [],
+      "policy.py": [],
+      "cache.py": [],
+      "service.py": [],
+      "middleware.py": [],
+      "application.py": [
+        "authentication.py",
+        "cache.py",
+        "middleware.py",
+        "policy.py",
+        "repository.py",
+        "service.py"
+      ]
+    },
+    "dependency_path_kind": "symptom-to-cause investigation/dataflow components",
+    "plausible_failure_locations": 7,
+    "debugging_operations": [
+      "reproduce public failure",
+      "trace contracts across dependency boundaries",
+      "inspect state before and after exceptions",
+      "repair coordinated invariants",
+      "run preservation and regression suites"
+    ],
+    "state_invariants": [
+      "principal isolation",
+      "tenant isolation",
+      "revision-sensitive permissions",
+      "cache-hit performance"
+    ],
+    "empirical_difficulty": null,
+    "public_test_count": 2,
+    "hidden_test_count": 6,
+    "mutant_hash": "3b9b4c45284c4a3dfe81058f45e3c9f910307dd2bdc0dc1c14597f248b9bf6d1"
+  },
+  "task_108": {
+    "domain": "service-configuration",
+    "root_cause": "Layer composition mutates shared defaults, discards explicit falsy values and places environment overrides after CLI settings, so consumers disagree with the requested effective configuration.",
+    "dependency_path": [
+      "application.py",
+      "parsing.py",
+      "resolver.py",
+      "layers.py",
+      "defaults.py",
+      "mailer.py",
+      "scheduler.py"
+    ],
+    "module_roles": {
+      "defaults.py": "Application defaults",
+      "parsing.py": "Typed environment adapter",
+      "layers.py": "Recursive layer composition",
+      "resolver.py": "Precedence and final validation",
+      "mailer.py": "Mail side effects",
+      "scheduler.py": "Scheduled work gating",
+      "application.py": "Shared effective configuration"
+    },
+    "meaningful_modules": 7,
+    "dependency_depth": 2,
+    "dependency_depth_metric": "longest local import path; injected runtime dependencies are additional",
+    "local_import_graph": {
+      "defaults.py": [],
+      "parsing.py": [],
+      "layers.py": [],
+      "resolver.py": [
+        "defaults.py",
+        "layers.py"
+      ],
+      "mailer.py": [],
+      "scheduler.py": [],
+      "application.py": [
+        "mailer.py",
+        "parsing.py",
+        "resolver.py",
+        "scheduler.py"
+      ]
+    },
+    "dependency_path_kind": "symptom-to-cause investigation/dataflow components",
+    "plausible_failure_locations": 7,
+    "debugging_operations": [
+      "reproduce public failure",
+      "trace contracts across dependency boundaries",
+      "inspect state before and after exceptions",
+      "repair coordinated invariants",
+      "run preservation and regression suites"
+    ],
+    "state_invariants": [
+      "precedence",
+      "explicit falsy values",
+      "instance/input ownership",
+      "typed consumer settings"
+    ],
+    "empirical_difficulty": null,
+    "public_test_count": 2,
+    "hidden_test_count": 5,
+    "mutant_hash": "669091d65c5cfb923d6170275098a4b39318dc42d30bc6c2e196234d927f30be"
+  },
+  "task_109": {
+    "domain": "worker-pool-lifecycle",
+    "root_cause": "Rollback ownership begins only after validation and cleanup stops on the first close error, so partial acquisition leaks and leaves the startup state unusable.",
+    "dependency_path": [
+      "application.py",
+      "configuration.py",
+      "pool.py",
+      "resources.py",
+      "cleanup.py",
+      "worker.py",
+      "telemetry.py"
+    ],
+    "module_roles": {
+      "resources.py": "Deterministic allocation/health/close behavior",
+      "cleanup.py": "Reverse-order cleanup policy",
+      "pool.py": "Startup ownership and state",
+      "worker.py": "Worker drain lifecycle",
+      "telemetry.py": "Observable live resources/order",
+      "configuration.py": "Factory validation",
+      "application.py": "Pool/worker orchestration"
+    },
+    "meaningful_modules": 7,
+    "dependency_depth": 2,
+    "dependency_depth_metric": "longest local import path; injected runtime dependencies are additional",
+    "local_import_graph": {
+      "resources.py": [],
+      "cleanup.py": [],
+      "pool.py": [
+        "cleanup.py"
+      ],
+      "worker.py": [],
+      "telemetry.py": [],
+      "configuration.py": [],
+      "application.py": [
+        "configuration.py",
+        "pool.py",
+        "worker.py"
+      ]
+    },
+    "dependency_path_kind": "symptom-to-cause investigation/dataflow components",
+    "plausible_failure_locations": 7,
+    "debugging_operations": [
+      "reproduce public failure",
+      "trace contracts across dependency boundaries",
+      "inspect state before and after exceptions",
+      "repair coordinated invariants",
+      "run preservation and regression suites"
+    ],
+    "state_invariants": [
+      "ownership before fallible initialization",
+      "LIFO complete cleanup",
+      "original failure preservation",
+      "restartable stopped state"
+    ],
+    "empirical_difficulty": null,
+    "public_test_count": 2,
+    "hidden_test_count": 5,
+    "mutant_hash": "7e00808b5c22b6d40568ba52f666268bcd9a3e6dafd12250a7ae9e4f15b5a3e3"
+  },
+  "task_110": {
+    "domain": "streaming-event-protocol",
+    "root_cause": "The encoder measures Unicode characters instead of bytes, and the decoder consumes the length header before an entire payload has arrived.",
+    "dependency_path": [
+      "stream.py",
+      "framing.py",
+      "payloads.py",
+      "schema.py",
+      "session.py",
+      "router.py",
+      "encoding.py"
+    ],
+    "module_roles": {
+      "encoding.py": "Wire serialization",
+      "framing.py": "Incremental byte framing",
+      "schema.py": "Event contract validation",
+      "payloads.py": "UTF-8/JSON decoding",
+      "router.py": "Business effect routing",
+      "session.py": "Replay and sequence handling",
+      "stream.py": "Incremental public stream API"
+    },
+    "meaningful_modules": 7,
+    "dependency_depth": 3,
+    "dependency_depth_metric": "longest local import path; injected runtime dependencies are additional",
+    "local_import_graph": {
+      "encoding.py": [],
+      "framing.py": [],
+      "schema.py": [],
+      "payloads.py": [
+        "schema.py"
+      ],
+      "router.py": [],
+      "session.py": [
+        "payloads.py"
+      ],
+      "stream.py": [
+        "framing.py",
+        "router.py",
+        "session.py"
+      ]
+    },
+    "dependency_path_kind": "symptom-to-cause investigation/dataflow components",
+    "plausible_failure_locations": 7,
+    "debugging_operations": [
+      "reproduce public failure",
+      "trace contracts across dependency boundaries",
+      "inspect state before and after exceptions",
+      "repair coordinated invariants",
+      "run preservation and regression suites"
+    ],
+    "state_invariants": [
+      "frame lengths are byte counts",
+      "incomplete frames retain header and body",
+      "validated monotone sequence",
+      "no partial effects on invalid payload"
+    ],
+    "empirical_difficulty": null,
+    "public_test_count": 2,
+    "hidden_test_count": 5,
+    "mutant_hash": "15d7108a96bdeaa713c8ae69176855e5b4bbe9bb7e6d64fe4f9947429f60ebbf"
+  },
+  "task_111": {
+    "domain": "dependency-container",
+    "root_cause": "Incomplete provider placeholders are inserted into the successful-instance cache, conflating in-progress, failed and completed resolution states.",
+    "dependency_path": [
+      "application.py",
+      "registry.py",
+      "definitions.py",
+      "loader.py",
+      "factories.py",
+      "providers.py",
+      "errors.py"
+    ],
+    "module_roles": {
+      "definitions.py": "Provider dependency schema",
+      "registry.py": "Named definition validation",
+      "errors.py": "Public cycle diagnostics",
+      "factories.py": "Construction dispatch and copied options",
+      "loader.py": "Dependency resolution lifecycle",
+      "providers.py": "Real value/bundle services",
+      "application.py": "Application-facing service access"
+    },
+    "meaningful_modules": 7,
+    "dependency_depth": 2,
+    "dependency_depth_metric": "longest local import path; injected runtime dependencies are additional",
+    "local_import_graph": {
+      "definitions.py": [],
+      "registry.py": [],
+      "errors.py": [],
+      "factories.py": [],
+      "loader.py": [
+        "errors.py"
+      ],
+      "providers.py": [],
+      "application.py": [
+        "factories.py",
+        "loader.py",
+        "providers.py",
+        "registry.py"
+      ]
+    },
+    "dependency_path_kind": "symptom-to-cause investigation/dataflow components",
+    "plausible_failure_locations": 7,
+    "debugging_operations": [
+      "reproduce public failure",
+      "trace contracts across dependency boundaries",
+      "inspect state before and after exceptions",
+      "repair coordinated invariants",
+      "run preservation and regression suites"
+    ],
+    "state_invariants": [
+      "cache contains completed providers only",
+      "cycles detected with path",
+      "failure does not poison retries",
+      "shared dependency identity"
+    ],
+    "empirical_difficulty": null,
+    "public_test_count": 2,
+    "hidden_test_count": 5,
+    "mutant_hash": "4606e061008a69871bfc64df884ce9d4bb88f8c99fe6abec928b85adafa80d7a"
+  },
+  "task_112": {
+    "domain": "search-projections",
+    "root_cause": "Replacement only appends new postings instead of removing the previous projection, and storage is committed before the replacement document is validated.",
+    "dependency_path": [
+      "service.py",
+      "documents.py",
+      "tokenization.py",
+      "storage.py",
+      "indexing.py",
+      "query.py",
+      "facets.py"
+    ],
+    "module_roles": {
+      "documents.py": "Document value model",
+      "tokenization.py": "Validation and normalized vocabulary",
+      "storage.py": "Primary document records",
+      "indexing.py": "Inverted postings and reverse membership",
+      "query.py": "Intersection query execution",
+      "facets.py": "Document-frequency projections",
+      "service.py": "Mutation/query coordination"
+    },
+    "meaningful_modules": 7,
+    "dependency_depth": 2,
+    "dependency_depth_metric": "longest local import path; injected runtime dependencies are additional",
+    "local_import_graph": {
+      "documents.py": [],
+      "tokenization.py": [],
+      "storage.py": [],
+      "indexing.py": [],
+      "query.py": [
+        "tokenization.py"
+      ],
+      "facets.py": [],
+      "service.py": [
+        "facets.py",
+        "query.py",
+        "tokenization.py"
+      ]
+    },
+    "dependency_path_kind": "symptom-to-cause investigation/dataflow components",
+    "plausible_failure_locations": 7,
+    "debugging_operations": [
+      "reproduce public failure",
+      "trace contracts across dependency boundaries",
+      "inspect state before and after exceptions",
+      "repair coordinated invariants",
+      "run preservation and regression suites"
+    ],
+    "state_invariants": [
+      "replace removes obsolete postings",
+      "facets and search share one projection",
+      "validation before mutation",
+      "deletion clears every term"
+    ],
+    "empirical_difficulty": null,
+    "public_test_count": 2,
+    "hidden_test_count": 5,
+    "mutant_hash": "8a7d0ce8032dadc12c4d4acccc89b199eb1cf998a2e125c0c92f3764d08e738f"
+  }
+}

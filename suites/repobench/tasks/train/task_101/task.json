@@ -1,0 +1,32 @@
+{
+  "id": "task_101",
+  "repository": "repo",
+  "issue": "A checkout can be charged twice after the client retries a request whose response was lost. Reusing a checkout key with different payment details must be rejected, including after a timeout.",
+  "setup": "",
+  "reproduction": "python -m unittest discover -s tests -v",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "models.py",
+    "journal.py",
+    "gateway.py",
+    "audit.py",
+    "payments.py",
+    "transport.py",
+    "api.py"
+  ],
+  "budget": {
+    "max_steps": 30,
+    "wall_seconds": 300,
+    "command_seconds": 30,
+    "max_tokens": 40000,
+    "response_tokens": 4096,
+    "retry_limit": 0
+  }
+}

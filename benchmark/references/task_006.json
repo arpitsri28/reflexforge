@@ -1,0 +1,3 @@
+{
+  "directory.py": "class Directory:\n    def __init__(self):\n        self.entries = {}\n        self.cached = None\n    def put(self, name, value):\n        self.entries[name] = value\n        self.cached = None\n    def delete(self, name):\n        self.entries.pop(name, None)\n        self.cached = None\n    def listing(self):\n        if self.cached is None: self.cached = sorted(self.entries)\n        return list(self.cached)\n"
+}

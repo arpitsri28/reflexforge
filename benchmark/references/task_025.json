@@ -1,0 +1,3 @@
+{
+  "group.py": "import asyncio\nasync def race_fail_fast(coroutines):\n    tasks = [asyncio.create_task(c) for c in coroutines]\n    try:\n        return await asyncio.gather(*tasks)\n    except BaseException:\n        for task in tasks:\n            if not task.done(): task.cancel()\n        await asyncio.gather(*tasks, return_exceptions=True)\n        raise\n"
+}

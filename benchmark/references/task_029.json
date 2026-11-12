@@ -1,0 +1,3 @@
+{
+  "chunks.py": "def chunks(values, size):\n    if size <= 0: raise ValueError('size')\n    batch = []\n    for value in values:\n        batch.append(value)\n        if len(batch) == size:\n            yield batch\n            batch = []\n    if batch: yield batch\n"
+}

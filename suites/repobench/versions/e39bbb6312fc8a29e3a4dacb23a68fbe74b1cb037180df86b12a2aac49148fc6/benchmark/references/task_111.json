@@ -1,0 +1,3 @@
+{
+  "loader.py": "from errors import DependencyCycle\nclass Loader:\n    def __init__(self,registry,factories): self.registry,self.factories=registry,factories;self.instances={};self.active=[]\n    def resolve(self,key):\n        if key in self.active: raise DependencyCycle(' -> '.join(self.active+[key]))\n        if key in self.instances: return self.instances[key]\n        self.active.append(key)\n        try:\n            definition=self.registry.get(key)\n            dependencies={name:self.resolve(name) for name in definition.dependencies}\n            value=self.factories.create(definition.kind,dependencies,definition.options)\n            self.instances[key]=value\n            return value\n        finally: self.active.pop()\n"
+}

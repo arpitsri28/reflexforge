@@ -1,0 +1,13 @@
+{
+  "id": "task_003",
+  "repository": "repo",
+  "issue": "Filter enabled records; disabled records must be omitted and order preserved.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "runtime": "python3.11",
+  "split": "test",
+  "editable": [
+    "solution.py"
+  ]
+}

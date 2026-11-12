@@ -1,0 +1,27 @@
+{
+  "id": "task_011",
+  "repository": "repo",
+  "issue": "A user may edit a document only if they belong to the document organization AND are its owner or an admin. Being an admin in another organization must not grant access. authorize() raises PermissionError on denial.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "policy.py",
+    "service.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

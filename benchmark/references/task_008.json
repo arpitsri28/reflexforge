@@ -1,0 +1,3 @@
+{
+  "retrying.py": "def retry(operation, attempts):\n    if attempts < 1: raise ValueError('attempts')\n    last = None\n    for _ in range(attempts):\n        try: return operation()\n        except TimeoutError as exc: last = exc\n    raise last\n"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "task_010",
+  "repository": "repo",
+  "issue": "Money JSON serialization must round-trip Decimal exactly using a decimal string for amount. The currency field must survive. Large or high-precision amounts currently lose digits.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "money.py",
+    "wire.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

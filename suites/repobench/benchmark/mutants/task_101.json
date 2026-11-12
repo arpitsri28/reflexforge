@@ -1,0 +1,3 @@
+{
+  "payments.py": "from models import Request\nclass PaymentService:\n    def __init__(self, gateway, journal, audit):\n        self.gateway, self.journal, self.audit = gateway, journal, audit\n        self.sequence = 0\n    def submit(self, account, key, amount, currency='USD'):\n        request = Request(account, key, amount, currency)\n        request.validate()\n        record = self.journal.prepare(request)\n        if record.receipt is not None: return dict(record.receipt)\n        self.sequence += 1\n        provider_key = (request.account, request.key)\n        receipt = self.gateway.charge(provider_key, request.amount, request.currency)\n        record.receipt = dict(receipt)\n        self.audit.completed(request, receipt)\n        return receipt\n"
+}

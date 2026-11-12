@@ -1,0 +1,3 @@
+{
+  "wire.py": "import json\nfrom money import Money\ndef encode(money):\n    return json.dumps({'amount': str(money.amount), 'currency': money.currency})\ndef decode(data):\n    fields = json.loads(data)\n    return Money(fields['amount'], fields['currency'])\n"
+}

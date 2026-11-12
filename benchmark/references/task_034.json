@@ -1,0 +1,4 @@
+{
+  "migrations.py": "def canonical(fields, version):\n    if version == 1: return {'name': fields['full_name']}\n    if version == 2: return {'name': fields['first'] + ' ' + fields['last']}\n    raise ValueError('unsupported schema')\n",
+  "reader.py": "import json\nfrom migrations import canonical\ndef read(text):\n    document = json.loads(text)\n    return canonical(document['data'], document.get('version', 1))\n"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "task_027",
+  "repository": "repo",
+  "issue": "Batch processing should collect ValueError failures per input and continue, but propagate infrastructure RuntimeError immediately. Preserve positional results with None for invalid records and indexed error strings.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "batching.py",
+    "converters.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "task_008",
+  "repository": "repo",
+  "issue": "retry() may retry TimeoutError only, up to attempts total calls. Other exceptions must propagate immediately. Exhausted timeouts must propagate the last TimeoutError; attempts below 1 raise ValueError before calling.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "retrying.py",
+    "client.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

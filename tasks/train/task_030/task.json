@@ -1,0 +1,27 @@
+{
+  "id": "task_030",
+  "repository": "repo",
+  "issue": "open_all() acquires resources in input order and closes them in reverse order, including partial acquisition failure. A body exception must propagate after cleanup. Factories return objects with close().",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "train",
+  "editable": [
+    "resources.py",
+    "job.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

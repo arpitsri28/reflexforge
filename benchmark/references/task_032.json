@@ -1,0 +1,3 @@
+{
+  "frames.py": "class FrameDecoder:\n    def __init__(self): self.buffer = b''\n    def feed(self, data):\n        self.buffer += data\n        result = []\n        while self.buffer:\n            length = self.buffer[0]\n            if len(self.buffer) < length + 1:\n                break\n            result.append(self.buffer[1:length + 1])\n            self.buffer = self.buffer[length + 1:]\n        return result\n"
+}

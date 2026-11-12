@@ -1,0 +1,27 @@
+{
+  "id": "task_028",
+  "repository": "repo",
+  "issue": "Merge configuration dictionaries recursively, with overrides winning only for supplied keys. Do not mutate or retain mutable aliases to either input, including nested lists. Scalars replace dictionaries.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "dev",
+  "editable": [
+    "merge.py",
+    "config.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

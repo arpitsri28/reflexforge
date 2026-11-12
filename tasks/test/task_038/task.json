@@ -1,0 +1,27 @@
+{
+  "id": "task_038",
+  "repository": "repo",
+  "issue": "Importing the registry must not eagerly import plugin implementations: plugins import registry.register, which currently causes a circular import. load_defaults() should explicitly import and register the builtin plugin idempotently. Missing names raise KeyError.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "test",
+  "editable": [
+    "registry.py",
+    "builtin_plugin.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

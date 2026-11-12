@@ -1,0 +1,3 @@
+{
+  "synchronizer.py": "from decoding import decode\nfrom protocol import BatchError\nclass Synchronizer:\n    def __init__(self,client,checkpoint,sink): self.client,self.checkpoint,self.sink=client,checkpoint,sink\n    def run(self,max_pages=None):\n        pages,processed=0,0\n        while not self.checkpoint.complete and (max_pages is None or pages<max_pages):\n            page=self.client.page(self.checkpoint.cursor)\n            self.checkpoint.advance(page['next'])\n            products=decode(page)\n            try: self.sink.apply(products)\n            except BatchError:\n                self.checkpoint.cursor=None;self.checkpoint.complete=False\n                raise\n            processed+=len(products)\n            pages+=1\n        return processed\n"
+}

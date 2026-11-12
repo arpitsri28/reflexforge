@@ -1,0 +1,5 @@
+steps:
+  - Inspect relevant source files.
+  - Reproduce the failure.
+  - Make a targeted change.
+  - Run tests, interpret failures, and retry within budget.

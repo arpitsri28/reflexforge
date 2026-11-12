@@ -1,0 +1,27 @@
+{
+  "id": "task_031",
+  "repository": "repo",
+  "issue": "Router matching must prefer literal paths over parameter routes regardless of registration order. Parameter routes match exactly one nonempty segment, not extra segments. Unknown routes raise KeyError.",
+  "setup": "",
+  "reproduction": "python test_visible.py",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "dev",
+  "editable": [
+    "routing.py",
+    "app.py"
+  ],
+  "budget": {
+    "max_steps": 20,
+    "wall_seconds": 180,
+    "command_seconds": 20,
+    "max_tokens": 30000,
+    "response_tokens": 2048,
+    "retry_limit": 2
+  }
+}

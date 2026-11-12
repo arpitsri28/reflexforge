@@ -1,0 +1,3 @@
+{
+  "headers.py": "def bearer(value):\n    parts = value.split()\n    if len(parts) != 2 or parts[0].lower() != 'bearer': raise ValueError('invalid authorization')\n    return parts[1]\n"
+}

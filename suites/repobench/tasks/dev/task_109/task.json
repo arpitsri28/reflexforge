@@ -1,0 +1,32 @@
+{
+  "id": "task_109",
+  "repository": "repo",
+  "issue": "A failed worker-pool startup can leave allocated connections behind and prevents a later clean restart. Cleanup must attempt every acquired resource, even if another resource fails while closing.",
+  "setup": "",
+  "reproduction": "python -m unittest discover -s tests -v",
+  "hidden_test": "hidden.py",
+  "evaluation_command": [
+    "python",
+    "-I",
+    "/evaluation/hidden.py"
+  ],
+  "runtime": "python3.11",
+  "split": "dev",
+  "editable": [
+    "resources.py",
+    "cleanup.py",
+    "pool.py",
+    "worker.py",
+    "telemetry.py",
+    "configuration.py",
+    "application.py"
+  ],
+  "budget": {
+    "max_steps": 30,
+    "wall_seconds": 300,
+    "command_seconds": 30,
+    "max_tokens": 40000,
+    "response_tokens": 4096,
+    "retry_limit": 0
+  }
+}

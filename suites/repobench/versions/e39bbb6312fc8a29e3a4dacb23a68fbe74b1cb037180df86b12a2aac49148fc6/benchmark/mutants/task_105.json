@@ -1,0 +1,3 @@
+{
+  "transactions.py": "from contextlib import contextmanager\nfrom copy import deepcopy\nclass Transactions:\n    def __init__(self,store): self.store=store;self.snapshot=None;self.depth=0\n    @contextmanager\n    def begin(self):\n        snapshot=deepcopy(self.store.data)\n        self.depth+=1\n        try: yield self.store\n        except BaseException:\n            self.store.restore(snapshot)\n            raise\n        finally: self.depth-=1\n"
+}
