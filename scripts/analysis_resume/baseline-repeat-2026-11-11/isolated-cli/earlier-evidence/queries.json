@@ -1,0 +1,590 @@
+[
+  {
+    "database": "artifacts/benchmark/real/optimization.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM api_usage",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM benchmark_cells",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM experiments",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM iterations",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/real/optimization.sqlite3",
+    "query": "experiments",
+    "sql": "SELECT id,synthetic,settings,status FROM experiments ORDER BY id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/real/optimization.sqlite3",
+    "query": "cells",
+    "sql": "SELECT experiment_id,task_id,attempt,condition,status,result FROM benchmark_cells ORDER BY experiment_id,task_id,attempt,condition",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/real/optimization.sqlite3",
+    "query": "ledger",
+    "sql": "SELECT id,experiment_id,role,model,state,calls,tokens,usd,actual_usage FROM api_usage ORDER BY id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/04f46d7a076d4971a9742527625d015f/runs/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/04f46d7a076d4971a9742527625d015f/runs/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/04f46d7a076d4971a9742527625d015f/runs/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/04f46d7a076d4971a9742527625d015f/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "4b7ab881deaa4131a147e5c819ce4847"
+    ]
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/04f46d7a076d4971a9742527625d015f/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "82d67b5a6686470abab627fcb803c361"
+    ]
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/2508458d048f41489d1cc51cb6fea948/runs/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/2508458d048f41489d1cc51cb6fea948/runs/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/2508458d048f41489d1cc51cb6fea948/runs/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/2508458d048f41489d1cc51cb6fea948/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "2c1b9b2afdbf4039a7342df938ce154d"
+    ]
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/4972ba042dc742ccafece06b8faa9e10/runs/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/4972ba042dc742ccafece06b8faa9e10/runs/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/4972ba042dc742ccafece06b8faa9e10/runs/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/4972ba042dc742ccafece06b8faa9e10/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "3c8b62e363644b1ebdce1d45c9f6cbc3"
+    ]
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/4972ba042dc742ccafece06b8faa9e10/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "ae8edc2510374d48b4a1d355f2e7b3d7"
+    ]
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/9fd09c6ad0f14d74913bca37107588dd/runs/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/9fd09c6ad0f14d74913bca37107588dd/runs/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/9fd09c6ad0f14d74913bca37107588dd/runs/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/9fd09c6ad0f14d74913bca37107588dd/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "5563b7195e674d4f976e06f82442ec42"
+    ]
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/9fd09c6ad0f14d74913bca37107588dd/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "627b7c1a48954a358f1ead081f7d7e5c"
+    ]
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/a2ddb96e56e84f8f84da5d5f45bec36e/runs/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/a2ddb96e56e84f8f84da5d5f45bec36e/runs/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/a2ddb96e56e84f8f84da5d5f45bec36e/runs/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/a2ddb96e56e84f8f84da5d5f45bec36e/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "0ceca15b72ed462dae6dc513cfd5e714"
+    ]
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/a2ddb96e56e84f8f84da5d5f45bec36e/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "d46900b2ac5440e5a8ef72f4f9aadf82"
+    ]
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/runs/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/runs/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/runs/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "615a73ef14cb4c2889c5761fe12b63f6"
+    ]
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "74280291ac014bdd9007b61741b62256"
+    ]
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "c56d6a7f829f4fe498194a062eea982c"
+    ]
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "d74d7c721c9a42e3a4cb6e808145499e"
+    ]
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM api_usage",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM benchmark_cells",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM experiments",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM iterations",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "experiments",
+    "sql": "SELECT id,synthetic,settings,status FROM experiments ORDER BY id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "cells",
+    "sql": "SELECT experiment_id,task_id,attempt,condition,status,result FROM benchmark_cells ORDER BY experiment_id,task_id,attempt,condition",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "ledger",
+    "sql": "SELECT id,experiment_id,role,model,state,calls,tokens,usd,actual_usage FROM api_usage ORDER BY id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/synthetic/optimization.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/synthetic/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM api_usage",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/synthetic/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM benchmark_cells",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/synthetic/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM experiments",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/synthetic/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM iterations",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/synthetic/optimization.sqlite3",
+    "query": "experiments",
+    "sql": "SELECT id,synthetic,settings,status FROM experiments ORDER BY id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/benchmark/synthetic/optimization.sqlite3",
+    "query": "cells",
+    "sql": "SELECT experiment_id,task_id,attempt,condition,status,result FROM benchmark_cells ORDER BY experiment_id,task_id,attempt,condition",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "5080abaa511048f99b56c4b13890fb19"
+    ]
+  },
+  {
+    "database": "artifacts/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "7d725b546d714b63b4dafaaadab82aaf"
+    ]
+  },
+  {
+    "database": "artifacts/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "7f025393197640f983aafbcbe5f3b51f"
+    ]
+  },
+  {
+    "database": "artifacts/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "9537c4e6d7044b5195040d23a5957060"
+    ]
+  },
+  {
+    "database": "artifacts/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "b5078f56983d495188ca8866606ed363"
+    ]
+  },
+  {
+    "database": "artifacts/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "bab0d9c4f8c24bae8a934fd726df6d25"
+    ]
+  },
+  {
+    "database": "artifacts/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "d22411a6d6a34d948c3dcbde6c30c209"
+    ]
+  },
+  {
+    "database": "artifacts/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "fe12010a986641be82133c72df8a916c"
+    ]
+  },
+  {
+    "database": "artifacts/optimization/repobench/pilots/real/optimization.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/repobench/pilots/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM api_usage",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/repobench/pilots/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM experiments",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/repobench/pilots/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM iterations",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/repobench/pilots/real/optimization.sqlite3",
+    "query": "experiments",
+    "sql": "SELECT id,synthetic,settings,status FROM experiments ORDER BY id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/repobench/pilots/real/optimization.sqlite3",
+    "query": "ledger",
+    "sql": "SELECT id,experiment_id,role,model,state,calls,tokens,usd,actual_usage FROM api_usage ORDER BY id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/experiments/0fbf17255a1f41c0ba95c0c1c0e32eaa/runs/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/experiments/0fbf17255a1f41c0ba95c0c1c0e32eaa/runs/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/experiments/0fbf17255a1f41c0ba95c0c1c0e32eaa/runs/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/experiments/76985ecb89f54f1e8c3e8604f4b43de1/runs/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/experiments/76985ecb89f54f1e8c3e8604f4b43de1/runs/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/experiments/76985ecb89f54f1e8c3e8604f4b43de1/runs/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/experiments/bef5ca77ae8c4c4b9db0f98ef2ffbc1a/runs/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/experiments/bef5ca77ae8c4c4b9db0f98ef2ffbc1a/runs/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/experiments/bef5ca77ae8c4c4b9db0f98ef2ffbc1a/runs/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/experiments/d28e443f349a4313b4962006093bdad2/runs/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/experiments/d28e443f349a4313b4962006093bdad2/runs/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/experiments/d28e443f349a4313b4962006093bdad2/runs/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/experiments/d5447390e42e4d2cbdc516a02b0f8caa/runs/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/experiments/d5447390e42e4d2cbdc516a02b0f8caa/runs/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/experiments/d5447390e42e4d2cbdc516a02b0f8caa/runs/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/optimization.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM api_usage",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM experiments",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM iterations",
+    "parameters": []
+  },
+  {
+    "database": "artifacts/optimization/synthetic/optimization.sqlite3",
+    "query": "experiments",
+    "sql": "SELECT id,synthetic,settings,status FROM experiments ORDER BY id",
+    "parameters": []
+  }
+]

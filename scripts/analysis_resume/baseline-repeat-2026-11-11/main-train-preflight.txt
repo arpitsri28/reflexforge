@@ -1,0 +1,23 @@
+{
+  "suite": "repobench",
+  "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+  "tasks": [
+    "task_101",
+    "task_102",
+    "task_103",
+    "task_104",
+    "task_105",
+    "task_106"
+  ],
+  "previously_exposed_task_ids": [],
+  "paid_requests_made": false,
+  "scheduled_runs": 18,
+  "max_generation_requests": 360,
+  "max_http_calls_including_counting": 720,
+  "uncapped_token_reservations": 432000,
+  "overall_token_limit": 744000,
+  "bounded_token_upper_limit": 432000,
+  "potential_usd_upper_bound": 1.944,
+  "hard_usd_cap": 1.99,
+  "warning": "Reservation upper bounds are not measurements or a guarantee all scheduled runs fit."
+}

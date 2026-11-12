@@ -1,0 +1,31 @@
+{
+  "suite": "debug",
+  "bank_version": "d47b31353fc8ee339a3d293dc88b1f6861b1c6febe5e4e48d525bb1d84790e94",
+  "tasks": [
+    "task_002",
+    "task_019",
+    "task_020",
+    "task_021",
+    "task_022",
+    "task_023",
+    "task_024",
+    "task_025",
+    "task_026",
+    "task_028",
+    "task_029",
+    "task_031"
+  ],
+  "previously_exposed_task_ids": [
+    "task_002"
+  ],
+  "paid_requests_made": false,
+  "scheduled_runs": 36,
+  "max_generation_requests": 288,
+  "max_http_calls_including_counting": 576,
+  "uncapped_token_reservations": 288000,
+  "overall_token_limit": 744000,
+  "bounded_token_upper_limit": 288000,
+  "potential_usd_upper_bound": 1.296,
+  "hard_usd_cap": 1.99,
+  "warning": "Reservation upper bounds are not measurements or a guarantee all scheduled runs fit."
+}

@@ -1,0 +1,109 @@
+{
+  "train_process_exit_code": 130,
+  "cell_status_counts": {
+    "coding_failure": 11,
+    "solved": 3,
+    "infrastructure_failure": 1,
+    "interrupted": 1,
+    "pending": 2
+  },
+  "problem_runs": [
+    {
+      "run_id": "ff422b8278b34d3488970bb9494c4f42",
+      "task_id": "task_105",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "ff422b8278b34d3488970bb9494c4f42",
+        "task_id": "task_105",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "api_error",
+        "evaluation": "failed",
+        "failure_category": "api_failure",
+        "steps": 3,
+        "tool_calls": 3,
+        "reflection_retries": 0,
+        "input_tokens": 1880,
+        "output_tokens": 64,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.001698,
+        "wall_seconds": 26.405950375003158
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/ff422b8278b34d3488970bb9494c4f42.jsonl",
+      "errors": [
+        {
+          "schema_version": 1,
+          "run_id": "ff422b8278b34d3488970bb9494c4f42",
+          "time": 1794445068.21605,
+          "kind": "api_error",
+          "data": {
+            "phase": "count_tokens",
+            "type": "APIConnectionError",
+            "status_code": null
+          },
+          "line": 12
+        }
+      ],
+      "model_responses": 3,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "ff422b8278b34d3488970bb9494c4f42",
+          "time": 1794445071.413593,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 1,
+            "output": "RF_QA {\"details\": [\"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 29, in test_live_views_on_simple_rollback\\n    self.assertEqual(view['a'],20)\\nAssertionError: 1 != 20\\n\", \"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 10, in test_outer_rollback_restores_inner_commits\\n    self.assertEqual(view,{'a':20,'b':0});self.assertEqual(events,[])\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: {'a': 15, 'b': 5} != {'a': 20, 'b': 0}\\n- {'a': 15, 'b': 5}\\n?       ^^       ^\\n\\n+ {'a': 20, 'b': 0}\\n?       ^^       ^\\n\\n\", \"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 24, in test_fee_failure_is_atomic\\n    self.assertEqual(report(s),{'balances':{'a':20,'b':0},'audit':[]})\\n                     ^^^^^^^^^\\n  File \\\"/workspace/reporting.py\\\", line 2, in report\\n    return {'balances':dict(store.account_view()),'audit':list(store.audit_view())}\\n                            ^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/workspace/storage.py\\\", line 6, in account_view\\n    def account_view(self): return self.data['accounts']\\n                                   ~~~~~~~~~^^^^^^^^^^^^\\nTypeError: 'NoneType' object is not subscriptable\\n\", \"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 19, in test_inner_rollback_can_be_caught\\n    a.change('b',2)\\n  File \\\"/workspace/accounts.py\\\", line 5, in change\\n    balance=self.store.data['accounts'][name]+amount\\n            ~~~~~~~~~~~~~~~^^^^^^^^^^^^\\nTypeError: 'NoneType' object is not subscriptable\\n\"], \"errors\": [\"__main__.Contract.test_fee_failure_is_atomic\", \"__main__.Contract.test_inner_rollback_can_be_caught\"], \"failures\": [\"__main__.Contract.test_live_views_on_simple_rollback\", \"__main__.Contract.test_outer_rollback_restores_inner_commits\"], \"successful\": false, \"tests_run\": 5}\n"
+          },
+          "line": 14
+        }
+      ]
+    },
+    {
+      "run_id": "5f767ae17a5f4b04a83dd44412e9db85",
+      "task_id": "task_106",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "5f767ae17a5f4b04a83dd44412e9db85",
+        "task_id": "task_106",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "interrupted",
+        "evaluation": "not_run",
+        "failure_category": "interrupted",
+        "steps": 6,
+        "tool_calls": 6,
+        "reflection_retries": 0,
+        "input_tokens": 5433,
+        "output_tokens": 125,
+        "cached_input_tokens": 1024,
+        "reasoning_tokens": 0,
+        "usage_incomplete": true,
+        "unconfirmed_tokens": 3541,
+        "cost_usd": null,
+        "wall_seconds": 71.00196850000066
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/5f767ae17a5f4b04a83dd44412e9db85.jsonl",
+      "errors": [],
+      "model_responses": 6,
+      "evaluation": []
+    }
+  ],
+  "cumulative_usage_priced_usd": "0.27164400",
+  "cumulative_ledger_with_reservations_usd": "0.28197975",
+  "stop_reasons": [
+    "train: infrastructure or unevaluated cell; inspect before continuing",
+    "train: uncertain usage"
+  ],
+  "originals_unchanged": true,
+  "dev_started": false
+}

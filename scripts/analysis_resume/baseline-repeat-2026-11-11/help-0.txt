@@ -1,0 +1,19 @@
+                                                                                
+ Usage: reflexforge benchmark [OPTIONS] COMMAND [ARGS]...                       
+                                                                                
+ Versioned fixtures and bounded baseline experiments.                           
+                                                                                
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --help          Show this message and exit.                                  │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Commands ───────────────────────────────────────────────────────────────────╮
+│ posthoc-evaluate  Evaluate trace-reconstructed edits offline; preserve       │
+│                   original experiment records.                               │
+│ list                                                                         │
+│ validate                                                                     │
+│ preflight                                                                    │
+│ run                                                                          │
+│ report                                                                       │
+│ compare                                                                      │
+╰──────────────────────────────────────────────────────────────────────────────╯
+

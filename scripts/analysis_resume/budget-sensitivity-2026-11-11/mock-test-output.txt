@@ -1,0 +1,7 @@
+test_free_preflight_never_constructs_clients (__main__.LauncherChecks.test_free_preflight_never_constructs_clients) ... ok
+test_mocked_full_internal_path_records_cli_shape_and_shared_ledger (__main__.LauncherChecks.test_mocked_full_internal_path_records_cli_shape_and_shared_ledger) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.358s
+
+OK

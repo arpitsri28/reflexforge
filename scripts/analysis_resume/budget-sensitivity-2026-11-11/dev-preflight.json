@@ -1,0 +1,57 @@
+{
+  "kind": "budget_sensitivity_not_candidate",
+  "paid_requests_made": false,
+  "root": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7",
+  "study_id": "f662545866a9481a9e9c94477d8a6d5e",
+  "tasks": {
+    "dev": [
+      "task_108"
+    ]
+  },
+  "only_changed_worker_field": {
+    "max_tokens": {
+      "before": 24000,
+      "after": 40000
+    }
+  },
+  "worker_budget": {
+    "max_steps": 20,
+    "wall_seconds": 240,
+    "command_seconds": 30,
+    "max_tokens": 40000,
+    "response_tokens": 2048,
+    "retry_limit": 0
+  },
+  "model": "gpt-5.4-mini",
+  "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+  "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+  "frozen_config": "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/configs/static",
+  "all_copy_hashes_match": true,
+  "existing_qa_matches": true,
+  "shared_ledger_used": {
+    "api_calls": 88,
+    "tokens": 70544,
+    "usd_upper_bound": "0.06100425",
+    "uncertain": false
+  },
+  "bounds": {
+    "paid_requests_made": false,
+    "scheduled_runs": 1,
+    "max_generation_requests": 20,
+    "max_http_calls_including_counting": 40,
+    "uncapped_token_reservations": 40000,
+    "overall_token_limit": 160000,
+    "bounded_token_upper_limit": 40000,
+    "potential_usd_upper_bound": 0.18,
+    "hard_usd_cap": 0.4,
+    "warning": "Reservation upper bounds are not measurements or a guarantee all scheduled runs fit."
+  },
+  "baseline_plus_study_cap_usd_upper_bound": "0.97558900",
+  "caveats": [
+    "This is a budget-sensitivity study, not a candidate.",
+    "One new attempt per selected task cannot establish a causal cap effect.",
+    "Step/time limits stay unchanged and may bind next.",
+    "Actual spending forecast is not available; USD bound is ledger pricing, not an invoice."
+  ],
+  "plan_sha256": "732e4b81c331edbe9e9805663489e1682a2707ecc1f3db84c5545acbe3b1b8f5"
+}

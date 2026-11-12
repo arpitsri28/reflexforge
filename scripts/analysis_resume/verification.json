@@ -1,0 +1,13 @@
+{
+  "identical_regeneration": true,
+  "input_hashes_unchanged": true,
+  "sqlite_trace_inventory_ids_reconcile": true,
+  "heldout_outcomes_excluded": true,
+  "worker_ledger_assignment_complete_and_unique": true,
+  "outputs_sha256": {
+    "docs/resume-stats.md": "f6b42f2a18756b19c72a468fa88fe4f644e1388574170666ac23d416fe118334",
+    "scripts/analysis_resume/evidence.json": "8eda5b8dbe2f675b9ac61df9afa6e30cff65222ed30461ea5288121b0cf152be",
+    "scripts/analysis_resume/queries.json": "f91d637cfb8cf1533111cbe75b6e0f231bf40f2457768215c8e2241a1abd0bb7"
+  },
+  "verification_sql": "SELECT run_id FROM runs"
+}

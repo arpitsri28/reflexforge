@@ -1,0 +1,25 @@
+{
+  "stage": "train-recovery-106",
+  "root": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train-recovery-106",
+  "command": "env PYTHONDONTWRITEBYTECODE=1 OPENAI_MODEL=gpt-5.4-mini REFLEXFORGE_IMAGE=sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3 REFLEXFORGE_INPUT_PRICE=0.75 REFLEXFORGE_OUTPUT_PRICE=4.5 /Users/arpitsrivastav/Desktop/swe_agent/.venv/bin/reflexforge benchmark preflight --root /private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train-recovery-106 --suite repobench --split train --tasks task_106 --conditions static --attempts 3 --bank-version e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6 --max-tokens 90000 --max-api-calls 150 --max-usd 0.55",
+  "stdout": "{\n  \"suite\": \"repobench\",\n  \"bank_version\": \"e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6\",\n  \"tasks\": [\n    \"task_106\"\n  ],\n  \"previously_exposed_task_ids\": [],\n  \"paid_requests_made\": false,\n  \"scheduled_runs\": 3,\n  \"max_generation_requests\": 60,\n  \"max_http_calls_including_counting\": 120,\n  \"uncapped_token_reservations\": 72000,\n  \"overall_token_limit\": 90000,\n  \"bounded_token_upper_limit\": 72000,\n  \"potential_usd_upper_bound\": 0.324,\n  \"hard_usd_cap\": 0.55,\n  \"warning\": \"Reservation upper bounds are not measurements or a guarantee all scheduled runs fit.\"\n}\n",
+  "paid_command_pending_approval": "env PYTHONDONTWRITEBYTECODE=1 OPENAI_MODEL=gpt-5.4-mini REFLEXFORGE_IMAGE=sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3 REFLEXFORGE_INPUT_PRICE=0.75 REFLEXFORGE_OUTPUT_PRICE=4.5 /Users/arpitsrivastav/Desktop/swe_agent/.venv/bin/reflexforge benchmark run --root /private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train-recovery-106 --suite repobench --split train --tasks task_106 --conditions static --attempts 3 --bank-version e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6 --max-tokens 90000 --max-api-calls 150 --max-usd 0.55 --config /Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/configs/static",
+  "preflight": {
+    "suite": "repobench",
+    "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+    "tasks": [
+      "task_106"
+    ],
+    "previously_exposed_task_ids": [],
+    "paid_requests_made": false,
+    "scheduled_runs": 3,
+    "max_generation_requests": 60,
+    "max_http_calls_including_counting": 120,
+    "uncapped_token_reservations": 72000,
+    "overall_token_limit": 90000,
+    "bounded_token_upper_limit": 72000,
+    "potential_usd_upper_bound": 0.324,
+    "hard_usd_cap": 0.55,
+    "warning": "Reservation upper bounds are not measurements or a guarantee all scheduled runs fit."
+  }
+}

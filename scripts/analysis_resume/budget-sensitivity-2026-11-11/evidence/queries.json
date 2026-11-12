@@ -1,0 +1,154 @@
+[
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/experiments/2c053c0826354176b9ca011dfc56825a/runs/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/experiments/2c053c0826354176b9ca011dfc56825a/runs/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/experiments/2c053c0826354176b9ca011dfc56825a/runs/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/experiments/2c053c0826354176b9ca011dfc56825a/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "02992dd178834cdf967342f31bdaada9"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/experiments/2c053c0826354176b9ca011dfc56825a/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "1b2f328329fd4a10b66cf7ad85621c70"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/experiments/2c053c0826354176b9ca011dfc56825a/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "573fefccca5448069040a71545e1a5f8"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/experiments/7ca29a61271a4c8a9c81a135e13316ec/runs/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/experiments/7ca29a61271a4c8a9c81a135e13316ec/runs/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/experiments/7ca29a61271a4c8a9c81a135e13316ec/runs/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/experiments/7ca29a61271a4c8a9c81a135e13316ec/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "a19c9f85267c4a0982c97b2c7180d338"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM api_usage",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM benchmark_cells",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM experiments",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM iterations",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "experiments",
+    "sql": "SELECT id,synthetic,settings,status FROM experiments ORDER BY id",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "cells",
+    "sql": "SELECT experiment_id,task_id,attempt,condition,status,result FROM benchmark_cells ORDER BY experiment_id,task_id,attempt,condition",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "ledger",
+    "sql": "SELECT id,experiment_id,role,model,state,calls,tokens,usd,actual_usage FROM api_usage ORDER BY id",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/budget-sensitivity-ledger/optimization.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/budget-sensitivity-ledger/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM api_usage",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/budget-sensitivity-ledger/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM experiments",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/budget-sensitivity-ledger/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM iterations",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/budget-sensitivity-ledger/optimization.sqlite3",
+    "query": "experiments",
+    "sql": "SELECT id,synthetic,settings,status FROM experiments ORDER BY id",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/budget-sensitivity-ledger/optimization.sqlite3",
+    "query": "ledger",
+    "sql": "SELECT id,experiment_id,role,model,state,calls,tokens,usd,actual_usage FROM api_usage ORDER BY id",
+    "parameters": []
+  }
+]

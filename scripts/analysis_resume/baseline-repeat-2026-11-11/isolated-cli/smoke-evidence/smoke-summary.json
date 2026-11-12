@@ -1,0 +1,105 @@
+{
+  "experiment_id": "d5b74481d41740db9370336444b91b9e",
+  "run_id": "cfc3ddaf960d4af283863b0fa7da7628",
+  "task": "task_101",
+  "evaluation": "failed",
+  "checks_passed": 5,
+  "checks_total": 6,
+  "failed_checks": [
+    "__main__.Contract.test_account_and_key_delimiters_do_not_alias"
+  ],
+  "termination": "token_limit",
+  "visible": {
+    "line": 41,
+    "exit_code": 1,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "visible_fresh": false,
+  "tokens": 22066,
+  "tool_calls": 14,
+  "wall_seconds": 32.17421062500216,
+  "api_calls": 29,
+  "generation_requests": 14,
+  "count_requests": 15,
+  "ledger_usd": "0.01939950",
+  "root_ledgers": [
+    {
+      "label": "dev",
+      "root": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/dev",
+      "ledger_rows": 0,
+      "api_calls": 0,
+      "tokens": 0,
+      "ledger_usd": "0",
+      "usage_priced_usd": "0",
+      "uncertain": false
+    },
+    {
+      "label": "preserved-failed-smoke",
+      "root": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke",
+      "ledger_rows": 0,
+      "api_calls": 0,
+      "tokens": 0,
+      "ledger_usd": "0",
+      "usage_priced_usd": "0",
+      "uncertain": false
+    },
+    {
+      "label": "smoke-retry",
+      "root": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01",
+      "ledger_rows": 29,
+      "api_calls": 29,
+      "tokens": 22066,
+      "ledger_usd": "0.01939950",
+      "usage_priced_usd": "0.01939950",
+      "uncertain": false
+    },
+    {
+      "label": "train",
+      "root": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train",
+      "ledger_rows": 0,
+      "api_calls": 0,
+      "tokens": 0,
+      "ledger_usd": "0",
+      "usage_priced_usd": "0",
+      "uncertain": false
+    }
+  ],
+  "cumulative_ledger_usd": "0.01939950",
+  "global_budget_stops": 0,
+  "same_analyzer_parser_succeeded": true,
+  "issues": [],
+  "reconciliation": {
+    "sqlite_runs": 1,
+    "trace_files": 1,
+    "trace_ids": 1,
+    "trace_only": [],
+    "sqlite_only": []
+  },
+  "ledger_queries": [
+    {
+      "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+      "sql": "SELECT * FROM api_usage ORDER BY id"
+    },
+    {
+      "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+      "sql": "SELECT * FROM experiments ORDER BY id"
+    },
+    {
+      "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+      "sql": "SELECT * FROM benchmark_cells ORDER BY experiment_id,task_id,attempt,condition"
+    },
+    {
+      "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01/artifacts/benchmark/repobench/real/optimization.sqlite3",
+      "sql": "SELECT * FROM api_usage ORDER BY id"
+    },
+    {
+      "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01/artifacts/benchmark/repobench/real/optimization.sqlite3",
+      "sql": "SELECT * FROM experiments ORDER BY id"
+    },
+    {
+      "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01/artifacts/benchmark/repobench/real/optimization.sqlite3",
+      "sql": "SELECT * FROM benchmark_cells ORDER BY experiment_id,task_id,attempt,condition"
+    }
+  ],
+  "originals_input_copies_and_failed_root_unchanged": true
+}

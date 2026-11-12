@@ -1,0 +1,18 @@
+                                                                                
+ Usage: reflexforge benchmark preflight [OPTIONS]                               
+                                                                                
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --root                 <path>   [default:                                    │
+│                                 /Users/arpitsrivastav/Desktop/swe_agent]     │
+│ --split                <str>    [default: train]                             │
+│ --tasks                <str>                                                 │
+│ --conditions           <str>    [default: static]                            │
+│ --attempts             <int>    [default: 1]                                 │
+│ --max-api-calls        <int>    [default: 40]                                │
+│ --max-tokens           <int>    [default: 30000]                             │
+│ --max-usd              <float>                                               │
+│ --bank-version         <str>                                                 │
+│ --suite                <str>    [default: debug]                             │
+│ --help                          Show this message and exit.                  │
+╰──────────────────────────────────────────────────────────────────────────────╯
+

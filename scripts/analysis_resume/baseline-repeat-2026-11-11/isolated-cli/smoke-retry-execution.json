@@ -1,0 +1,18 @@
+{
+  "fresh_preflight": {
+    "chunk_id": "25f68c",
+    "wall_time_seconds": 0.934985917,
+    "exit_code": 0,
+    "original_token_count": 147,
+    "output": "{\n  \"suite\": \"repobench\",\n  \"bank_version\": \"e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6\",\n  \"tasks\": [\n    \"task_101\"\n  ],\n  \"previously_exposed_task_ids\": [],\n  \"paid_requests_made\": false,\n  \"scheduled_runs\": 1,\n  \"max_generation_requests\": 20,\n  \"max_http_calls_including_counting\": 40,\n  \"uncapped_token_reservations\": 24000,\n  \"overall_token_limit\": 30000,\n  \"bounded_token_upper_limit\": 24000,\n  \"potential_usd_upper_bound\": 0.108,\n  \"hard_usd_cap\": 0.2,\n  \"warning\": \"Reservation upper bounds are not measurements or a guarantee all scheduled runs fit.\"\n}\n"
+  },
+  "paid_command": "env PYTHONDONTWRITEBYTECODE=1 OPENAI_MODEL=gpt-5.4-mini REFLEXFORGE_IMAGE=sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3 REFLEXFORGE_INPUT_PRICE=0.75 REFLEXFORGE_OUTPUT_PRICE=4.5 /Users/arpitsrivastav/Desktop/swe_agent/.venv/bin/reflexforge benchmark run --root /private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01 --suite repobench --split train --tasks task_101 --conditions static --attempts 1 --bank-version e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6 --max-tokens 30000 --max-api-calls 50 --max-usd 0.20 --config /Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/configs/static",
+  "initial_process": {
+    "chunk_id": "4fb7ca",
+    "wall_time_seconds": 1.00262225,
+    "session_id": 62323,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "approval": "User: just run it dont worry about the costs i think it will be good enough; executed smoke only with unchanged caps"
+}

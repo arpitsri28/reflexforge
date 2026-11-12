@@ -1,0 +1,12 @@
+{
+  "identical_regeneration": true,
+  "input_hashes_unchanged": true,
+  "sqlite_trace_inventory_ids_reconcile": true,
+  "heldout_outcomes_excluded": true,
+  "worker_ledger_assignment_complete_and_unique": true,
+  "outputs_sha256": {
+    "scripts/analysis_resume/budget-sensitivity-2026-11-11/evidence/evidence.json": "4a3bb189be6c03972309dc178cbb5ca7dce6a440b608f2c09f323aa08bbf8a04",
+    "scripts/analysis_resume/budget-sensitivity-2026-11-11/evidence/queries.json": "eb66adc3bf418b29dc9a94bbd0c0b48cc378dc0793552fc6e849846deeb4c0bf"
+  },
+  "verification_sql": "SELECT run_id FROM runs"
+}

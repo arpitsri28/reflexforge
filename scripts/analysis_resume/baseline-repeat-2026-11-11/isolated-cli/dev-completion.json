@@ -1,0 +1,7 @@
+{
+  "chunk_id": "05eb1a",
+  "wall_time_seconds": 16.497820042,
+  "exit_code": 0,
+  "original_token_count": 99,
+  "output": "{\n  \"experiment_id\": \"fb548dc9ce8542f78aa13eb3360de42b\",\n  \"suite\": \"repobench\",\n  \"synthetic\": false,\n  \"status\": \"finished\",\n  \"bank_version\": \"e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6\",\n  \"previously_exposed_task_ids\": [],\n  \"usage\": {\n    \"api_calls\": 359,\n    \"tokens\": 264838,\n    \"usd_upper_bound\": 0.22354350000000014,\n    \"uncertain\": false\n  },\n  \"cells\": 12\n}\n"
+}

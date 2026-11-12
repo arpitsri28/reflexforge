@@ -1,0 +1,390 @@
+Wrote /Users/arpitsrivastav/Desktop/swe_agent/scripts/analysis_resume/baseline-repeat-2026-11-11/isolated-cli/earlier-evidence/evidence.json; 22 real runs, 21 non-test runs; 1 disclosed issues
+{
+  "identical_regeneration": true,
+  "input_hashes_unchanged": true,
+  "sqlite_trace_inventory_ids_reconcile": true,
+  "heldout_outcomes_excluded": true,
+  "worker_ledger_assignment_complete_and_unique": true,
+  "outputs_sha256": {
+    "scripts/analysis_resume/baseline-repeat-2026-11-11/isolated-cli/earlier-evidence/evidence.json": "f24722fe8f29a84d515ba24d9c368aaaf46497698874b2e547d63e6ee904e623",
+    "scripts/analysis_resume/baseline-repeat-2026-11-11/isolated-cli/earlier-evidence/queries.json": "f91d637cfb8cf1533111cbe75b6e0f231bf40f2457768215c8e2241a1abd0bb7"
+  },
+  "verification_sql": "SELECT run_id FROM runs"
+}
+Wrote /Users/arpitsrivastav/Desktop/swe_agent/scripts/analysis_resume/baseline-repeat-2026-11-11/isolated-cli/repeat-evidence/evidence.json; 33 real runs, 33 non-test runs; 2 disclosed issues
+{
+  "identical_regeneration": true,
+  "input_hashes_unchanged": true,
+  "sqlite_trace_inventory_ids_reconcile": true,
+  "heldout_outcomes_excluded": true,
+  "worker_ledger_assignment_complete_and_unique": true,
+  "outputs_sha256": {
+    "scripts/analysis_resume/baseline-repeat-2026-11-11/isolated-cli/repeat-evidence/evidence.json": "e12d315b0842dddfa6598b07ee03a4549c1db88691b56873877dffc726fdeba0",
+    "scripts/analysis_resume/baseline-repeat-2026-11-11/isolated-cli/repeat-evidence/queries.json": "87ace5fe107f2f183053d4d901e4737b15b8646f61e3082962e748d1180e0974"
+  },
+  "verification_sql": "SELECT run_id FROM runs"
+}
+Wrote /Users/arpitsrivastav/Desktop/swe_agent/scripts/analysis_resume/baseline-repeat-2026-11-11/isolated-cli/earlier-evidence/evidence.json; 22 real runs, 21 non-test runs; 1 disclosed issues
+Wrote /Users/arpitsrivastav/Desktop/swe_agent/scripts/analysis_resume/baseline-repeat-2026-11-11/isolated-cli/repeat-evidence/evidence.json; 33 real runs, 33 non-test runs; 2 disclosed issues
+Wrote /Users/arpitsrivastav/Desktop/swe_agent/scripts/analysis_resume/baseline-repeat-2026-11-11/isolated-cli/earlier-evidence/evidence.json; 22 real runs, 21 non-test runs; 1 disclosed issues
+Wrote /Users/arpitsrivastav/Desktop/swe_agent/scripts/analysis_resume/baseline-repeat-2026-11-11/isolated-cli/repeat-evidence/evidence.json; 33 real runs, 33 non-test runs; 2 disclosed issues
+{
+  "main_runs": 30,
+  "tasks": 10,
+  "inconsistent_tasks": [],
+  "rates": {
+    "New main (train+dev; smoke excluded)": {
+      "success": {
+        "numerator": 12,
+        "denominator": 30,
+        "wilson": "12/30 = 40% (95% Wilson 24.59\u201357.67%)",
+        "bootstrap": {
+          "tasks": 10,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0.1",
+          "upper": "0.7",
+          "interval": "10\u201370%"
+        }
+      },
+      "false_given_visible_pass": {
+        "numerator": 14,
+        "denominator": 26,
+        "wilson": "14/26 = 53.84% (95% Wilson 35.45\u201371.24%)",
+        "bootstrap": {
+          "tasks": 10,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0.2222222222222222222222222222",
+          "upper": "0.875",
+          "interval": "22.22\u201387.5%"
+        }
+      },
+      "false_over_comparable": {
+        "numerator": 14,
+        "denominator": 27,
+        "wilson": "14/27 = 51.85% (95% Wilson 33.98\u201369.25%)",
+        "bootstrap": {
+          "tasks": 10,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0.2222222222222222222222222222",
+          "upper": "0.8275862068965517241379310345",
+          "interval": "22.22\u201382.75%"
+        }
+      }
+    },
+    "New train": {
+      "success": {
+        "numerator": 6,
+        "denominator": 18,
+        "wilson": "6/18 = 33.33% (95% Wilson 16.27\u201356.25%)",
+        "bootstrap": {
+          "tasks": 6,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0",
+          "upper": "0.6666666666666666666666666667",
+          "interval": "0\u201366.66%"
+        }
+      },
+      "false_given_visible_pass": {
+        "numerator": 8,
+        "denominator": 14,
+        "wilson": "8/14 = 57.14% (95% Wilson 32.59\u201378.61%)",
+        "bootstrap": {
+          "tasks": 6,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0.2",
+          "upper": "1",
+          "interval": "20\u2013100%"
+        }
+      },
+      "false_over_comparable": {
+        "numerator": 8,
+        "denominator": 15,
+        "wilson": "8/15 = 53.33% (95% Wilson 30.11\u201375.19%)",
+        "bootstrap": {
+          "tasks": 6,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0.1875",
+          "upper": "0.9285714285714285714285714286",
+          "interval": "18.75\u201392.85%"
+        }
+      }
+    },
+    "New dev": {
+      "success": {
+        "numerator": 6,
+        "denominator": 12,
+        "wilson": "6/12 = 50% (95% Wilson 25.37\u201374.62%)",
+        "bootstrap": {
+          "tasks": 4,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0",
+          "upper": "1",
+          "interval": "0\u2013100%"
+        }
+      },
+      "false_given_visible_pass": {
+        "numerator": 6,
+        "denominator": 12,
+        "wilson": "6/12 = 50% (95% Wilson 25.37\u201374.62%)",
+        "bootstrap": {
+          "tasks": 4,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0",
+          "upper": "1",
+          "interval": "0\u2013100%"
+        }
+      },
+      "false_over_comparable": {
+        "numerator": 6,
+        "denominator": 12,
+        "wilson": "6/12 = 50% (95% Wilson 25.37\u201374.62%)",
+        "bootstrap": {
+          "tasks": 4,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0",
+          "upper": "1",
+          "interval": "0\u2013100%"
+        }
+      }
+    },
+    "New smoke (diagnostic)": {
+      "success": {
+        "numerator": 0,
+        "denominator": 1,
+        "wilson": "0/1 = 0% (95% Wilson 0\u201379.34%)",
+        "bootstrap": {
+          "tasks": 1,
+          "interval": "not available (fewer than two eligible task clusters)"
+        }
+      },
+      "false_given_visible_pass": {
+        "numerator": 0,
+        "denominator": 0,
+        "wilson": "not available (n=0)",
+        "bootstrap": {
+          "tasks": 0,
+          "interval": "not available (fewer than two eligible task clusters)"
+        }
+      },
+      "false_over_comparable": {
+        "numerator": 0,
+        "denominator": 0,
+        "wilson": "not available (n=0)",
+        "bootstrap": {
+          "tasks": 0,
+          "interval": "not available (fewer than two eligible task clusters)"
+        }
+      }
+    },
+    "All new (main+smoke)": {
+      "success": {
+        "numerator": 12,
+        "denominator": 31,
+        "wilson": "12/31 = 38.7% (95% Wilson 23.73\u201356.17%)",
+        "bootstrap": {
+          "tasks": 10,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0.09677419354838709677419354839",
+          "upper": "0.7",
+          "interval": "9.67\u201370%"
+        }
+      },
+      "false_given_visible_pass": {
+        "numerator": 14,
+        "denominator": 26,
+        "wilson": "14/26 = 53.84% (95% Wilson 35.45\u201371.24%)",
+        "bootstrap": {
+          "tasks": 10,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0.2222222222222222222222222222",
+          "upper": "0.875",
+          "interval": "22.22\u201387.5%"
+        }
+      },
+      "false_over_comparable": {
+        "numerator": 14,
+        "denominator": 27,
+        "wilson": "14/27 = 51.85% (95% Wilson 33.98\u201369.25%)",
+        "bootstrap": {
+          "tasks": 10,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0.2222222222222222222222222222",
+          "upper": "0.8275862068965517241379310345",
+          "interval": "22.22\u201382.75%"
+        }
+      }
+    },
+    "Earlier matched incumbent only": {
+      "success": {
+        "numerator": 3,
+        "denominator": 7,
+        "wilson": "3/7 = 42.85% (95% Wilson 15.82\u201374.95%)",
+        "bootstrap": {
+          "tasks": 7,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0.1428571428571428571428571429",
+          "upper": "0.8571428571428571428571428571",
+          "interval": "14.28\u201385.71%"
+        }
+      },
+      "false_given_visible_pass": {
+        "numerator": 3,
+        "denominator": 6,
+        "wilson": "3/6 = 50% (95% Wilson 18.76\u201381.23%)",
+        "bootstrap": {
+          "tasks": 6,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0.1666666666666666666666666667",
+          "upper": "0.8333333333333333333333333333",
+          "interval": "16.66\u201383.33%"
+        }
+      },
+      "false_over_comparable": {
+        "numerator": 3,
+        "denominator": 6,
+        "wilson": "3/6 = 50% (95% Wilson 18.76\u201381.23%)",
+        "bootstrap": {
+          "tasks": 6,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0.1666666666666666666666666667",
+          "upper": "0.8333333333333333333333333333",
+          "interval": "16.66\u201383.33%"
+        }
+      }
+    },
+    "POOLED earlier matched incumbent + all new": {
+      "success": {
+        "numerator": 15,
+        "denominator": 38,
+        "wilson": "15/38 = 39.47% (95% Wilson 25.59\u201355.28%)",
+        "bootstrap": {
+          "tasks": 10,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0.1025641025641025641025641026",
+          "upper": "0.7105263157894736842105263158",
+          "interval": "10.25\u201371.05%"
+        }
+      },
+      "false_given_visible_pass": {
+        "numerator": 17,
+        "denominator": 32,
+        "wilson": "17/32 = 53.12% (95% Wilson 36.44\u201369.13%)",
+        "bootstrap": {
+          "tasks": 10,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0.21875",
+          "upper": "0.8709677419354838709677419355",
+          "interval": "21.87\u201387.09%"
+        }
+      },
+      "false_over_comparable": {
+        "numerator": 17,
+        "denominator": 33,
+        "wilson": "17/33 = 51.51% (95% Wilson 35.21\u201367.49%)",
+        "bootstrap": {
+          "tasks": 10,
+          "resamples": 20000,
+          "seed": 2026,
+          "lower": "0.2121212121212121212121212121",
+          "upper": "0.8333333333333333333333333333",
+          "interval": "21.21\u201383.33%"
+        }
+      }
+    }
+  },
+  "root_ledgers": [
+    {
+      "label": "preserved-failed-smoke",
+      "root": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke",
+      "experiment_ids": [],
+      "ledger_rows": 0,
+      "api_calls": 0,
+      "tokens": 0,
+      "confirmed_tokens": 0,
+      "retained_token_reservations": 0,
+      "usd": "0"
+    },
+    {
+      "label": "smoke",
+      "root": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01",
+      "experiment_ids": [
+        "d5b74481d41740db9370336444b91b9e"
+      ],
+      "ledger_rows": 29,
+      "api_calls": 29,
+      "tokens": 22066,
+      "confirmed_tokens": 22066,
+      "retained_token_reservations": 0,
+      "usd": "0.01939950"
+    },
+    {
+      "label": "train",
+      "root": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train",
+      "experiment_ids": [
+        "39224a1b4f4a4efca4ce79742a7808fc"
+      ],
+      "ledger_rows": 407,
+      "api_calls": 407,
+      "tokens": 296082,
+      "confirmed_tokens": 292541,
+      "retained_token_reservations": 3541,
+      "usd": "0.26258025"
+    },
+    {
+      "label": "dev",
+      "root": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/dev",
+      "experiment_ids": [
+        "fb548dc9ce8542f78aa13eb3360de42b"
+      ],
+      "ledger_rows": 359,
+      "api_calls": 359,
+      "tokens": 264838,
+      "confirmed_tokens": 264838,
+      "retained_token_reservations": 0,
+      "usd": "0.22354350"
+    },
+    {
+      "label": "train-recovery-105",
+      "root": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train-recovery-105",
+      "experiment_ids": [
+        "abce8d2abbb84bbbb5422ac688c632be"
+      ],
+      "ledger_rows": 28,
+      "api_calls": 28,
+      "tokens": 20221,
+      "confirmed_tokens": 20221,
+      "retained_token_reservations": 0,
+      "usd": "0.01684575"
+    },
+    {
+      "label": "train-recovery-106",
+      "root": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train-recovery-106",
+      "experiment_ids": [
+        "65bee1f0088d4f22a396d46271062224"
+      ],
+      "ledger_rows": 82,
+      "api_calls": 82,
+      "tokens": 63550,
+      "confirmed_tokens": 63550,
+      "retained_token_reservations": 0,
+      "usd": "0.05322000"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "identical_regeneration": true,
+  "input_hashes_unchanged": true,
+  "sqlite_trace_inventory_ids_reconcile": true,
+  "heldout_outcomes_excluded": true,
+  "worker_ledger_assignment_complete_and_unique": true,
+  "outputs_sha256": {
+    "scripts/analysis_resume/baseline-repeat-2026-11-11/isolated-cli/earlier-evidence/evidence.json": "f24722fe8f29a84d515ba24d9c368aaaf46497698874b2e547d63e6ee904e623",
+    "scripts/analysis_resume/baseline-repeat-2026-11-11/isolated-cli/earlier-evidence/queries.json": "f91d637cfb8cf1533111cbe75b6e0f231bf40f2457768215c8e2241a1abd0bb7"
+  },
+  "verification_sql": "SELECT run_id FROM runs"
+}

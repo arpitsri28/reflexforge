@@ -1,0 +1,124 @@
+[
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM api_usage",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM benchmark_cells",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM experiments",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM iterations",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "experiments",
+    "sql": "SELECT id,synthetic,settings,status FROM experiments ORDER BY id",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "cells",
+    "sql": "SELECT experiment_id,task_id,attempt,condition,status,result FROM benchmark_cells ORDER BY experiment_id,task_id,attempt,condition",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "ledger",
+    "sql": "SELECT id,experiment_id,role,model,state,calls,tokens,usd,actual_usage FROM api_usage ORDER BY id",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01/artifacts/benchmark/repobench/real/experiments/d5b74481d41740db9370336444b91b9e/runs/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01/artifacts/benchmark/repobench/real/experiments/d5b74481d41740db9370336444b91b9e/runs/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01/artifacts/benchmark/repobench/real/experiments/d5b74481d41740db9370336444b91b9e/runs/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01/artifacts/benchmark/repobench/real/experiments/d5b74481d41740db9370336444b91b9e/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "cfc3ddaf960d4af283863b0fa7da7628"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM api_usage",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM benchmark_cells",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM experiments",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM iterations",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "experiments",
+    "sql": "SELECT id,synthetic,settings,status FROM experiments ORDER BY id",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "cells",
+    "sql": "SELECT experiment_id,task_id,attempt,condition,status,result FROM benchmark_cells ORDER BY experiment_id,task_id,attempt,condition",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke-retry-01/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "ledger",
+    "sql": "SELECT id,experiment_id,role,model,state,calls,tokens,usd,actual_usage FROM api_usage ORDER BY id",
+    "parameters": []
+  }
+]

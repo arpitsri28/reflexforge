@@ -1,0 +1,1427 @@
+{
+  "train_process_exit_code": 130,
+  "cells": [
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_101",
+      "attempt": 0,
+      "condition": "static",
+      "status": "coding_failure",
+      "result": {
+        "run_id": "5726d67e46994ee3b285b7e181e70578",
+        "task_id": "task_101",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "token_limit",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 14,
+        "reflection_retries": 0,
+        "input_tokens": 21785,
+        "output_tokens": 890,
+        "cached_input_tokens": 13952,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.010926149999999999,
+        "wall_seconds": 26.33443933300441,
+        "suite": "repobench",
+        "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+        "source_config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "execution_budget": {
+          "max_steps": 20,
+          "wall_seconds": 240,
+          "command_seconds": 30,
+          "max_tokens": 24000,
+          "response_tokens": 2048,
+          "retry_limit": 0
+        },
+        "condition": "static",
+        "attempt": 0,
+        "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3"
+      }
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_101",
+      "attempt": 1,
+      "condition": "static",
+      "status": "coding_failure",
+      "result": {
+        "run_id": "7ae6fd18b48944a798971386568872a3",
+        "task_id": "task_101",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "token_limit",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 14,
+        "reflection_retries": 0,
+        "input_tokens": 21785,
+        "output_tokens": 890,
+        "cached_input_tokens": 16640,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.00911175,
+        "wall_seconds": 30.153487458999734,
+        "suite": "repobench",
+        "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+        "source_config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "execution_budget": {
+          "max_steps": 20,
+          "wall_seconds": 240,
+          "command_seconds": 30,
+          "max_tokens": 24000,
+          "response_tokens": 2048,
+          "retry_limit": 0
+        },
+        "condition": "static",
+        "attempt": 1,
+        "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3"
+      }
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_101",
+      "attempt": 2,
+      "condition": "static",
+      "status": "coding_failure",
+      "result": {
+        "run_id": "9ef916ecde2d4deb8b50d3228a34fc88",
+        "task_id": "task_101",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 13,
+        "reflection_retries": 0,
+        "input_tokens": 21171,
+        "output_tokens": 629,
+        "cached_input_tokens": 13312,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.00972315,
+        "wall_seconds": 24.790707041989663,
+        "suite": "repobench",
+        "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+        "source_config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "execution_budget": {
+          "max_steps": 20,
+          "wall_seconds": 240,
+          "command_seconds": 30,
+          "max_tokens": 24000,
+          "response_tokens": 2048,
+          "retry_limit": 0
+        },
+        "condition": "static",
+        "attempt": 2,
+        "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3"
+      }
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_102",
+      "attempt": 0,
+      "condition": "static",
+      "status": "coding_failure",
+      "result": {
+        "run_id": "e614495c758348ba93a1d35753d09c86",
+        "task_id": "task_102",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 13,
+        "reflection_retries": 0,
+        "input_tokens": 21733,
+        "output_tokens": 715,
+        "cached_input_tokens": 14720,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.00958125,
+        "wall_seconds": 27.83034637500532,
+        "suite": "repobench",
+        "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+        "source_config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "execution_budget": {
+          "max_steps": 20,
+          "wall_seconds": 240,
+          "command_seconds": 30,
+          "max_tokens": 24000,
+          "response_tokens": 2048,
+          "retry_limit": 0
+        },
+        "condition": "static",
+        "attempt": 0,
+        "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3"
+      }
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_102",
+      "attempt": 1,
+      "condition": "static",
+      "status": "coding_failure",
+      "result": {
+        "run_id": "ac14a34549944006b1cec351fcc63816",
+        "task_id": "task_102",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 13,
+        "reflection_retries": 0,
+        "input_tokens": 21617,
+        "output_tokens": 518,
+        "cached_input_tokens": 14848,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.00852135,
+        "wall_seconds": 25.322940165991895,
+        "suite": "repobench",
+        "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+        "source_config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "execution_budget": {
+          "max_steps": 20,
+          "wall_seconds": 240,
+          "command_seconds": 30,
+          "max_tokens": 24000,
+          "response_tokens": 2048,
+          "retry_limit": 0
+        },
+        "condition": "static",
+        "attempt": 1,
+        "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3"
+      }
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_102",
+      "attempt": 2,
+      "condition": "static",
+      "status": "coding_failure",
+      "result": {
+        "run_id": "ed9329f3545e4dd481b3136932d6e350",
+        "task_id": "task_102",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "token_limit",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 14,
+        "reflection_retries": 0,
+        "input_tokens": 21370,
+        "output_tokens": 627,
+        "cached_input_tokens": 16512,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0077034,
+        "wall_seconds": 22.940834624998388,
+        "suite": "repobench",
+        "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+        "source_config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "execution_budget": {
+          "max_steps": 20,
+          "wall_seconds": 240,
+          "command_seconds": 30,
+          "max_tokens": 24000,
+          "response_tokens": 2048,
+          "retry_limit": 0
+        },
+        "condition": "static",
+        "attempt": 2,
+        "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3"
+      }
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_103",
+      "attempt": 0,
+      "condition": "static",
+      "status": "solved",
+      "result": {
+        "run_id": "a7e3f4622e304f85a02876ebfe82af81",
+        "task_id": "task_103",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "passed",
+        "failure_category": null,
+        "steps": 11,
+        "tool_calls": 10,
+        "reflection_retries": 0,
+        "input_tokens": 13154,
+        "output_tokens": 403,
+        "cached_input_tokens": 6784,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0070998,
+        "wall_seconds": 20.98684549999598,
+        "suite": "repobench",
+        "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+        "source_config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "execution_budget": {
+          "max_steps": 20,
+          "wall_seconds": 240,
+          "command_seconds": 30,
+          "max_tokens": 24000,
+          "response_tokens": 2048,
+          "retry_limit": 0
+        },
+        "condition": "static",
+        "attempt": 0,
+        "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3"
+      }
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_103",
+      "attempt": 1,
+      "condition": "static",
+      "status": "solved",
+      "result": {
+        "run_id": "6eda1e3d57b94ebab12b832142db5d92",
+        "task_id": "task_103",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "passed",
+        "failure_category": null,
+        "steps": 11,
+        "tool_calls": 10,
+        "reflection_retries": 0,
+        "input_tokens": 13154,
+        "output_tokens": 403,
+        "cached_input_tokens": 8576,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0058902,
+        "wall_seconds": 17.581786832990474,
+        "suite": "repobench",
+        "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+        "source_config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "execution_budget": {
+          "max_steps": 20,
+          "wall_seconds": 240,
+          "command_seconds": 30,
+          "max_tokens": 24000,
+          "response_tokens": 2048,
+          "retry_limit": 0
+        },
+        "condition": "static",
+        "attempt": 1,
+        "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3"
+      }
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_103",
+      "attempt": 2,
+      "condition": "static",
+      "status": "solved",
+      "result": {
+        "run_id": "09253c5a368844cf9d77c35c140195cc",
+        "task_id": "task_103",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "passed",
+        "failure_category": null,
+        "steps": 13,
+        "tool_calls": 12,
+        "reflection_retries": 0,
+        "input_tokens": 17076,
+        "output_tokens": 459,
+        "cached_input_tokens": 11008,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0074421,
+        "wall_seconds": 22.68701070798852,
+        "suite": "repobench",
+        "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+        "source_config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "execution_budget": {
+          "max_steps": 20,
+          "wall_seconds": 240,
+          "command_seconds": 30,
+          "max_tokens": 24000,
+          "response_tokens": 2048,
+          "retry_limit": 0
+        },
+        "condition": "static",
+        "attempt": 2,
+        "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3"
+      }
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_104",
+      "attempt": 0,
+      "condition": "static",
+      "status": "coding_failure",
+      "result": {
+        "run_id": "7041ec217e5a45d79c02313b89c44f3a",
+        "task_id": "task_104",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "token_limit",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 15,
+        "tool_calls": 15,
+        "reflection_retries": 0,
+        "input_tokens": 23004,
+        "output_tokens": 744,
+        "cached_input_tokens": 15232,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0103194,
+        "wall_seconds": 27.17051379100303,
+        "suite": "repobench",
+        "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+        "source_config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "execution_budget": {
+          "max_steps": 20,
+          "wall_seconds": 240,
+          "command_seconds": 30,
+          "max_tokens": 24000,
+          "response_tokens": 2048,
+          "retry_limit": 0
+        },
+        "condition": "static",
+        "attempt": 0,
+        "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3"
+      }
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_104",
+      "attempt": 1,
+      "condition": "static",
+      "status": "coding_failure",
+      "result": {
+        "run_id": "e8cf721e2ca949038f6c9f26253a4b1b",
+        "task_id": "task_104",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "token_limit",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 14,
+        "reflection_retries": 0,
+        "input_tokens": 20550,
+        "output_tokens": 702,
+        "cached_input_tokens": 12928,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0098451,
+        "wall_seconds": 25.186939541992615,
+        "suite": "repobench",
+        "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+        "source_config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "execution_budget": {
+          "max_steps": 20,
+          "wall_seconds": 240,
+          "command_seconds": 30,
+          "max_tokens": 24000,
+          "response_tokens": 2048,
+          "retry_limit": 0
+        },
+        "condition": "static",
+        "attempt": 1,
+        "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3"
+      }
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_104",
+      "attempt": 2,
+      "condition": "static",
+      "status": "coding_failure",
+      "result": {
+        "run_id": "3de07b12161d43bf81523d3ca78f2876",
+        "task_id": "task_104",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "token_limit",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 14,
+        "reflection_retries": 0,
+        "input_tokens": 20520,
+        "output_tokens": 695,
+        "cached_input_tokens": 14848,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0084951,
+        "wall_seconds": 27.136122374999104,
+        "suite": "repobench",
+        "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+        "source_config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "execution_budget": {
+          "max_steps": 20,
+          "wall_seconds": 240,
+          "command_seconds": 30,
+          "max_tokens": 24000,
+          "response_tokens": 2048,
+          "retry_limit": 0
+        },
+        "condition": "static",
+        "attempt": 2,
+        "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3"
+      }
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_105",
+      "attempt": 0,
+      "condition": "static",
+      "status": "coding_failure",
+      "result": {
+        "run_id": "cec4abe1321642ef8d34ebb2db4cef8a",
+        "task_id": "task_105",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 13,
+        "reflection_retries": 0,
+        "input_tokens": 19773,
+        "output_tokens": 420,
+        "cached_input_tokens": 12288,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.00842535,
+        "wall_seconds": 24.18241887500335,
+        "suite": "repobench",
+        "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+        "source_config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "execution_budget": {
+          "max_steps": 20,
+          "wall_seconds": 240,
+          "command_seconds": 30,
+          "max_tokens": 24000,
+          "response_tokens": 2048,
+          "retry_limit": 0
+        },
+        "condition": "static",
+        "attempt": 0,
+        "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3"
+      }
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_105",
+      "attempt": 1,
+      "condition": "static",
+      "status": "coding_failure",
+      "result": {
+        "run_id": "ecdd76f2579c41a585b5b34cafe98010",
+        "task_id": "task_105",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 13,
+        "reflection_retries": 0,
+        "input_tokens": 19779,
+        "output_tokens": 473,
+        "cached_input_tokens": 13952,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.00754515,
+        "wall_seconds": 21.910088958000415,
+        "suite": "repobench",
+        "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+        "source_config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "execution_budget": {
+          "max_steps": 20,
+          "wall_seconds": 240,
+          "command_seconds": 30,
+          "max_tokens": 24000,
+          "response_tokens": 2048,
+          "retry_limit": 0
+        },
+        "condition": "static",
+        "attempt": 1,
+        "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3"
+      }
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_105",
+      "attempt": 2,
+      "condition": "static",
+      "status": "infrastructure_failure",
+      "result": {
+        "run_id": "ff422b8278b34d3488970bb9494c4f42",
+        "task_id": "task_105",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "api_error",
+        "evaluation": "failed",
+        "failure_category": "api_failure",
+        "steps": 3,
+        "tool_calls": 3,
+        "reflection_retries": 0,
+        "input_tokens": 1880,
+        "output_tokens": 64,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.001698,
+        "wall_seconds": 26.405950375003158,
+        "suite": "repobench",
+        "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+        "source_config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "execution_budget": {
+          "max_steps": 20,
+          "wall_seconds": 240,
+          "command_seconds": 30,
+          "max_tokens": 24000,
+          "response_tokens": 2048,
+          "retry_limit": 0
+        },
+        "condition": "static",
+        "attempt": 2,
+        "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3"
+      }
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_106",
+      "attempt": 0,
+      "condition": "static",
+      "status": "interrupted",
+      "result": null
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_106",
+      "attempt": 1,
+      "condition": "static",
+      "status": "pending",
+      "result": null
+    },
+    {
+      "experiment_id": "39224a1b4f4a4efca4ce79742a7808fc",
+      "task_id": "task_106",
+      "attempt": 2,
+      "condition": "static",
+      "status": "pending",
+      "result": null
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "5726d67e46994ee3b285b7e181e70578",
+      "task_id": "task_101",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "5726d67e46994ee3b285b7e181e70578",
+        "task_id": "task_101",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "token_limit",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 14,
+        "reflection_retries": 0,
+        "input_tokens": 21785,
+        "output_tokens": 890,
+        "cached_input_tokens": 13952,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.010926149999999999,
+        "wall_seconds": 26.33443933300441
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/5726d67e46994ee3b285b7e181e70578.jsonl",
+      "errors": [],
+      "model_responses": 14,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "5726d67e46994ee3b285b7e181e70578",
+          "time": 1794444726.874889,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 1,
+            "output": "RF_QA {\"details\": [\"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 41, in test_account_and_key_delimiters_do_not_alias\\n    self.assertEqual(len(g.charges),2)\\nAssertionError: 1 != 2\\n\"], \"errors\": [], \"failures\": [\"__main__.Contract.test_account_and_key_delimiters_do_not_alias\"], \"successful\": false, \"tests_run\": 6}\n"
+          },
+          "line": 46
+        }
+      ]
+    },
+    {
+      "run_id": "7ae6fd18b48944a798971386568872a3",
+      "task_id": "task_101",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "7ae6fd18b48944a798971386568872a3",
+        "task_id": "task_101",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "token_limit",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 14,
+        "reflection_retries": 0,
+        "input_tokens": 21785,
+        "output_tokens": 890,
+        "cached_input_tokens": 16640,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.00911175,
+        "wall_seconds": 30.153487458999734
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/7ae6fd18b48944a798971386568872a3.jsonl",
+      "errors": [],
+      "model_responses": 14,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "7ae6fd18b48944a798971386568872a3",
+          "time": 1794444757.041108,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 1,
+            "output": "RF_QA {\"details\": [\"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 41, in test_account_and_key_delimiters_do_not_alias\\n    self.assertEqual(len(g.charges),2)\\nAssertionError: 1 != 2\\n\"], \"errors\": [], \"failures\": [\"__main__.Contract.test_account_and_key_delimiters_do_not_alias\"], \"successful\": false, \"tests_run\": 6}\n"
+          },
+          "line": 46
+        }
+      ]
+    },
+    {
+      "run_id": "9ef916ecde2d4deb8b50d3228a34fc88",
+      "task_id": "task_101",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "9ef916ecde2d4deb8b50d3228a34fc88",
+        "task_id": "task_101",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 13,
+        "reflection_retries": 0,
+        "input_tokens": 21171,
+        "output_tokens": 629,
+        "cached_input_tokens": 13312,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.00972315,
+        "wall_seconds": 24.790707041989663
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/9ef916ecde2d4deb8b50d3228a34fc88.jsonl",
+      "errors": [],
+      "model_responses": 14,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "9ef916ecde2d4deb8b50d3228a34fc88",
+          "time": 1794444781.861124,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 1,
+            "output": "RF_QA {\"details\": [\"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 41, in test_account_and_key_delimiters_do_not_alias\\n    self.assertEqual(len(g.charges),2)\\nAssertionError: 1 != 2\\n\"], \"errors\": [], \"failures\": [\"__main__.Contract.test_account_and_key_delimiters_do_not_alias\"], \"successful\": false, \"tests_run\": 6}\n"
+          },
+          "line": 44
+        }
+      ]
+    },
+    {
+      "run_id": "ac14a34549944006b1cec351fcc63816",
+      "task_id": "task_102",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "ac14a34549944006b1cec351fcc63816",
+        "task_id": "task_102",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 13,
+        "reflection_retries": 0,
+        "input_tokens": 21617,
+        "output_tokens": 518,
+        "cached_input_tokens": 14848,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.00852135,
+        "wall_seconds": 25.322940165991895
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/ac14a34549944006b1cec351fcc63816.jsonl",
+      "errors": [],
+      "model_responses": 14,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "ac14a34549944006b1cec351fcc63816",
+          "time": 1794444835.0531871,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 1,
+            "output": "RF_QA {\"details\": [\"Traceback (most recent call last):\\n  File \\\"/usr/local/lib/python3.11/unittest/async_case.py\\\", line 90, in _callTestMethod\\n    if self._callMaybeAsync(method) is not None:\\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.11/unittest/async_case.py\\\", line 112, in _callMaybeAsync\\n    return self._asyncioRunner.run(\\n           ^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.11/asyncio/runners.py\\\", line 118, in run\\n    return self._loop.run_until_complete(task)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.11/asyncio/base_events.py\\\", line 654, in run_until_complete\\n    return future.result()\\n           ^^^^^^^^^^^^^^^\\n  File \\\"/evaluation/hidden.py\\\", line 33, in test_cancelled_processing_retries\\n    self.assertEqual(j.state,'queued');self.assertEqual(r.values,{})\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: 'done' != 'queued'\\n- done\\n+ queued\\n\\n\", \"Traceback (most recent call last):\\n  File \\\"/usr/local/lib/python3.11/unittest/async_case.py\\\", line 90, in _callTestMethod\\n    if self._callMaybeAsync(method) is not None:\\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.11/unittest/async_case.py\\\", line 112, in _callMaybeAsync\\n    return self._asyncioRunner.run(\\n           ^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.11/asyncio/runners.py\\\", line 118, in run\\n    return self._loop.run_until_complete(task)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.11/asyncio/base_events.py\\\", line 654, in run_until_complete\\n    return future.result()\\n           ^^^^^^^^^^^^^^^\\n  File \\\"/evaluation/hidden.py\\\", line 39, in test_processing_error_releases\\n    self.assertEqual(j.state,'queued')\\nAssertionError: 'done' != 'queued'\\n- done\\n+ queued\\n\\n\"], \"errors\": [], \"failures\": [\"__main__.Contract.test_cancelled_processing_retries\", \"__main__.Contract.test_processing_error_releases\"], \"successful\": false, \"tests_run\": 5}\n"
+          },
+          "line": 44
+        }
+      ]
+    },
+    {
+      "run_id": "e614495c758348ba93a1d35753d09c86",
+      "task_id": "task_102",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "e614495c758348ba93a1d35753d09c86",
+        "task_id": "task_102",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 13,
+        "reflection_retries": 0,
+        "input_tokens": 21733,
+        "output_tokens": 715,
+        "cached_input_tokens": 14720,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.00958125,
+        "wall_seconds": 27.83034637500532
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/e614495c758348ba93a1d35753d09c86.jsonl",
+      "errors": [],
+      "model_responses": 14,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "e614495c758348ba93a1d35753d09c86",
+          "time": 1794444809.711998,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 1,
+            "output": "RF_QA {\"details\": [\"Traceback (most recent call last):\\n  File \\\"/usr/local/lib/python3.11/unittest/async_case.py\\\", line 90, in _callTestMethod\\n    if self._callMaybeAsync(method) is not None:\\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.11/unittest/async_case.py\\\", line 112, in _callMaybeAsync\\n    return self._asyncioRunner.run(\\n           ^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.11/asyncio/runners.py\\\", line 118, in run\\n    return self._loop.run_until_complete(task)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.11/asyncio/base_events.py\\\", line 654, in run_until_complete\\n    return future.result()\\n           ^^^^^^^^^^^^^^^\\n  File \\\"/evaluation/hidden.py\\\", line 26, in test_cancelled_acquisition_releases\\n    self.assertEqual(j.state,'queued')\\nAssertionError: 'leased' != 'queued'\\n- leased\\n+ queued\\n\\n\"], \"errors\": [], \"failures\": [\"__main__.Contract.test_cancelled_acquisition_releases\"], \"successful\": false, \"tests_run\": 5}\n"
+          },
+          "line": 44
+        }
+      ]
+    },
+    {
+      "run_id": "ed9329f3545e4dd481b3136932d6e350",
+      "task_id": "task_102",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "ed9329f3545e4dd481b3136932d6e350",
+        "task_id": "task_102",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "token_limit",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 14,
+        "reflection_retries": 0,
+        "input_tokens": 21370,
+        "output_tokens": 627,
+        "cached_input_tokens": 16512,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0077034,
+        "wall_seconds": 22.940834624998388
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/ed9329f3545e4dd481b3136932d6e350.jsonl",
+      "errors": [],
+      "model_responses": 14,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "ed9329f3545e4dd481b3136932d6e350",
+          "time": 1794444858.009969,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 1,
+            "output": "RF_QA {\"details\": [\"Traceback (most recent call last):\\n  File \\\"/usr/local/lib/python3.11/unittest/async_case.py\\\", line 90, in _callTestMethod\\n    if self._callMaybeAsync(method) is not None:\\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.11/unittest/async_case.py\\\", line 112, in _callMaybeAsync\\n    return self._asyncioRunner.run(\\n           ^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.11/asyncio/runners.py\\\", line 118, in run\\n    return self._loop.run_until_complete(task)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.11/asyncio/base_events.py\\\", line 654, in run_until_complete\\n    return future.result()\\n           ^^^^^^^^^^^^^^^\\n  File \\\"/evaluation/hidden.py\\\", line 26, in test_cancelled_acquisition_releases\\n    self.assertEqual(j.state,'queued')\\nAssertionError: 'leasing' != 'queued'\\n- leasing\\n+ queued\\n\\n\", \"Traceback (most recent call last):\\n  File \\\"/usr/local/lib/python3.11/unittest/async_case.py\\\", line 90, in _callTestMethod\\n    if self._callMaybeAsync(method) is not None:\\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.11/unittest/async_case.py\\\", line 112, in _callMaybeAsync\\n    return self._asyncioRunner.run(\\n           ^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.11/asyncio/runners.py\\\", line 118, in run\\n    return self._loop.run_until_complete(task)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.11/asyncio/base_events.py\\\", line 654, in run_until_complete\\n    return future.result()\\n           ^^^^^^^^^^^^^^^\\n  File \\\"/evaluation/hidden.py\\\", line 33, in test_cancelled_processing_retries\\n    self.assertEqual(j.state,'queued');self.assertEqual(r.values,{})\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: 'leased' != 'queued'\\n- leased\\n+ queued\\n\\n\"], \"errors\": [], \"failures\": [\"__main__.Contract.test_cancelled_acquisition_releases\", \"__main__.Contract.test_cancelled_processing_retries\"], \"successful\": false, \"tests_run\": 5}\n"
+          },
+          "line": 46
+        }
+      ]
+    },
+    {
+      "run_id": "09253c5a368844cf9d77c35c140195cc",
+      "task_id": "task_103",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "09253c5a368844cf9d77c35c140195cc",
+        "task_id": "task_103",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "passed",
+        "failure_category": null,
+        "steps": 13,
+        "tool_calls": 12,
+        "reflection_retries": 0,
+        "input_tokens": 17076,
+        "output_tokens": 459,
+        "cached_input_tokens": 11008,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0074421,
+        "wall_seconds": 22.68701070798852
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/09253c5a368844cf9d77c35c140195cc.jsonl",
+      "errors": [],
+      "model_responses": 13,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "09253c5a368844cf9d77c35c140195cc",
+          "time": 1794444919.3187442,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 0,
+            "output": "RF_QA {\"details\": [], \"errors\": [], \"failures\": [], \"successful\": true, \"tests_run\": 4}\n"
+          },
+          "line": 41
+        }
+      ]
+    },
+    {
+      "run_id": "6eda1e3d57b94ebab12b832142db5d92",
+      "task_id": "task_103",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "6eda1e3d57b94ebab12b832142db5d92",
+        "task_id": "task_103",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "passed",
+        "failure_category": null,
+        "steps": 11,
+        "tool_calls": 10,
+        "reflection_retries": 0,
+        "input_tokens": 13154,
+        "output_tokens": 403,
+        "cached_input_tokens": 8576,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0058902,
+        "wall_seconds": 17.581786832990474
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/6eda1e3d57b94ebab12b832142db5d92.jsonl",
+      "errors": [],
+      "model_responses": 11,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "6eda1e3d57b94ebab12b832142db5d92",
+          "time": 1794444896.615187,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 0,
+            "output": "RF_QA {\"details\": [], \"errors\": [], \"failures\": [], \"successful\": true, \"tests_run\": 4}\n"
+          },
+          "line": 35
+        }
+      ]
+    },
+    {
+      "run_id": "a7e3f4622e304f85a02876ebfe82af81",
+      "task_id": "task_103",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "a7e3f4622e304f85a02876ebfe82af81",
+        "task_id": "task_103",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "passed",
+        "failure_category": null,
+        "steps": 11,
+        "tool_calls": 10,
+        "reflection_retries": 0,
+        "input_tokens": 13154,
+        "output_tokens": 403,
+        "cached_input_tokens": 6784,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0070998,
+        "wall_seconds": 20.98684549999598
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/a7e3f4622e304f85a02876ebfe82af81.jsonl",
+      "errors": [],
+      "model_responses": 11,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "a7e3f4622e304f85a02876ebfe82af81",
+          "time": 1794444879.0158038,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 0,
+            "output": "RF_QA {\"details\": [], \"errors\": [], \"failures\": [], \"successful\": true, \"tests_run\": 4}\n"
+          },
+          "line": 35
+        }
+      ]
+    },
+    {
+      "run_id": "3de07b12161d43bf81523d3ca78f2876",
+      "task_id": "task_104",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "3de07b12161d43bf81523d3ca78f2876",
+        "task_id": "task_104",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "token_limit",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 14,
+        "reflection_retries": 0,
+        "input_tokens": 20520,
+        "output_tokens": 695,
+        "cached_input_tokens": 14848,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0084951,
+        "wall_seconds": 27.136122374999104
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/3de07b12161d43bf81523d3ca78f2876.jsonl",
+      "errors": [],
+      "model_responses": 14,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "3de07b12161d43bf81523d3ca78f2876",
+          "time": 1794444998.866476,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 1,
+            "output": "RF_QA {\"details\": [\"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 22, in test_conflict\\n    with self.assertRaises(ValueError): a.json(json.dumps([row(amount_cents=99)]))\\nAssertionError: ValueError not raised\\n\", \"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 15, in test_type_validation\\n    self.assertEqual(len(errors),3);self.assertEqual(json.loads(a.report()),[])\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: 2 != 3\\n\"], \"errors\": [], \"failures\": [\"__main__.Contract.test_conflict\", \"__main__.Contract.test_type_validation\"], \"successful\": false, \"tests_run\": 5}\n"
+          },
+          "line": 46
+        }
+      ]
+    },
+    {
+      "run_id": "7041ec217e5a45d79c02313b89c44f3a",
+      "task_id": "task_104",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "7041ec217e5a45d79c02313b89c44f3a",
+        "task_id": "task_104",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "token_limit",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 15,
+        "tool_calls": 15,
+        "reflection_retries": 0,
+        "input_tokens": 23004,
+        "output_tokens": 744,
+        "cached_input_tokens": 15232,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0103194,
+        "wall_seconds": 27.17051379100303
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/7041ec217e5a45d79c02313b89c44f3a.jsonl",
+      "errors": [],
+      "model_responses": 15,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "7041ec217e5a45d79c02313b89c44f3a",
+          "time": 1794444946.5096269,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 1,
+            "output": "RF_QA {\"details\": [\"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 15, in test_type_validation\\n    self.assertEqual(len(errors),3);self.assertEqual(json.loads(a.report()),[])\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: 0 != 3\\n\"], \"errors\": [], \"failures\": [\"__main__.Contract.test_type_validation\"], \"successful\": false, \"tests_run\": 5}\n"
+          },
+          "line": 49
+        }
+      ]
+    },
+    {
+      "run_id": "e8cf721e2ca949038f6c9f26253a4b1b",
+      "task_id": "task_104",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "e8cf721e2ca949038f6c9f26253a4b1b",
+        "task_id": "task_104",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "token_limit",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 14,
+        "reflection_retries": 0,
+        "input_tokens": 20550,
+        "output_tokens": 702,
+        "cached_input_tokens": 12928,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0098451,
+        "wall_seconds": 25.186939541992615
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/e8cf721e2ca949038f6c9f26253a4b1b.jsonl",
+      "errors": [],
+      "model_responses": 14,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "e8cf721e2ca949038f6c9f26253a4b1b",
+          "time": 1794444971.7138681,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 1,
+            "output": "RF_QA {\"details\": [\"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 15, in test_type_validation\\n    self.assertEqual(len(errors),3);self.assertEqual(json.loads(a.report()),[])\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: 2 != 3\\n\"], \"errors\": [], \"failures\": [\"__main__.Contract.test_type_validation\"], \"successful\": false, \"tests_run\": 5}\n"
+          },
+          "line": 46
+        }
+      ]
+    },
+    {
+      "run_id": "cec4abe1321642ef8d34ebb2db4cef8a",
+      "task_id": "task_105",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "cec4abe1321642ef8d34ebb2db4cef8a",
+        "task_id": "task_105",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 13,
+        "reflection_retries": 0,
+        "input_tokens": 19773,
+        "output_tokens": 420,
+        "cached_input_tokens": 12288,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.00842535,
+        "wall_seconds": 24.18241887500335
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/cec4abe1321642ef8d34ebb2db4cef8a.jsonl",
+      "errors": [],
+      "model_responses": 14,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "cec4abe1321642ef8d34ebb2db4cef8a",
+          "time": 1794445023.065291,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 1,
+            "output": "RF_QA {\"details\": [\"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 29, in test_live_views_on_simple_rollback\\n    self.assertEqual(view['a'],20)\\nAssertionError: 1 != 20\\n\", \"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 10, in test_outer_rollback_restores_inner_commits\\n    self.assertEqual(view,{'a':20,'b':0});self.assertEqual(events,[])\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: {'a': 15, 'b': 5} != {'a': 20, 'b': 0}\\n- {'a': 15, 'b': 5}\\n?       ^^       ^\\n\\n+ {'a': 20, 'b': 0}\\n?       ^^       ^\\n\\n\"], \"errors\": [], \"failures\": [\"__main__.Contract.test_live_views_on_simple_rollback\", \"__main__.Contract.test_outer_rollback_restores_inner_commits\"], \"successful\": false, \"tests_run\": 5}\n"
+          },
+          "line": 44
+        }
+      ]
+    },
+    {
+      "run_id": "ecdd76f2579c41a585b5b34cafe98010",
+      "task_id": "task_105",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "ecdd76f2579c41a585b5b34cafe98010",
+        "task_id": "task_105",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 14,
+        "tool_calls": 13,
+        "reflection_retries": 0,
+        "input_tokens": 19779,
+        "output_tokens": 473,
+        "cached_input_tokens": 13952,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.00754515,
+        "wall_seconds": 21.910088958000415
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/ecdd76f2579c41a585b5b34cafe98010.jsonl",
+      "errors": [],
+      "model_responses": 14,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "ecdd76f2579c41a585b5b34cafe98010",
+          "time": 1794445044.993203,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 1,
+            "output": "RF_QA {\"details\": [\"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 29, in test_live_views_on_simple_rollback\\n    self.assertEqual(view['a'],20)\\nAssertionError: 1 != 20\\n\", \"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 10, in test_outer_rollback_restores_inner_commits\\n    self.assertEqual(view,{'a':20,'b':0});self.assertEqual(events,[])\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: {'a': 15, 'b': 5} != {'a': 20, 'b': 0}\\n- {'a': 15, 'b': 5}\\n?       ^^       ^\\n\\n+ {'a': 20, 'b': 0}\\n?       ^^       ^\\n\\n\"], \"errors\": [], \"failures\": [\"__main__.Contract.test_live_views_on_simple_rollback\", \"__main__.Contract.test_outer_rollback_restores_inner_commits\"], \"successful\": false, \"tests_run\": 5}\n"
+          },
+          "line": 44
+        }
+      ]
+    },
+    {
+      "run_id": "ff422b8278b34d3488970bb9494c4f42",
+      "task_id": "task_105",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "ff422b8278b34d3488970bb9494c4f42",
+        "task_id": "task_105",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "api_error",
+        "evaluation": "failed",
+        "failure_category": "api_failure",
+        "steps": 3,
+        "tool_calls": 3,
+        "reflection_retries": 0,
+        "input_tokens": 1880,
+        "output_tokens": 64,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.001698,
+        "wall_seconds": 26.405950375003158
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/ff422b8278b34d3488970bb9494c4f42.jsonl",
+      "errors": [
+        {
+          "schema_version": 1,
+          "run_id": "ff422b8278b34d3488970bb9494c4f42",
+          "time": 1794445068.21605,
+          "kind": "api_error",
+          "data": {
+            "phase": "count_tokens",
+            "type": "APIConnectionError",
+            "status_code": null
+          },
+          "line": 12
+        }
+      ],
+      "model_responses": 3,
+      "evaluation": [
+        {
+          "schema_version": 1,
+          "run_id": "ff422b8278b34d3488970bb9494c4f42",
+          "time": 1794445071.413593,
+          "kind": "evaluation",
+          "data": {
+            "exit_code": 1,
+            "output": "RF_QA {\"details\": [\"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 29, in test_live_views_on_simple_rollback\\n    self.assertEqual(view['a'],20)\\nAssertionError: 1 != 20\\n\", \"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 10, in test_outer_rollback_restores_inner_commits\\n    self.assertEqual(view,{'a':20,'b':0});self.assertEqual(events,[])\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: {'a': 15, 'b': 5} != {'a': 20, 'b': 0}\\n- {'a': 15, 'b': 5}\\n?       ^^       ^\\n\\n+ {'a': 20, 'b': 0}\\n?       ^^       ^\\n\\n\", \"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 24, in test_fee_failure_is_atomic\\n    self.assertEqual(report(s),{'balances':{'a':20,'b':0},'audit':[]})\\n                     ^^^^^^^^^\\n  File \\\"/workspace/reporting.py\\\", line 2, in report\\n    return {'balances':dict(store.account_view()),'audit':list(store.audit_view())}\\n                            ^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/workspace/storage.py\\\", line 6, in account_view\\n    def account_view(self): return self.data['accounts']\\n                                   ~~~~~~~~~^^^^^^^^^^^^\\nTypeError: 'NoneType' object is not subscriptable\\n\", \"Traceback (most recent call last):\\n  File \\\"/evaluation/hidden.py\\\", line 19, in test_inner_rollback_can_be_caught\\n    a.change('b',2)\\n  File \\\"/workspace/accounts.py\\\", line 5, in change\\n    balance=self.store.data['accounts'][name]+amount\\n            ~~~~~~~~~~~~~~~^^^^^^^^^^^^\\nTypeError: 'NoneType' object is not subscriptable\\n\"], \"errors\": [\"__main__.Contract.test_fee_failure_is_atomic\", \"__main__.Contract.test_inner_rollback_can_be_caught\"], \"failures\": [\"__main__.Contract.test_live_views_on_simple_rollback\", \"__main__.Contract.test_outer_rollback_restores_inner_commits\"], \"successful\": false, \"tests_run\": 5}\n"
+          },
+          "line": 14
+        }
+      ]
+    },
+    {
+      "run_id": "5f767ae17a5f4b04a83dd44412e9db85",
+      "task_id": "task_106",
+      "split": "train",
+      "synthetic": 0,
+      "status": "finished",
+      "result": {
+        "run_id": "5f767ae17a5f4b04a83dd44412e9db85",
+        "task_id": "task_106",
+        "config_version": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "interrupted",
+        "evaluation": "not_run",
+        "failure_category": "interrupted",
+        "steps": 6,
+        "tool_calls": 6,
+        "reflection_retries": 0,
+        "input_tokens": 5433,
+        "output_tokens": 125,
+        "cached_input_tokens": 1024,
+        "reasoning_tokens": 0,
+        "usage_incomplete": true,
+        "unconfirmed_tokens": 3541,
+        "cost_usd": null,
+        "wall_seconds": 71.00196850000066
+      },
+      "trace": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/traces/5f767ae17a5f4b04a83dd44412e9db85.jsonl",
+      "errors": [],
+      "model_responses": 6,
+      "evaluation": []
+    }
+  ],
+  "queries": [
+    {
+      "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/optimization.sqlite3",
+      "sql": "SELECT experiment_id,task_id,attempt,condition,status,result FROM benchmark_cells ORDER BY task_id,attempt"
+    },
+    {
+      "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+      "sql": "SELECT run_id,task_id,split,synthetic,status,result FROM runs WHERE split IN ('train','dev') ORDER BY task_id,run_id"
+    }
+  ],
+  "monitor": {
+    "roots": {
+      "dev": {
+        "cells": {},
+        "usage_priced_usd": "0",
+        "api_calls": 0,
+        "tokens": 0
+      },
+      "smoke": {
+        "cells": {},
+        "usage_priced_usd": "0",
+        "ledger_with_reservations_usd": "0",
+        "api_calls": 0,
+        "tokens": 0
+      },
+      "smoke-retry": {
+        "cells": {
+          "coding_failure": 1
+        },
+        "usage_priced_usd": "0.01939950",
+        "ledger_with_reservations_usd": "0.01939950",
+        "api_calls": 29,
+        "tokens": 22066
+      },
+      "train": {
+        "cells": {
+          "coding_failure": 11,
+          "infrastructure_failure": 1,
+          "interrupted": 1,
+          "pending": 2,
+          "solved": 3
+        },
+        "usage_priced_usd": "0.25224450",
+        "ledger_with_reservations_usd": "0.26258025",
+        "api_calls": 407,
+        "tokens": 296082
+      }
+    },
+    "cumulative_usage_priced_usd": "0.27164400",
+    "cumulative_ledger_with_reservations_usd": "0.28197975",
+    "stop_reasons": [
+      "train: infrastructure or unevaluated cell; inspect before continuing",
+      "train: uncertain usage"
+    ],
+    "queries": [
+      "SELECT * FROM api_usage",
+      "SELECT status,COUNT(*) FROM benchmark_cells GROUP BY status"
+    ]
+  },
+  "original_repository_files_unchanged": true,
+  "dev_started": false
+}

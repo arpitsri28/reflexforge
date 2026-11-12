@@ -1,0 +1,90 @@
+{
+  "approved_smoke_command_exit_code": 1,
+  "observed_startup_error": "DockerException: Error while fetching server API version: ('Connection aborted.', PermissionError(1, 'Operation not permitted'))",
+  "failure_stage": "Docker client construction, before experiment metadata insertion, API client construction, or worker execution",
+  "roots": {
+    "smoke": {
+      "root": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke",
+      "databases": [
+        {
+          "path": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+          "tables": {
+            "api_usage": 0,
+            "benchmark_cells": 0,
+            "experiments": 0,
+            "iterations": 0
+          }
+        }
+      ],
+      "ledger_rows": 0,
+      "recorded_api_calls": 0,
+      "recorded_tokens": 0,
+      "sum_recorded_ledger_usd": "0",
+      "worker_traces": [],
+      "worker_trace_count": 0,
+      "worker_rows": 0,
+      "snapshot_directories": [
+        "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/experiments/7ddf8ca6f8fd4030af348263c08ee8c2"
+      ],
+      "condition_files": [],
+      "independent_evaluation": "not available: no worker run started"
+    },
+    "train": {
+      "root": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train",
+      "databases": [],
+      "ledger_rows": 0,
+      "recorded_api_calls": 0,
+      "recorded_tokens": 0,
+      "sum_recorded_ledger_usd": "0",
+      "worker_traces": [],
+      "worker_trace_count": 0,
+      "worker_rows": 0,
+      "snapshot_directories": [],
+      "condition_files": [],
+      "independent_evaluation": "not available: no worker run started"
+    },
+    "dev": {
+      "root": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/dev",
+      "databases": [],
+      "ledger_rows": 0,
+      "recorded_api_calls": 0,
+      "recorded_tokens": 0,
+      "sum_recorded_ledger_usd": "0",
+      "worker_traces": [],
+      "worker_trace_count": 0,
+      "worker_rows": 0,
+      "snapshot_directories": [],
+      "condition_files": [],
+      "independent_evaluation": "not available: no worker run started"
+    }
+  },
+  "queries": [
+    {
+      "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+      "sql": "SELECT name,sql FROM sqlite_master WHERE type='table' ORDER BY name"
+    },
+    {
+      "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+      "sql": "SELECT COUNT(*) AS n FROM \"api_usage\""
+    },
+    {
+      "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+      "sql": "SELECT COUNT(*) AS n FROM \"benchmark_cells\""
+    },
+    {
+      "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+      "sql": "SELECT COUNT(*) AS n FROM \"experiments\""
+    },
+    {
+      "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+      "sql": "SELECT COUNT(*) AS n FROM \"iterations\""
+    },
+    {
+      "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/smoke/artifacts/benchmark/repobench/real/optimization.sqlite3",
+      "sql": "SELECT id,experiment_id,role,state,calls,tokens,usd,actual_usage FROM api_usage"
+    }
+  ],
+  "originals_and_input_copies_unchanged": true,
+  "parseable_completed_smoke_run": "not available: no run exists",
+  "paid_retry_executed": false
+}

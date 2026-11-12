@@ -1,0 +1,10 @@
+{
+  "preflight": {
+    "chunk_id": "c528ff",
+    "wall_time_seconds": 0.524394959,
+    "exit_code": 0,
+    "original_token_count": 160,
+    "output": "{\n  \"suite\": \"repobench\",\n  \"bank_version\": \"e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6\",\n  \"tasks\": [\n    \"task_107\",\n    \"task_108\",\n    \"task_109\",\n    \"task_110\"\n  ],\n  \"previously_exposed_task_ids\": [],\n  \"paid_requests_made\": false,\n  \"scheduled_runs\": 12,\n  \"max_generation_requests\": 240,\n  \"max_http_calls_including_counting\": 480,\n  \"uncapped_token_reservations\": 288000,\n  \"overall_token_limit\": 300000,\n  \"bounded_token_upper_limit\": 288000,\n  \"potential_usd_upper_bound\": 1.296,\n  \"hard_usd_cap\": 0.75,\n  \"warning\": \"Reservation upper bounds are not measurements or a guarantee all scheduled runs fit.\"\n}\n"
+  },
+  "note": "After an automatic approval-review usage-limit failure, user said continue and finish. Normal approval review subsequently allowed the unchanged dev command; no bypass."
+}

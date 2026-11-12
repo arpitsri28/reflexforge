@@ -1,0 +1,433 @@
+Wrote /Users/arpitsrivastav/Desktop/swe_agent/scripts/analysis_resume/budget-sensitivity-2026-11-11/evidence/evidence.json; 4 real runs, 4 non-test runs; 0 disclosed issues
+{
+  "identical_regeneration": true,
+  "input_hashes_unchanged": true,
+  "sqlite_trace_inventory_ids_reconcile": true,
+  "heldout_outcomes_excluded": true,
+  "worker_ledger_assignment_complete_and_unique": true,
+  "outputs_sha256": {
+    "scripts/analysis_resume/budget-sensitivity-2026-11-11/evidence/evidence.json": "4a3bb189be6c03972309dc178cbb5ca7dce6a440b608f2c09f323aa08bbf8a04",
+    "scripts/analysis_resume/budget-sensitivity-2026-11-11/evidence/queries.json": "eb66adc3bf418b29dc9a94bbd0c0b48cc378dc0793552fc6e849846deeb4c0bf"
+  },
+  "verification_sql": "SELECT run_id FROM runs"
+}
+Wrote /Users/arpitsrivastav/Desktop/swe_agent/scripts/analysis_resume/budget-sensitivity-2026-11-11/evidence/evidence.json; 4 real runs, 4 non-test runs; 0 disclosed issues
+{
+  "kind": "budget_sensitivity_not_candidate",
+  "study_id": "f662545866a9481a9e9c94477d8a6d5e",
+  "status": {
+    "root": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7",
+    "cells": {
+      "coding_failure": 4
+    },
+    "ledger_states": {
+      "finished": 128
+    },
+    "api_calls": 128,
+    "ledger_token_bound": 107612,
+    "known_usage_priced_usd": "0.09252900",
+    "study_ledger_usd_upper_bound": "0.09252900",
+    "baseline_plus_study_usd_upper_bound": "0.66811800",
+    "stop_reasons": [],
+    "queries": [
+      "SELECT * FROM api_usage ORDER BY id",
+      "SELECT status,COUNT(*) FROM benchmark_cells GROUP BY status"
+    ]
+  },
+  "completed_tasks": 4,
+  "comparison": [
+    {
+      "task": "task_101",
+      "split": "train",
+      "new_run_id": "1b2f328329fd4a10b66cf7ad85621c70",
+      "experiment_id": "2c053c0826354176b9ca011dfc56825a",
+      "baseline_run_ids": [
+        "5726d67e46994ee3b285b7e181e70578",
+        "7ae6fd18b48944a798971386568872a3",
+        "9ef916ecde2d4deb8b50d3228a34fc88"
+      ],
+      "baseline_evaluations": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "baseline_checks": [
+        {
+          "passed": 5,
+          "total": 6,
+          "failed_checks": [
+            "__main__.Contract.test_account_and_key_delimiters_do_not_alias"
+          ],
+          "details": [
+            "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 41, in test_account_and_key_delimiters_do_not_alias\n    self.assertEqual(len(g.charges),2)\nAssertionError: 1 != 2\n"
+          ]
+        },
+        {
+          "passed": 5,
+          "total": 6,
+          "failed_checks": [
+            "__main__.Contract.test_account_and_key_delimiters_do_not_alias"
+          ],
+          "details": [
+            "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 41, in test_account_and_key_delimiters_do_not_alias\n    self.assertEqual(len(g.charges),2)\nAssertionError: 1 != 2\n"
+          ]
+        },
+        {
+          "passed": 5,
+          "total": 6,
+          "failed_checks": [
+            "__main__.Contract.test_account_and_key_delimiters_do_not_alias"
+          ],
+          "details": [
+            "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 41, in test_account_and_key_delimiters_do_not_alias\n    self.assertEqual(len(g.charges),2)\nAssertionError: 1 != 2\n"
+          ]
+        }
+      ],
+      "new_result": {
+        "run_id": "1b2f328329fd4a10b66cf7ad85621c70",
+        "task_id": "task_101",
+        "config_version": "cec6fcfdd93d61b0169f670e7fe04dc01dd0c9a026bd809ff086ff83957fb71f",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 13,
+        "tool_calls": 12,
+        "reflection_retries": 0,
+        "input_tokens": 18497,
+        "output_tokens": 521,
+        "cached_input_tokens": 11008,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.00878685,
+        "wall_seconds": 29.879334249999374,
+        "patch": "--- a/payments.py\n+++ b/payments.py\n@@ -2,14 +2,13 @@\n class PaymentService:\n     def __init__(self, gateway, journal, audit):\n         self.gateway, self.journal, self.audit = gateway, journal, audit\n-        self.sequence = 0\n     def submit(self, account, key, amount, currency='USD'):\n         request = Request(account, key, amount, currency)\n         request.validate()\n         record = self.journal.prepare(request)\n-        if record.receipt is not None: return dict(record.receipt)\n-        self.sequence += 1\n-        provider_key = f'{request.account}:{request.key}:{self.sequence}'\n+        if record.receipt is not None:\n+            return dict(record.receipt)\n+        provider_key = f'{request.account}:{request.key}'\n         receipt = self.gateway.charge(provider_key, request.amount, request.currency)\n         record.receipt = dict(receipt)\n         self.audit.completed(request, receipt)\n"
+      },
+      "new_checks": {
+        "passed": 4,
+        "total": 6,
+        "failed_checks": [
+          "__main__.Contract.test_account_and_key_delimiters_do_not_alias",
+          "__main__.Contract.test_pending_conflict"
+        ],
+        "details": [
+          "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 41, in test_account_and_key_delimiters_do_not_alias\n    self.assertEqual(len(g.charges),2)\nAssertionError: 1 != 2\n",
+          "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 21, in test_pending_conflict\n    with self.assertRaises(ValueError): s.submit('u','r',74)\nAssertionError: ValueError not raised\n"
+        ]
+      },
+      "visible": {
+        "line": 38,
+        "exit_code": 0,
+        "command": "python -m unittest discover -s tests -v"
+      },
+      "visible_fresh": true,
+      "tokens": 19018,
+      "api_calls": 26,
+      "ledger_usd": "0.01621725",
+      "failed_checks": [
+        "__main__.Contract.test_account_and_key_delimiters_do_not_alias",
+        "__main__.Contract.test_pending_conflict"
+      ]
+    },
+    {
+      "task": "task_102",
+      "split": "train",
+      "new_run_id": "573fefccca5448069040a71545e1a5f8",
+      "experiment_id": "2c053c0826354176b9ca011dfc56825a",
+      "baseline_run_ids": [
+        "e614495c758348ba93a1d35753d09c86",
+        "ac14a34549944006b1cec351fcc63816",
+        "ed9329f3545e4dd481b3136932d6e350"
+      ],
+      "baseline_evaluations": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "baseline_checks": [
+        {
+          "passed": 4,
+          "total": 5,
+          "failed_checks": [
+            "__main__.Contract.test_cancelled_acquisition_releases"
+          ],
+          "details": [
+            "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 26, in test_cancelled_acquisition_releases\n    self.assertEqual(j.state,'queued')\nAssertionError: 'leased' != 'queued'\n- leased\n+ queued\n\n"
+          ]
+        },
+        {
+          "passed": 3,
+          "total": 5,
+          "failed_checks": [
+            "__main__.Contract.test_cancelled_processing_retries",
+            "__main__.Contract.test_processing_error_releases"
+          ],
+          "details": [
+            "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 33, in test_cancelled_processing_retries\n    self.assertEqual(j.state,'queued');self.assertEqual(r.values,{})\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'done' != 'queued'\n- done\n+ queued\n\n",
+            "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 39, in test_processing_error_releases\n    self.assertEqual(j.state,'queued')\nAssertionError: 'done' != 'queued'\n- done\n+ queued\n\n"
+          ]
+        },
+        {
+          "passed": 3,
+          "total": 5,
+          "failed_checks": [
+            "__main__.Contract.test_cancelled_acquisition_releases",
+            "__main__.Contract.test_cancelled_processing_retries"
+          ],
+          "details": [
+            "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 26, in test_cancelled_acquisition_releases\n    self.assertEqual(j.state,'queued')\nAssertionError: 'leasing' != 'queued'\n- leasing\n+ queued\n\n",
+            "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 33, in test_cancelled_processing_retries\n    self.assertEqual(j.state,'queued');self.assertEqual(r.values,{})\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'leased' != 'queued'\n- leased\n+ queued\n\n"
+          ]
+        }
+      ],
+      "new_result": {
+        "run_id": "573fefccca5448069040a71545e1a5f8",
+        "task_id": "task_102",
+        "config_version": "cec6fcfdd93d61b0169f670e7fe04dc01dd0c9a026bd809ff086ff83957fb71f",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 15,
+        "tool_calls": 14,
+        "reflection_retries": 0,
+        "input_tokens": 23902,
+        "output_tokens": 742,
+        "cached_input_tokens": 16896,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0098607,
+        "wall_seconds": 26.89961495900934,
+        "patch": "--- a/broker.py\n+++ b/broker.py\n@@ -1,15 +1,36 @@\n-async def noop(): pass\n+import asyncio\n+\n+async def noop():\n+    pass\n+\n+\n class Broker:\n     def __init__(self, jobs, before_claim=noop):\n-        self.jobs=list(jobs)\n-        self.before_claim=before_claim\n+        self.jobs = list(jobs)\n+        self.before_claim = before_claim\n+        self._lock = asyncio.Lock()\n+\n     async def claim(self):\n-        job=next((j for j in self.jobs if j.state=='queued'),None)\n-        if job is None: return None\n-        await self.before_claim()\n-        job.state = 'leased'\n+        async with self._lock:\n+            job = next((j for j in self.jobs if j.state == 'queued'), None)\n+            if job is None:\n+                return None\n+            job.state = 'leased'\n+        try:\n+            await self.before_claim()\n+        except Exception:\n+            async with self._lock:\n+                if job.state == 'leased':\n+                    job.state = 'queued'\n+            raise\n         return job\n-    def ack(self,job): job.state='done'\n-    def release(self,job):\n-        if job.state=='leased': job.state='queued'\n-    def pending(self): return [j.key for j in self.jobs if j.state!='done']\n+\n+    def ack(self, job):\n+        job.state = 'done'\n+\n+    def release(self, job):\n+        if job.state == 'leased':\n+            job.state = 'queued'\n+\n+    def pending(self):\n+        return [j.key for j in self.jobs if j.state != 'done']\n--- a/worker.py\n+++ b/worker.py\n@@ -1,12 +1,18 @@\n class Worker:\n-    def __init__(self,broker,results,operation):\n-        self.broker,self.results,self.operation=broker,results,operation\n+    def __init__(self, broker, results, operation):\n+        self.broker, self.results, self.operation = broker, results, operation\n+\n     async def once(self):\n-        job=await self.broker.claim()\n-        if job is None: return None\n-        job.attempts+=1\n+        job = await self.broker.claim()\n+        if job is None:\n+            return None\n+        job.attempts += 1\n         try:\n-            value=await self.operation(job.payload)\n-            self.results.put(job.key,value)\n-        finally:\n+            value = await self.operation(job.payload)\n+        except Exception:\n+            self.broker.release(job)\n+            raise\n+        else:\n+            self.results.put(job.key, value)\n             self.broker.ack(job)\n+            return value\n"
+      },
+      "new_checks": {
+        "passed": 3,
+        "total": 5,
+        "failed_checks": [
+          "__main__.Contract.test_cancelled_acquisition_releases",
+          "__main__.Contract.test_cancelled_processing_retries"
+        ],
+        "details": [
+          "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 26, in test_cancelled_acquisition_releases\n    self.assertEqual(j.state,'queued')\nAssertionError: 'leased' != 'queued'\n- leased\n+ queued\n\n",
+          "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 90, in _callTestMethod\n    if self._callMaybeAsync(method) is not None:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/unittest/async_case.py\", line 112, in _callMaybeAsync\n    return self._asyncioRunner.run(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/evaluation/hidden.py\", line 33, in test_cancelled_processing_retries\n    self.assertEqual(j.state,'queued');self.assertEqual(r.values,{})\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'leased' != 'queued'\n- leased\n+ queued\n\n"
+        ]
+      },
+      "visible": {
+        "line": 44,
+        "exit_code": 0,
+        "command": "python -m unittest discover -s tests -v"
+      },
+      "visible_fresh": true,
+      "tokens": 24644,
+      "api_calls": 30,
+      "ledger_usd": "0.02126550",
+      "failed_checks": [
+        "__main__.Contract.test_cancelled_acquisition_releases",
+        "__main__.Contract.test_cancelled_processing_retries"
+      ]
+    },
+    {
+      "task": "task_104",
+      "split": "train",
+      "new_run_id": "02992dd178834cdf967342f31bdaada9",
+      "experiment_id": "2c053c0826354176b9ca011dfc56825a",
+      "baseline_run_ids": [
+        "7041ec217e5a45d79c02313b89c44f3a",
+        "e8cf721e2ca949038f6c9f26253a4b1b",
+        "3de07b12161d43bf81523d3ca78f2876"
+      ],
+      "baseline_evaluations": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "baseline_checks": [
+        {
+          "passed": 4,
+          "total": 5,
+          "failed_checks": [
+            "__main__.Contract.test_type_validation"
+          ],
+          "details": [
+            "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 15, in test_type_validation\n    self.assertEqual(len(errors),3);self.assertEqual(json.loads(a.report()),[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0 != 3\n"
+          ]
+        },
+        {
+          "passed": 4,
+          "total": 5,
+          "failed_checks": [
+            "__main__.Contract.test_type_validation"
+          ],
+          "details": [
+            "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 15, in test_type_validation\n    self.assertEqual(len(errors),3);self.assertEqual(json.loads(a.report()),[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 2 != 3\n"
+          ]
+        },
+        {
+          "passed": 3,
+          "total": 5,
+          "failed_checks": [
+            "__main__.Contract.test_conflict",
+            "__main__.Contract.test_type_validation"
+          ],
+          "details": [
+            "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 22, in test_conflict\n    with self.assertRaises(ValueError): a.json(json.dumps([row(amount_cents=99)]))\nAssertionError: ValueError not raised\n",
+            "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 15, in test_type_validation\n    self.assertEqual(len(errors),3);self.assertEqual(json.loads(a.report()),[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 2 != 3\n"
+          ]
+        }
+      ],
+      "new_result": {
+        "run_id": "02992dd178834cdf967342f31bdaada9",
+        "task_id": "task_104",
+        "config_version": "cec6fcfdd93d61b0169f670e7fe04dc01dd0c9a026bd809ff086ff83957fb71f",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "completed",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 16,
+        "tool_calls": 15,
+        "reflection_retries": 0,
+        "input_tokens": 25986,
+        "output_tokens": 896,
+        "cached_input_tokens": 17920,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.0114255,
+        "wall_seconds": 33.201745665995986,
+        "patch": "--- a/normalization.py\n+++ b/normalization.py\n@@ -1,6 +1,12 @@\n-from datetime import datetime,timezone\n-from decimal import Decimal\n+from datetime import datetime, timezone\n+from decimal import Decimal, ROUND_HALF_UP\n+\n+\n def normalize(row):\n-    amount=int(row.get('amount_cents',row.get('amount',0)))\n-    day=datetime.fromisoformat(row['timestamp'].replace('Z','+00:00')).astimezone(timezone.utc).date().isoformat()\n-    return {'id':row['sale_id'],'day':day,'currency':row['currency'].upper(),'cents':amount}\n+    if 'amount_cents' in row:\n+        amount = int(row['amount_cents'])\n+    else:\n+        amount = int((Decimal(row['amount']) * 100).to_integral_value(rounding=ROUND_HALF_UP))\n+    day = datetime.fromisoformat(row['timestamp'].replace('Z', '+00:00')).astimezone(timezone.utc).date().isoformat()\n+    return {'id': row['sale_id'], 'day': day, 'currency': row['currency'].upper(), 'cents': amount}\n+\n--- a/validation.py\n+++ b/validation.py\n@@ -1,11 +1,28 @@\n from decimal import Decimal\n from datetime import datetime\n+\n+\n def validate(row):\n-    for key in ('sale_id','currency','timestamp'):\n-        if not isinstance(row.get(key),str) or not row[key]: raise ValueError(key)\n-    if len(row['currency'])!=3: raise ValueError('currency')\n-    if datetime.fromisoformat(row['timestamp'].replace('Z','+00:00')).tzinfo is None: raise ValueError('timezone')\n-    if 'amount_cents' in row and int(row['amount_cents']) < 0: raise ValueError('amount')\n-    if 'amount_cents' not in row:\n-        amount=Decimal(row['amount'])\n-        if not amount.is_finite() or amount<0 or amount*100!=int(amount*100): raise ValueError('amount')\n+    for key in ('sale_id', 'currency', 'timestamp'):\n+        if not isinstance(row.get(key), str) or not row[key]:\n+            raise ValueError(key)\n+    if len(row['currency']) != 3:\n+        raise ValueError('currency')\n+    if datetime.fromisoformat(row['timestamp'].replace('Z', '+00:00')).tzinfo is None:\n+        raise ValueError('timezone')\n+\n+    if 'amount_cents' in row:\n+        try:\n+            amount_cents = int(row['amount_cents'])\n+        except (TypeError, ValueError):\n+            raise ValueError('amount')\n+        if amount_cents < 0:\n+            raise ValueError('amount')\n+    else:\n+        try:\n+            amount = Decimal(row['amount'])\n+        except Exception:\n+            raise ValueError('amount')\n+        if not amount.is_finite() or amount < 0 or amount * 100 != int(amount * 100):\n+            raise ValueError('amount')\n+\n"
+      },
+      "new_checks": {
+        "passed": 4,
+        "total": 5,
+        "failed_checks": [
+          "__main__.Contract.test_type_validation"
+        ],
+        "details": [
+          "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 15, in test_type_validation\n    self.assertEqual(len(errors),3);self.assertEqual(json.loads(a.report()),[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0 != 3\n"
+        ]
+      },
+      "visible": {
+        "line": 47,
+        "exit_code": 0,
+        "command": "python -m unittest discover -s tests -v"
+      },
+      "visible_fresh": true,
+      "tokens": 26882,
+      "api_calls": 32,
+      "ledger_usd": "0.02352150",
+      "failed_checks": [
+        "__main__.Contract.test_type_validation"
+      ]
+    },
+    {
+      "task": "task_108",
+      "split": "dev",
+      "new_run_id": "a19c9f85267c4a0982c97b2c7180d338",
+      "experiment_id": "7ca29a61271a4c8a9c81a135e13316ec",
+      "baseline_run_ids": [
+        "fbb7a3f2bc3f4e78935d7834b97c67ad",
+        "895ffd51d7714c469d27e12705c5e476",
+        "5fc81169c48647c9888eb607afb2b964"
+      ],
+      "baseline_evaluations": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "baseline_checks": [
+        {
+          "passed": 4,
+          "total": 5,
+          "failed_checks": [
+            "__main__.Contract.test_input_ownership"
+          ],
+          "details": [
+            "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 22, in test_input_ownership\n    self.assertEqual(settings['mail']['tags'],['custom'])\nAssertionError: Lists differ: ['custom', 'later'] != ['custom']\n\nFirst list contains 1 additional elements.\nFirst extra element 1:\n'later'\n\n- ['custom', 'later']\n+ ['custom']\n"
+          ]
+        },
+        {
+          "passed": 4,
+          "total": 5,
+          "failed_checks": [
+            "__main__.Contract.test_input_ownership"
+          ],
+          "details": [
+            "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 22, in test_input_ownership\n    self.assertEqual(settings['mail']['tags'],['custom'])\nAssertionError: Lists differ: ['custom', 'later'] != ['custom']\n\nFirst list contains 1 additional elements.\nFirst extra element 1:\n'later'\n\n- ['custom', 'later']\n+ ['custom']\n"
+          ]
+        },
+        {
+          "passed": 4,
+          "total": 5,
+          "failed_checks": [
+            "__main__.Contract.test_input_ownership"
+          ],
+          "details": [
+            "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 22, in test_input_ownership\n    self.assertEqual(settings['mail']['tags'],['custom'])\nAssertionError: Lists differ: ['custom', 'later'] != ['custom']\n\nFirst list contains 1 additional elements.\nFirst extra element 1:\n'later'\n\n- ['custom', 'later']\n+ ['custom']\n"
+          ]
+        }
+      ],
+      "new_result": {
+        "run_id": "a19c9f85267c4a0982c97b2c7180d338",
+        "task_id": "task_108",
+        "config_version": "cec6fcfdd93d61b0169f670e7fe04dc01dd0c9a026bd809ff086ff83957fb71f",
+        "model": "gpt-5.4-mini",
+        "synthetic": false,
+        "termination": "step_limit",
+        "evaluation": "failed",
+        "failure_category": "incorrect_patch",
+        "steps": 20,
+        "tool_calls": 20,
+        "reflection_retries": 0,
+        "input_tokens": 36075,
+        "output_tokens": 993,
+        "cached_input_tokens": 27008,
+        "reasoning_tokens": 0,
+        "usage_incomplete": false,
+        "unconfirmed_tokens": 0,
+        "cost_usd": 0.01329435,
+        "wall_seconds": 45.902364000008674,
+        "patch": "--- a/application.py\n+++ b/application.py\n@@ -2,10 +2,13 @@\n from resolver import resolve\n from mailer import Mailer\n from scheduler import Scheduler\n+\n class Application:\n     def __init__(self,file=None,env=None,cli=None):\n         self.config=resolve(file or {},environment(env or {}),cli or {})\n-        self.mailer=Mailer(self.config['mail']);self.scheduler=Scheduler(self.config['jobs'])\n+        self.mailer=Mailer(self.config['mail'])\n+        self.scheduler=Scheduler(self.config['jobs'])\n     def tick(self,time,message):\n-        if self.scheduler.tick(time): return self.mailer.send(message)\n+        if self.scheduler.tick(time):\n+            return self.mailer.send(message)\n         return False\n--- a/layers.py\n+++ b/layers.py\n@@ -1,7 +1,15 @@\n def merge(base,override):\n-    result=base\n+    result={}\n+    for key,value in base.items():\n+        if isinstance(value,dict):\n+            result[key]=merge(value,{})\n+        elif isinstance(value,list):\n+            result[key]=value[:]\n+        else:\n+            result[key]=value\n     for key,value in override.items():\n-        if not value: continue\n-        if isinstance(value,dict) and isinstance(result.get(key),dict): result[key]=merge(result[key],value)\n-        else: result[key]=value\n+        if isinstance(value,dict) and isinstance(result.get(key),dict):\n+            result[key]=merge(result[key],value)\n+        else:\n+            result[key]=value\n     return result\n--- a/resolver.py\n+++ b/resolver.py\n@@ -1,8 +1,12 @@\n from defaults import DEFAULTS\n from layers import merge\n+\n def resolve(file,environment,cli):\n-    result=DEFAULTS\n-    for layer in (file,cli,environment): result=merge(result,layer)\n-    if type(result['mail']['enabled']) is not bool: raise ValueError('mail enabled')\n-    if type(result['jobs']['interval']) is not int or result['jobs']['interval']<0: raise ValueError('interval')\n+    result=merge(DEFAULTS,file)\n+    result=merge(result,cli)\n+    result=merge(result,environment)\n+    if type(result['mail']['enabled']) is not bool:\n+        raise ValueError('mail enabled')\n+    if type(result['jobs']['interval']) is not int or result['jobs']['interval']<0:\n+        raise ValueError('interval')\n     return result\n--- a/scheduler.py\n+++ b/scheduler.py\n@@ -1,6 +1,12 @@\n class Scheduler:\n-    def __init__(self,config): self.config=config;self.runs=[]\n+    def __init__(self,config):\n+        self.config=config\n+        self.runs=[]\n     def tick(self,time):\n         interval=self.config['interval']\n-        if interval and time%interval==0: self.runs.append(time);return True\n+        if interval == 0:\n+            return False\n+        if time % interval == 0:\n+            self.runs.append(time)\n+            return True\n         return False\n"
+      },
+      "new_checks": {
+        "passed": 3,
+        "total": 5,
+        "failed_checks": [
+          "__main__.Contract.test_false_and_zero",
+          "__main__.Contract.test_precedence"
+        ],
+        "details": [
+          "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 9, in test_false_and_zero\n    self.assertFalse(app.tick(0,'no'));self.assertEqual(app.mailer.sent,[]);self.assertEqual(app.scheduler.runs,[])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: True is not false\n",
+          "Traceback (most recent call last):\n  File \"/evaluation/hidden.py\", line 12, in test_precedence\n    app.tick(10,'x');self.assertEqual(app.mailer.sent,[('cli','x')])\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Lists differ: [('env', 'x')] != [('cli', 'x')]\n\nFirst differing element 0:\n('env', 'x')\n('cli', 'x')\n\n- [('env', 'x')]\n?    ^^^\n\n+ [('cli', 'x')]\n?    ^^^\n\n"
+        ]
+      },
+      "visible": {
+        "line": 62,
+        "exit_code": 1,
+        "command": "python -m unittest discover -s tests -v"
+      },
+      "visible_fresh": true,
+      "tokens": 37068,
+      "api_calls": 40,
+      "ledger_usd": "0.03152475",
+      "failed_checks": [
+        "__main__.Contract.test_false_and_zero",
+        "__main__.Contract.test_precedence"
+      ]
+    }
+  ],
+  "success_rate": "0/4 = 0% (95% Wilson 0\u201348.98%)",
+  "false_pass_rate": "3/3 = 100% (95% Wilson 43.85\u2013100%)",
+  "reconciliation": {
+    "sqlite_runs": 4,
+    "trace_files": 4,
+    "trace_ids": 4,
+    "trace_only": [],
+    "sqlite_only": []
+  },
+  "issues": []
+}

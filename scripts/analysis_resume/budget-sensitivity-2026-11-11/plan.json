@@ -1,0 +1,305 @@
+{
+  "study_id": "f662545866a9481a9e9c94477d8a6d5e",
+  "kind": "budget_sensitivity_not_candidate",
+  "root": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7",
+  "groups": {
+    "train": [
+      "task_101",
+      "task_102",
+      "task_104"
+    ],
+    "dev": [
+      "task_108"
+    ]
+  },
+  "frozen_config": "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/configs/static",
+  "source_config_hash": "64c11a73818ed62a6ad3527e035e2746e03405205e96c680003a963d254176aa",
+  "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+  "image_id": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+  "model": "gpt-5.4-mini",
+  "prices": [
+    0.75,
+    4.5
+  ],
+  "sampling": {
+    "temperature": 0.0,
+    "reasoning_effort": "none"
+  },
+  "seed": 2026,
+  "run_budget": {
+    "max_steps": 20,
+    "wall_seconds": 240,
+    "command_seconds": 30,
+    "max_tokens": 40000,
+    "response_tokens": 2048,
+    "retry_limit": 0
+  },
+  "baseline_budget": {
+    "max_steps": 20,
+    "wall_seconds": 240,
+    "command_seconds": 30,
+    "max_tokens": 24000,
+    "response_tokens": 2048,
+    "retry_limit": 0
+  },
+  "caps": {
+    "max_tokens": 160000,
+    "max_api_calls": 180,
+    "max_usd": 0.4
+  },
+  "baseline_ledger_usd_upper_bound": "0.57558900",
+  "copies": [
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/benchmark/manifest.json",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/benchmark/manifest.json",
+      "sha256": "bd10882a413f085d11bb057ca825c15f11b44ee9fb1e0e2828c1abf7609e0b19"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/hidden.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_101/hidden.py",
+      "sha256": "8f1226f29e9fff86163960d755a4796b2fe2d231daf127cf8030d626fcab9db1"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/README.md",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_101/repo/README.md",
+      "sha256": "8d917d492f8dbcde164827ea5d226989eea6da2f318b2e77543077b39eaa4121"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/api.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_101/repo/api.py",
+      "sha256": "8a402255ad03ef963314b7922e4bdbbd2d82f63dae41a0e5e9bf956200c36304"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/audit.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_101/repo/audit.py",
+      "sha256": "a8f40786cfd7fed07d6c0466b35908be708d77443c0a0061c834b630babd8a32"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/gateway.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_101/repo/gateway.py",
+      "sha256": "ba9ea1000cc1aae50a646e78ffc4b6af9da25c12f8f116e491f62c23b1bc2f7b"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/journal.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_101/repo/journal.py",
+      "sha256": "852b99ce5763d3c73c7ebb7b0b1a1237862134a354f37bfba56f03ad0cb6469f"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/models.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_101/repo/models.py",
+      "sha256": "2512240b883d853ed9bd9cafe368f4846c348f7c127fd605d0650c5f34badcc4"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/payments.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_101/repo/payments.py",
+      "sha256": "5ae7aa3490a25a1dc6c605abf7309ec859a088f4ae5dbb393f83c023236d9ced"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/tests/test_application.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_101/repo/tests/test_application.py",
+      "sha256": "fa765cf1815acfa677b7816f4e6d95a0c0397ab0984ffb59838e696dea90bc25"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/transport.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_101/repo/transport.py",
+      "sha256": "35445b569ac5e3b72bcec6f38e58f671d7384ccecb04aa4b36c3e7c35d57df4d"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/task.json",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_101/task.json",
+      "sha256": "6ff4a23009f896f8ba8329b5df4487b7bde0cf384906012bd38033d582ffb12b"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_101.json",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_101.json",
+      "sha256": "2cbf3f46439fcd4867476beffeee49c0d65f569e5ee2626c557713365ad72f31"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/hidden.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_102/hidden.py",
+      "sha256": "0beaf2b49ee3f3ec8311b8ad1293764d81c1e976cce3804b545c57c1eddb4b17"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/README.md",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_102/repo/README.md",
+      "sha256": "4d2d6aef07cfd03a1a3b1c916baa1e0bbfcbe924d6f982802376738f97cea39e"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/application.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_102/repo/application.py",
+      "sha256": "3b84c81b71d2db773cbeb16fbff65b4491d65f9fb868a34729d859c93ef707ba"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/broker.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_102/repo/broker.py",
+      "sha256": "7618ee0e91834fb57f4558a3b23422901fd073d088af71e8993e41c3b9135294"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/jobs.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_102/repo/jobs.py",
+      "sha256": "1c2328d2cc99f899c7a523c2ad8da1731c977c6617fdc0d29b5034cd89b60dc8"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/operations.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_102/repo/operations.py",
+      "sha256": "d4feda5c64ed9401da8f6d3ded2ff36673fee04fdd7b100541d6e5f852b403fe"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/results.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_102/repo/results.py",
+      "sha256": "49df99e15472c197f3b6fd6e1cfb5f9cbd327791d007c025fd6a2610c32bfb88"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/scheduler.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_102/repo/scheduler.py",
+      "sha256": "60c86c67caec469d79e8546621cb2d590e54c5b355ac4c3b5504dfee5cf49dfa"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/tests/test_application.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_102/repo/tests/test_application.py",
+      "sha256": "6064a9f582719bacdf0df1688aea28ae17aa8f5632902057e62b3022b70f2b32"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/worker.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_102/repo/worker.py",
+      "sha256": "35c603ce257ed4a7f4092093ebe6ca018263af143e721433088b47190bca8935"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/task.json",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_102/task.json",
+      "sha256": "1913415c6811343a56a3a49441f3d76f7a6383cbe7b189d03341722e50dd845b"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_102.json",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_102.json",
+      "sha256": "1791707384ecac1dabcd3201a7cde819258e6d327f74da960e521b9cfcddaa9f"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/hidden.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_104/hidden.py",
+      "sha256": "8bf8aecb350b78d66fd628b5694b39d9d8e668a17f2f9527494c698853bb80f7"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/README.md",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_104/repo/README.md",
+      "sha256": "ee3c3a376c960976016e0667727670a8ab76154d6728457cbde346319ff99297"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/aggregation.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_104/repo/aggregation.py",
+      "sha256": "72517b0c6f1fb3bd68d0db48cc3f84af6112b4eba92d26b6a77897c625d8f563"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/application.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_104/repo/application.py",
+      "sha256": "a70c6b625cdbb0f3a02f414c6eabf6a605d66a11d5c695f1484de85fec640e2d"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/exporting.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_104/repo/exporting.py",
+      "sha256": "5f3fab4c8fa00de76e1379cb8f01900e9f3693106c38c581829154c448b61cfe"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/normalization.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_104/repo/normalization.py",
+      "sha256": "a34f637610c95b9a9791b2a12a458db3d3833f25484f9fc952ae92a54771dc78"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/pipeline.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_104/repo/pipeline.py",
+      "sha256": "81a2db9270929f8a6ecaacb6639375b9a27797dc19b883b27f507f46d381ba3e"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/sources.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_104/repo/sources.py",
+      "sha256": "20bad9264a2c452d579d7e8ca53a35f533f71720a096c2e0df4d0afddd7db702"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/tests/test_application.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_104/repo/tests/test_application.py",
+      "sha256": "ad6dc768632b39acf1e2789ac4915224864385aba78b8d72214d376b6677154d"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/validation.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_104/repo/validation.py",
+      "sha256": "257f109b154d0306430e8e33848a364302963fe754f0f10ccfc668bf361b9bf7"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/task.json",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/train/task_104/task.json",
+      "sha256": "2d3c8a9fb09510a450e7c12e9d28bddf39df04b35ca79c4be41ff43d13ce5da6"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_104.json",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_104.json",
+      "sha256": "024a4dc3d0a2dc58a525dd78af4a52be51cf563f87c8dcbf79e2c83315ca4dbc"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/dev/task_108/hidden.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/dev/task_108/hidden.py",
+      "sha256": "7dcda25f978c2ae9725559e2e51bc844265b99860756802753c2bc92ccce5dba"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/dev/task_108/repo/README.md",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/dev/task_108/repo/README.md",
+      "sha256": "9184a2cec312e51807d80ea8c3197136436157406a5325dbcf0dc20847295d98"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/dev/task_108/repo/application.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/dev/task_108/repo/application.py",
+      "sha256": "6acfb1536a5ffd5c9cde078fe590537ba5e3ca31e7e4ff765f4f44e61526150b"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/dev/task_108/repo/defaults.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/dev/task_108/repo/defaults.py",
+      "sha256": "f1ef913de09b4ec1ad7945ebe1faeb515e9bb9ff4065354a5781cf508374e079"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/dev/task_108/repo/layers.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/dev/task_108/repo/layers.py",
+      "sha256": "20782a0973649469f76c35aded4e2617c040e3753b1187642753543a6ef3a9de"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/dev/task_108/repo/mailer.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/dev/task_108/repo/mailer.py",
+      "sha256": "21196147c4fada95687441d44d2f845d2f369e3a714eda89d9812e62c309b8b6"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/dev/task_108/repo/parsing.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/dev/task_108/repo/parsing.py",
+      "sha256": "cc69837eaa9986cc33b2b276051df955dcf7a19b0947a94d76a0dbc8d2c89ed9"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/dev/task_108/repo/resolver.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/dev/task_108/repo/resolver.py",
+      "sha256": "cd8455784d13dc10d9fc14da5db8da23210d036b709124f1461e5946641862d1"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/dev/task_108/repo/scheduler.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/dev/task_108/repo/scheduler.py",
+      "sha256": "9951e3ad1a398f1ab4c774c70ce2f969b3839a722b60b5416570e633176161ce"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/dev/task_108/repo/tests/test_application.py",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/dev/task_108/repo/tests/test_application.py",
+      "sha256": "ac0e18f793d162332e33379b2fa7b6f2f5708ffb539f8c9ed3df2f985fec6188"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/dev/task_108/task.json",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/suites/repobench/tasks/dev/task_108/task.json",
+      "sha256": "b9df2bd3c884ff1f38f098acaa660f4aeb971edc129df6e706288b449de32f60"
+    },
+    {
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_108.json",
+      "copy": "/private/tmp/reflexforge-token-sensitivity-2026-11-11-05k8p8b7/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_108.json",
+      "sha256": "56fd78112c468da5bed04ef1058def9439589ec58db39732f8bd63ff4f6a8628"
+    }
+  ],
+  "incumbent_files": {
+    "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/configs/static/params.yaml": "90cad5062018947356eb2c7b8b0a94b1bdc3a2cecfe22dfbfc3a4ef0f4f9decc",
+    "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/configs/static/skills/debugging.md": "0aa40e96c8253c11274dbce7b0e2cb8eef118f39856361be28361457330c3243",
+    "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/configs/static/system_prompt.md": "6af714bdc129396fd0bf08da024af7cc95b8320a3e2a376532980df3f816f70f",
+    "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/configs/static/tools.yaml": "45e3e386b999809be5ce23bd0b9e01852db4aa38c61332c1dbc7ca85d85645a2",
+    "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/configs/static/workflow.yaml": "8bf00de8d6c9e231f8e50e3571ca93d513c786efc6fb942ae82508823db37c9e"
+  }
+}

@@ -1,0 +1,23 @@
+                                                                                
+ Usage: reflexforge benchmark run [OPTIONS]                                     
+                                                                                
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --root                                 <path>   [default:                    │
+│                                                 /Users/arpitsrivastav/Deskt… │
+│ --split                                <str>    [default: train]             │
+│ --tasks                                <str>                                 │
+│ --config                               <str>    [default: baseline]          │
+│ --conditions                           <str>    [default: static]            │
+│ --attempts                             <int>    [default: 1]                 │
+│ --max-api-calls                        <int>    [default: 40]                │
+│ --max-tokens                           <int>    [default: 30000]             │
+│ --max-usd                              <float>                               │
+│ --bank-version                         <str>                                 │
+│ --suite                                <str>    [default: debug]             │
+│ --optimized-version                    <str>                                 │
+│ --final                --no-final               [default: no-final]          │
+│ --dry-run              --no-dry-run             [default: no-dry-run]        │
+│ --candidate-config                     <path>                                │
+│ --help                                          Show this message and exit.  │
+╰──────────────────────────────────────────────────────────────────────────────╯
+

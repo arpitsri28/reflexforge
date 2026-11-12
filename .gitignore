@@ -6,3 +6,5 @@ __pycache__/
 *.egg-info/
 .env
 artifacts/
+docs/resume-stats.md
+docs/baseline-repeat-2026-11-11.md

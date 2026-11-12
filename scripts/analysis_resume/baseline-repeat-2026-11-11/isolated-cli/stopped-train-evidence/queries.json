@@ -1,0 +1,196 @@
+[
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM runs",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "inventory",
+    "sql": "SELECT run_id,task_id,split,synthetic,status,json_extract(result,'$.model') AS model FROM runs ORDER BY run_id",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "09253c5a368844cf9d77c35c140195cc"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "3de07b12161d43bf81523d3ca78f2876"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "5726d67e46994ee3b285b7e181e70578"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "5f767ae17a5f4b04a83dd44412e9db85"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "6eda1e3d57b94ebab12b832142db5d92"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "7041ec217e5a45d79c02313b89c44f3a"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "7ae6fd18b48944a798971386568872a3"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "9ef916ecde2d4deb8b50d3228a34fc88"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "a7e3f4622e304f85a02876ebfe82af81"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "ac14a34549944006b1cec351fcc63816"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "cec4abe1321642ef8d34ebb2db4cef8a"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "e614495c758348ba93a1d35753d09c86"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "e8cf721e2ca949038f6c9f26253a4b1b"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "ecdd76f2579c41a585b5b34cafe98010"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "ed9329f3545e4dd481b3136932d6e350"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/experiments/39224a1b4f4a4efca4ce79742a7808fc/runs/experiments.sqlite3",
+    "query": "result_non_test",
+    "sql": "SELECT result FROM runs WHERE run_id=? AND split IN ('train','dev')",
+    "parameters": [
+      "ff422b8278b34d3488970bb9494c4f42"
+    ]
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "tables",
+    "sql": "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM api_usage",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM benchmark_cells",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM experiments",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "table_count",
+    "sql": "SELECT COUNT(*) AS n FROM iterations",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "experiments",
+    "sql": "SELECT id,synthetic,settings,status FROM experiments ORDER BY id",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "cells",
+    "sql": "SELECT experiment_id,task_id,attempt,condition,status,result FROM benchmark_cells ORDER BY experiment_id,task_id,attempt,condition",
+    "parameters": []
+  },
+  {
+    "database": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/real/optimization.sqlite3",
+    "query": "ledger",
+    "sql": "SELECT id,experiment_id,role,model,state,calls,tokens,usd,actual_usage FROM api_usage ORDER BY id",
+    "parameters": []
+  }
+]

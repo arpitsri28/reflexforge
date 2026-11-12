@@ -1,0 +1,630 @@
+{
+  "stage": "train",
+  "root": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train",
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OPENAI_MODEL": "gpt-5.4-mini",
+    "REFLEXFORGE_IMAGE": "sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3",
+    "REFLEXFORGE_INPUT_PRICE": "0.75",
+    "REFLEXFORGE_OUTPUT_PRICE": "4.5"
+  },
+  "copy_hashes": [
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/benchmark/manifest.json",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/benchmark/manifest.json",
+      "original_sha256": "bd10882a413f085d11bb057ca825c15f11b44ee9fb1e0e2828c1abf7609e0b19",
+      "copy_sha256": "bd10882a413f085d11bb057ca825c15f11b44ee9fb1e0e2828c1abf7609e0b19",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/hidden.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_101/hidden.py",
+      "original_sha256": "8f1226f29e9fff86163960d755a4796b2fe2d231daf127cf8030d626fcab9db1",
+      "copy_sha256": "8f1226f29e9fff86163960d755a4796b2fe2d231daf127cf8030d626fcab9db1",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/README.md",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_101/repo/README.md",
+      "original_sha256": "8d917d492f8dbcde164827ea5d226989eea6da2f318b2e77543077b39eaa4121",
+      "copy_sha256": "8d917d492f8dbcde164827ea5d226989eea6da2f318b2e77543077b39eaa4121",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/api.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_101/repo/api.py",
+      "original_sha256": "8a402255ad03ef963314b7922e4bdbbd2d82f63dae41a0e5e9bf956200c36304",
+      "copy_sha256": "8a402255ad03ef963314b7922e4bdbbd2d82f63dae41a0e5e9bf956200c36304",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/audit.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_101/repo/audit.py",
+      "original_sha256": "a8f40786cfd7fed07d6c0466b35908be708d77443c0a0061c834b630babd8a32",
+      "copy_sha256": "a8f40786cfd7fed07d6c0466b35908be708d77443c0a0061c834b630babd8a32",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/gateway.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_101/repo/gateway.py",
+      "original_sha256": "ba9ea1000cc1aae50a646e78ffc4b6af9da25c12f8f116e491f62c23b1bc2f7b",
+      "copy_sha256": "ba9ea1000cc1aae50a646e78ffc4b6af9da25c12f8f116e491f62c23b1bc2f7b",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/journal.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_101/repo/journal.py",
+      "original_sha256": "852b99ce5763d3c73c7ebb7b0b1a1237862134a354f37bfba56f03ad0cb6469f",
+      "copy_sha256": "852b99ce5763d3c73c7ebb7b0b1a1237862134a354f37bfba56f03ad0cb6469f",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/models.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_101/repo/models.py",
+      "original_sha256": "2512240b883d853ed9bd9cafe368f4846c348f7c127fd605d0650c5f34badcc4",
+      "copy_sha256": "2512240b883d853ed9bd9cafe368f4846c348f7c127fd605d0650c5f34badcc4",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/payments.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_101/repo/payments.py",
+      "original_sha256": "5ae7aa3490a25a1dc6c605abf7309ec859a088f4ae5dbb393f83c023236d9ced",
+      "copy_sha256": "5ae7aa3490a25a1dc6c605abf7309ec859a088f4ae5dbb393f83c023236d9ced",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/tests/test_application.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_101/repo/tests/test_application.py",
+      "original_sha256": "fa765cf1815acfa677b7816f4e6d95a0c0397ab0984ffb59838e696dea90bc25",
+      "copy_sha256": "fa765cf1815acfa677b7816f4e6d95a0c0397ab0984ffb59838e696dea90bc25",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/repo/transport.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_101/repo/transport.py",
+      "original_sha256": "35445b569ac5e3b72bcec6f38e58f671d7384ccecb04aa4b36c3e7c35d57df4d",
+      "copy_sha256": "35445b569ac5e3b72bcec6f38e58f671d7384ccecb04aa4b36c3e7c35d57df4d",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_101/task.json",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_101/task.json",
+      "original_sha256": "6ff4a23009f896f8ba8329b5df4487b7bde0cf384906012bd38033d582ffb12b",
+      "copy_sha256": "6ff4a23009f896f8ba8329b5df4487b7bde0cf384906012bd38033d582ffb12b",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_101.json",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_101.json",
+      "original_sha256": "2cbf3f46439fcd4867476beffeee49c0d65f569e5ee2626c557713365ad72f31",
+      "copy_sha256": "2cbf3f46439fcd4867476beffeee49c0d65f569e5ee2626c557713365ad72f31",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/hidden.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_102/hidden.py",
+      "original_sha256": "0beaf2b49ee3f3ec8311b8ad1293764d81c1e976cce3804b545c57c1eddb4b17",
+      "copy_sha256": "0beaf2b49ee3f3ec8311b8ad1293764d81c1e976cce3804b545c57c1eddb4b17",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/README.md",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_102/repo/README.md",
+      "original_sha256": "4d2d6aef07cfd03a1a3b1c916baa1e0bbfcbe924d6f982802376738f97cea39e",
+      "copy_sha256": "4d2d6aef07cfd03a1a3b1c916baa1e0bbfcbe924d6f982802376738f97cea39e",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/application.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_102/repo/application.py",
+      "original_sha256": "3b84c81b71d2db773cbeb16fbff65b4491d65f9fb868a34729d859c93ef707ba",
+      "copy_sha256": "3b84c81b71d2db773cbeb16fbff65b4491d65f9fb868a34729d859c93ef707ba",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/broker.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_102/repo/broker.py",
+      "original_sha256": "7618ee0e91834fb57f4558a3b23422901fd073d088af71e8993e41c3b9135294",
+      "copy_sha256": "7618ee0e91834fb57f4558a3b23422901fd073d088af71e8993e41c3b9135294",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/jobs.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_102/repo/jobs.py",
+      "original_sha256": "1c2328d2cc99f899c7a523c2ad8da1731c977c6617fdc0d29b5034cd89b60dc8",
+      "copy_sha256": "1c2328d2cc99f899c7a523c2ad8da1731c977c6617fdc0d29b5034cd89b60dc8",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/operations.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_102/repo/operations.py",
+      "original_sha256": "d4feda5c64ed9401da8f6d3ded2ff36673fee04fdd7b100541d6e5f852b403fe",
+      "copy_sha256": "d4feda5c64ed9401da8f6d3ded2ff36673fee04fdd7b100541d6e5f852b403fe",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/results.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_102/repo/results.py",
+      "original_sha256": "49df99e15472c197f3b6fd6e1cfb5f9cbd327791d007c025fd6a2610c32bfb88",
+      "copy_sha256": "49df99e15472c197f3b6fd6e1cfb5f9cbd327791d007c025fd6a2610c32bfb88",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/scheduler.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_102/repo/scheduler.py",
+      "original_sha256": "60c86c67caec469d79e8546621cb2d590e54c5b355ac4c3b5504dfee5cf49dfa",
+      "copy_sha256": "60c86c67caec469d79e8546621cb2d590e54c5b355ac4c3b5504dfee5cf49dfa",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/tests/test_application.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_102/repo/tests/test_application.py",
+      "original_sha256": "6064a9f582719bacdf0df1688aea28ae17aa8f5632902057e62b3022b70f2b32",
+      "copy_sha256": "6064a9f582719bacdf0df1688aea28ae17aa8f5632902057e62b3022b70f2b32",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/repo/worker.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_102/repo/worker.py",
+      "original_sha256": "35c603ce257ed4a7f4092093ebe6ca018263af143e721433088b47190bca8935",
+      "copy_sha256": "35c603ce257ed4a7f4092093ebe6ca018263af143e721433088b47190bca8935",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_102/task.json",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_102/task.json",
+      "original_sha256": "1913415c6811343a56a3a49441f3d76f7a6383cbe7b189d03341722e50dd845b",
+      "copy_sha256": "1913415c6811343a56a3a49441f3d76f7a6383cbe7b189d03341722e50dd845b",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_102.json",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_102.json",
+      "original_sha256": "1791707384ecac1dabcd3201a7cde819258e6d327f74da960e521b9cfcddaa9f",
+      "copy_sha256": "1791707384ecac1dabcd3201a7cde819258e6d327f74da960e521b9cfcddaa9f",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_103/hidden.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_103/hidden.py",
+      "original_sha256": "b27907a6dc6265cd9db3b19aa89cbcb94eaa7fa88393f481548e1e70fccc94d9",
+      "copy_sha256": "b27907a6dc6265cd9db3b19aa89cbcb94eaa7fa88393f481548e1e70fccc94d9",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_103/repo/README.md",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_103/repo/README.md",
+      "original_sha256": "a3068c862b3624623460561d8c9a728d02bba1f7bebb6d71b37e142f75fdd4a8",
+      "copy_sha256": "a3068c862b3624623460561d8c9a728d02bba1f7bebb6d71b37e142f75fdd4a8",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_103/repo/application.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_103/repo/application.py",
+      "original_sha256": "170ace701c7f8bc8bceb332d9fc77b100bb757ba173cf9b80846ee71a7a97ef5",
+      "copy_sha256": "170ace701c7f8bc8bceb332d9fc77b100bb757ba173cf9b80846ee71a7a97ef5",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_103/repo/broker.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_103/repo/broker.py",
+      "original_sha256": "e503158c4b15a0bae2c0c2503f4527b753e5fac2216fc0664924f7309ac8d6ff",
+      "copy_sha256": "e503158c4b15a0bae2c0c2503f4527b753e5fac2216fc0664924f7309ac8d6ff",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_103/repo/consumer.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_103/repo/consumer.py",
+      "original_sha256": "a66de41d35bed693e4fa8678c96420b90197e19fdfb323fd36ece7d486041618",
+      "copy_sha256": "a66de41d35bed693e4fa8678c96420b90197e19fdfb323fd36ece7d486041618",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_103/repo/handlers.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_103/repo/handlers.py",
+      "original_sha256": "50c078e52086877b898ae975bf304ead45ea5d207746cd04c214f0cfc475098f",
+      "copy_sha256": "50c078e52086877b898ae975bf304ead45ea5d207746cd04c214f0cfc475098f",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_103/repo/messages.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_103/repo/messages.py",
+      "original_sha256": "bd3ce154500fb767e29dd223610ee539a3ee0e1106b05a092e82a60cb6ec4e67",
+      "copy_sha256": "bd3ce154500fb767e29dd223610ee539a3ee0e1106b05a092e82a60cb6ec4e67",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_103/repo/simulation.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_103/repo/simulation.py",
+      "original_sha256": "ee8e7b1def4af89098db2611dcf0c48ed50f39ae4f769d808ab76bde978927dc",
+      "copy_sha256": "ee8e7b1def4af89098db2611dcf0c48ed50f39ae4f769d808ab76bde978927dc",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_103/repo/storage.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_103/repo/storage.py",
+      "original_sha256": "9081094d164ad522fe38f369ff23ade643641c4d9778be6f578535a6d8a494e3",
+      "copy_sha256": "9081094d164ad522fe38f369ff23ade643641c4d9778be6f578535a6d8a494e3",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_103/repo/tests/test_application.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_103/repo/tests/test_application.py",
+      "original_sha256": "73f6031faea1b715ca7efcf5020c936daf4858d120f91430ce7120b03b815c8a",
+      "copy_sha256": "73f6031faea1b715ca7efcf5020c936daf4858d120f91430ce7120b03b815c8a",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_103/task.json",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_103/task.json",
+      "original_sha256": "29d0699a1339ac59c408e3a610802b62544877a1ce14f58bea19a3c3b93ad889",
+      "copy_sha256": "29d0699a1339ac59c408e3a610802b62544877a1ce14f58bea19a3c3b93ad889",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_103.json",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_103.json",
+      "original_sha256": "4c162fa0d841223ff382c1598f92326beb534aa4a033abf48d4c67e3bbd160d4",
+      "copy_sha256": "4c162fa0d841223ff382c1598f92326beb534aa4a033abf48d4c67e3bbd160d4",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/hidden.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_104/hidden.py",
+      "original_sha256": "8bf8aecb350b78d66fd628b5694b39d9d8e668a17f2f9527494c698853bb80f7",
+      "copy_sha256": "8bf8aecb350b78d66fd628b5694b39d9d8e668a17f2f9527494c698853bb80f7",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/README.md",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_104/repo/README.md",
+      "original_sha256": "ee3c3a376c960976016e0667727670a8ab76154d6728457cbde346319ff99297",
+      "copy_sha256": "ee3c3a376c960976016e0667727670a8ab76154d6728457cbde346319ff99297",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/aggregation.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_104/repo/aggregation.py",
+      "original_sha256": "72517b0c6f1fb3bd68d0db48cc3f84af6112b4eba92d26b6a77897c625d8f563",
+      "copy_sha256": "72517b0c6f1fb3bd68d0db48cc3f84af6112b4eba92d26b6a77897c625d8f563",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/application.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_104/repo/application.py",
+      "original_sha256": "a70c6b625cdbb0f3a02f414c6eabf6a605d66a11d5c695f1484de85fec640e2d",
+      "copy_sha256": "a70c6b625cdbb0f3a02f414c6eabf6a605d66a11d5c695f1484de85fec640e2d",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/exporting.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_104/repo/exporting.py",
+      "original_sha256": "5f3fab4c8fa00de76e1379cb8f01900e9f3693106c38c581829154c448b61cfe",
+      "copy_sha256": "5f3fab4c8fa00de76e1379cb8f01900e9f3693106c38c581829154c448b61cfe",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/normalization.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_104/repo/normalization.py",
+      "original_sha256": "a34f637610c95b9a9791b2a12a458db3d3833f25484f9fc952ae92a54771dc78",
+      "copy_sha256": "a34f637610c95b9a9791b2a12a458db3d3833f25484f9fc952ae92a54771dc78",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/pipeline.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_104/repo/pipeline.py",
+      "original_sha256": "81a2db9270929f8a6ecaacb6639375b9a27797dc19b883b27f507f46d381ba3e",
+      "copy_sha256": "81a2db9270929f8a6ecaacb6639375b9a27797dc19b883b27f507f46d381ba3e",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/sources.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_104/repo/sources.py",
+      "original_sha256": "20bad9264a2c452d579d7e8ca53a35f533f71720a096c2e0df4d0afddd7db702",
+      "copy_sha256": "20bad9264a2c452d579d7e8ca53a35f533f71720a096c2e0df4d0afddd7db702",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/tests/test_application.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_104/repo/tests/test_application.py",
+      "original_sha256": "ad6dc768632b39acf1e2789ac4915224864385aba78b8d72214d376b6677154d",
+      "copy_sha256": "ad6dc768632b39acf1e2789ac4915224864385aba78b8d72214d376b6677154d",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/repo/validation.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_104/repo/validation.py",
+      "original_sha256": "257f109b154d0306430e8e33848a364302963fe754f0f10ccfc668bf361b9bf7",
+      "copy_sha256": "257f109b154d0306430e8e33848a364302963fe754f0f10ccfc668bf361b9bf7",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_104/task.json",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_104/task.json",
+      "original_sha256": "2d3c8a9fb09510a450e7c12e9d28bddf39df04b35ca79c4be41ff43d13ce5da6",
+      "copy_sha256": "2d3c8a9fb09510a450e7c12e9d28bddf39df04b35ca79c4be41ff43d13ce5da6",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_104.json",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_104.json",
+      "original_sha256": "024a4dc3d0a2dc58a525dd78af4a52be51cf563f87c8dcbf79e2c83315ca4dbc",
+      "copy_sha256": "024a4dc3d0a2dc58a525dd78af4a52be51cf563f87c8dcbf79e2c83315ca4dbc",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_105/hidden.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_105/hidden.py",
+      "original_sha256": "64bda3608b8269db4a525fdd623d0dd3a8118e146c0a367371959b8f251f1850",
+      "copy_sha256": "64bda3608b8269db4a525fdd623d0dd3a8118e146c0a367371959b8f251f1850",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_105/repo/README.md",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_105/repo/README.md",
+      "original_sha256": "79c0f303f227d45220b9b772814a49ac429bc2e3ee3709a07f3efbb96e9409b9",
+      "copy_sha256": "79c0f303f227d45220b9b772814a49ac429bc2e3ee3709a07f3efbb96e9409b9",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_105/repo/accounts.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_105/repo/accounts.py",
+      "original_sha256": "2fe196bdebcc11b46368be7d0ae93d9351dd0eea248f05d816a45e8822028790",
+      "copy_sha256": "2fe196bdebcc11b46368be7d0ae93d9351dd0eea248f05d816a45e8822028790",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_105/repo/application.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_105/repo/application.py",
+      "original_sha256": "0b15aed3b1723cbb3540782713a46279f9736531c95727d69b2795ffef44f16f",
+      "copy_sha256": "0b15aed3b1723cbb3540782713a46279f9736531c95727d69b2795ffef44f16f",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_105/repo/fees.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_105/repo/fees.py",
+      "original_sha256": "ac5258f2ba8f6d2b7529a932a891400adc22684300d9d77915357aec930df696",
+      "copy_sha256": "ac5258f2ba8f6d2b7529a932a891400adc22684300d9d77915357aec930df696",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_105/repo/reporting.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_105/repo/reporting.py",
+      "original_sha256": "a6b6958c43ddbe1d1b703f11027094647bcf83c4afc6772f38c10224c9717c98",
+      "copy_sha256": "a6b6958c43ddbe1d1b703f11027094647bcf83c4afc6772f38c10224c9717c98",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_105/repo/storage.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_105/repo/storage.py",
+      "original_sha256": "ee18c91a456a076d99fee6913cbdcf8f00cb220cd351fabd157dc13c91f51461",
+      "copy_sha256": "ee18c91a456a076d99fee6913cbdcf8f00cb220cd351fabd157dc13c91f51461",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_105/repo/tests/test_application.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_105/repo/tests/test_application.py",
+      "original_sha256": "58623d2522119422125dae08c9dac3556d915faaf138e8d7a6c44f00d2cc7c28",
+      "copy_sha256": "58623d2522119422125dae08c9dac3556d915faaf138e8d7a6c44f00d2cc7c28",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_105/repo/transactions.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_105/repo/transactions.py",
+      "original_sha256": "153e18744fe900e87112a4a3ee88032e9bd95e7604df8a348a0bd3735260938a",
+      "copy_sha256": "153e18744fe900e87112a4a3ee88032e9bd95e7604df8a348a0bd3735260938a",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_105/repo/transfers.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_105/repo/transfers.py",
+      "original_sha256": "a6a4f6c776408dda3a8c3a2181e00a517e9aa3ee07168592a56c07217cdb80d5",
+      "copy_sha256": "a6a4f6c776408dda3a8c3a2181e00a517e9aa3ee07168592a56c07217cdb80d5",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_105/task.json",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_105/task.json",
+      "original_sha256": "7ea89a70843edd26cecaf0828bbd9acfdaa8ba29e13e9807c10f982065288769",
+      "copy_sha256": "7ea89a70843edd26cecaf0828bbd9acfdaa8ba29e13e9807c10f982065288769",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_105.json",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_105.json",
+      "original_sha256": "9752793ce1f5bffcebd0a20fc2fddd1d921c8bf3ad95a3f6b6824529ae02a7ec",
+      "copy_sha256": "9752793ce1f5bffcebd0a20fc2fddd1d921c8bf3ad95a3f6b6824529ae02a7ec",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_106/hidden.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_106/hidden.py",
+      "original_sha256": "f2ac3446283c7fa4f8ce0aecd9d44417abc5d3be5a2d24a6520a60b80029cc5a",
+      "copy_sha256": "f2ac3446283c7fa4f8ce0aecd9d44417abc5d3be5a2d24a6520a60b80029cc5a",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_106/repo/README.md",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_106/repo/README.md",
+      "original_sha256": "a0a65789160f50a98b970197343308db452b05cf4149fbeace04f073aac3b924",
+      "copy_sha256": "a0a65789160f50a98b970197343308db452b05cf4149fbeace04f073aac3b924",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_106/repo/checkpoint.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_106/repo/checkpoint.py",
+      "original_sha256": "3736c2b3883db3d58dc7c552707b25d98ceb68f51c295fb06953fc335f716b6b",
+      "copy_sha256": "3736c2b3883db3d58dc7c552707b25d98ceb68f51c295fb06953fc335f716b6b",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_106/repo/client.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_106/repo/client.py",
+      "original_sha256": "1d57535c4e4c545a51e0d245048a45ce15820200e17ce13217810f66ad4594e6",
+      "copy_sha256": "1d57535c4e4c545a51e0d245048a45ce15820200e17ce13217810f66ad4594e6",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_106/repo/decoding.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_106/repo/decoding.py",
+      "original_sha256": "69da046b08198f78abab5644ff84016dcdef85dfc3637141147d5650919c4e4f",
+      "copy_sha256": "69da046b08198f78abab5644ff84016dcdef85dfc3637141147d5650919c4e4f",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_106/repo/destination.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_106/repo/destination.py",
+      "original_sha256": "92ee3f37f7a2e34fcde03ff98273f553f354066fcb71f449e16eeb305c119fcd",
+      "copy_sha256": "92ee3f37f7a2e34fcde03ff98273f553f354066fcb71f449e16eeb305c119fcd",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_106/repo/protocol.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_106/repo/protocol.py",
+      "original_sha256": "14b130a8cf597930668020a78c430b9685c13a59c4385631c25e83ce29f7adc6",
+      "copy_sha256": "14b130a8cf597930668020a78c430b9685c13a59c4385631c25e83ce29f7adc6",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_106/repo/synchronizer.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_106/repo/synchronizer.py",
+      "original_sha256": "d6dd376d04bc73642c226b65505c14145d04ab13265d5a1d07c0dccd1b626ae6",
+      "copy_sha256": "d6dd376d04bc73642c226b65505c14145d04ab13265d5a1d07c0dccd1b626ae6",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_106/repo/tests/test_application.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_106/repo/tests/test_application.py",
+      "original_sha256": "f86440efaee79ec425a3d69d6fca17819406e45e1c2ee599db3158bbfa727891",
+      "copy_sha256": "f86440efaee79ec425a3d69d6fca17819406e45e1c2ee599db3158bbfa727891",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_106/repo/transport.py",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_106/repo/transport.py",
+      "original_sha256": "d1a4c45a6019558ab76627e5109bbdfc7c3fca44897f2804974510930b8139dd",
+      "copy_sha256": "d1a4c45a6019558ab76627e5109bbdfc7c3fca44897f2804974510930b8139dd",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/suites/repobench/tasks/train/task_106/task.json",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/suites/repobench/tasks/train/task_106/task.json",
+      "original_sha256": "b24bdf12f9e9f5a6c3350c11caf5a8c15b569e9515cac8972a8cf1ca467a5517",
+      "copy_sha256": "b24bdf12f9e9f5a6c3350c11caf5a8c15b569e9515cac8972a8cf1ca467a5517",
+      "match": true
+    },
+    {
+      "stage": "train",
+      "source": "/Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_106.json",
+      "copy": "/private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train/artifacts/benchmark/repobench/qa/e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6/task_106.json",
+      "original_sha256": "7e66604a43d25ea5a51eaf3a2ffb19974256a4a68de2f41f27f79c50d3a4f817",
+      "copy_sha256": "7e66604a43d25ea5a51eaf3a2ffb19974256a4a68de2f41f27f79c50d3a4f817",
+      "match": true
+    }
+  ],
+  "guard": {
+    "cumulative_usage_priced_ledger_usd": "0",
+    "sql": [
+      "SELECT state,usd,actual_usage FROM api_usage",
+      "SELECT status FROM benchmark_cells WHERE status='budget_exhausted'"
+    ]
+  },
+  "command": "env PYTHONDONTWRITEBYTECODE=1 OPENAI_MODEL=gpt-5.4-mini REFLEXFORGE_IMAGE=sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3 REFLEXFORGE_INPUT_PRICE=0.75 REFLEXFORGE_OUTPUT_PRICE=4.5 /Users/arpitsrivastav/Desktop/swe_agent/.venv/bin/reflexforge benchmark preflight --root /private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train --suite repobench --split train --tasks task_101,task_102,task_103,task_104,task_105,task_106 --conditions static --attempts 3 --bank-version e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6 --max-tokens 450000 --max-api-calls 760 --max-usd 1.00",
+  "stdout": "{\n  \"suite\": \"repobench\",\n  \"bank_version\": \"e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6\",\n  \"tasks\": [\n    \"task_101\",\n    \"task_102\",\n    \"task_103\",\n    \"task_104\",\n    \"task_105\",\n    \"task_106\"\n  ],\n  \"previously_exposed_task_ids\": [],\n  \"paid_requests_made\": false,\n  \"scheduled_runs\": 18,\n  \"max_generation_requests\": 360,\n  \"max_http_calls_including_counting\": 720,\n  \"uncapped_token_reservations\": 432000,\n  \"overall_token_limit\": 450000,\n  \"bounded_token_upper_limit\": 432000,\n  \"potential_usd_upper_bound\": 1.944,\n  \"hard_usd_cap\": 1.0,\n  \"warning\": \"Reservation upper bounds are not measurements or a guarantee all scheduled runs fit.\"\n}\n",
+  "preflight": {
+    "suite": "repobench",
+    "bank_version": "e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6",
+    "tasks": [
+      "task_101",
+      "task_102",
+      "task_103",
+      "task_104",
+      "task_105",
+      "task_106"
+    ],
+    "previously_exposed_task_ids": [],
+    "paid_requests_made": false,
+    "scheduled_runs": 18,
+    "max_generation_requests": 360,
+    "max_http_calls_including_counting": 720,
+    "uncapped_token_reservations": 432000,
+    "overall_token_limit": 450000,
+    "bounded_token_upper_limit": 432000,
+    "potential_usd_upper_bound": 1.944,
+    "hard_usd_cap": 1.0,
+    "warning": "Reservation upper bounds are not measurements or a guarantee all scheduled runs fit."
+  },
+  "paid_command_pending_approval": "env PYTHONDONTWRITEBYTECODE=1 OPENAI_MODEL=gpt-5.4-mini REFLEXFORGE_IMAGE=sha256:a652ee72cbe2908d0649a0fad5063611255481a74a2a8130a515bd2574ff25b3 REFLEXFORGE_INPUT_PRICE=0.75 REFLEXFORGE_OUTPUT_PRICE=4.5 /Users/arpitsrivastav/Desktop/swe_agent/.venv/bin/reflexforge benchmark run --root /private/tmp/reflexforge-baseline-repeat-2026-11-11-4nkfx21u/train --suite repobench --split train --tasks task_101,task_102,task_103,task_104,task_105,task_106 --conditions static --attempts 3 --bank-version e39bbb6312fc8a29e3a4dacb23a68fbe74b1cb037180df86b12a2aac49148fc6 --max-tokens 450000 --max-api-calls 760 --max-usd 1.00 --config /Users/arpitsrivastav/Desktop/swe_agent/artifacts/benchmark/repobench/real/experiments/e6ceb4bc2c4c4525ba52dbd9e2310f05/configs/static"
+}
